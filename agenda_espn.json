@@ -1,6 +1,6 @@
 {
   "fuente": "ESPN Argentina",
-  "fecha_scrapeo": "2026-05-02T16:29:06.582074-03:00",
+  "fecha_scrapeo": "2026-05-02T17:43:12.222805-03:00",
   "total": 154,
   "partidos": [
     {
@@ -42,10 +42,10 @@
         "tipo_temporada": 13905
       },
       "hora": "14:30",
-      "estado": "Second Half",
-      "estado_corto": "76'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T17:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/762896"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/762896/deportivo-riestra-lanus"
     },
     {
       "id": "762907",
@@ -64,10 +64,10 @@
         "tipo_temporada": 13905
       },
       "hora": "16:15",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
+      "estado": "First Half",
+      "estado_corto": "10'",
       "fecha_espn": "2026-05-02T19:15Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/762907/boca-juniors-central-cordoba-santiago-del-estero"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/762907"
     },
     {
       "id": "762901",
@@ -152,8 +152,8 @@
         "tipo_temporada": 13952
       },
       "hora": "15:30",
-      "estado": "First Half",
-      "estado_corto": "26'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
       "fecha_espn": "2026-05-02T18:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843827"
     },
@@ -174,8 +174,8 @@
         "tipo_temporada": 13952
       },
       "hora": "15:30",
-      "estado": "First Half",
-      "estado_corto": "30'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
       "fecha_espn": "2026-05-02T18:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843828"
     },
@@ -196,8 +196,8 @@
         "tipo_temporada": 13952
       },
       "hora": "15:30",
-      "estado": "First Half",
-      "estado_corto": "10'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
       "fecha_espn": "2026-05-02T18:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843815"
     },
@@ -307,7 +307,7 @@
       },
       "hora": "16:00",
       "estado": "First Half",
-      "estado_corto": "4'",
+      "estado_corto": "7'",
       "fecha_espn": "2026-05-02T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748480"
     },
@@ -482,10 +482,10 @@
         "tipo_temporada": 13546
       },
       "hora": "16:05",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
+      "estado": "First Half",
+      "estado_corto": "2'",
       "fecha_espn": "2026-05-02T19:05Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/746697/lens-nice"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/746697"
     },
     {
       "id": "737128",
@@ -549,7 +549,7 @@
       },
       "hora": "15:45",
       "estado": "First Half",
-      "estado_corto": "18'",
+      "estado_corto": "22'",
       "fecha_espn": "2026-05-02T18:45Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/737132"
     },
