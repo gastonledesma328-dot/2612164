@@ -22,7 +22,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run scraper
-        run: python scraper.py
+       run: python agendascrap_ready/scraper.py
 
       - name: Commit JSON
         run: |
