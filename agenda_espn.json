@@ -1,6 +1,6 @@
 {
   "fuente": "ESPN Argentina",
-  "fecha_scrapeo": "2026-05-02T17:43:12.222805-03:00",
+  "fecha_scrapeo": "2026-05-02T19:43:11.941302-03:00",
   "total": 154,
   "partidos": [
     {
@@ -64,8 +64,8 @@
         "tipo_temporada": 13905
       },
       "hora": "16:15",
-      "estado": "First Half",
-      "estado_corto": "10'",
+      "estado": "Second Half",
+      "estado_corto": "64'",
       "fecha_espn": "2026-05-02T19:15Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/762907"
     },
@@ -152,10 +152,10 @@
         "tipo_temporada": 13952
       },
       "hora": "15:30",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843827"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843827/central-norte-defensores-de-belgrano"
     },
     {
       "id": "401843828",
@@ -174,10 +174,10 @@
         "tipo_temporada": 13952
       },
       "hora": "15:30",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843828"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843828/san-telmo-estudiantes-buenos-aires"
     },
     {
       "id": "401843815",
@@ -196,10 +196,10 @@
         "tipo_temporada": 13952
       },
       "hora": "15:30",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843815"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843815/colon-santa-fe-los-andes"
     },
     {
       "id": "401843820",
@@ -306,8 +306,8 @@
         "tipo_temporada": 13561
       },
       "hora": "16:00",
-      "estado": "First Half",
-      "estado_corto": "7'",
+      "estado": "Second Half",
+      "estado_corto": "85'",
       "fecha_espn": "2026-05-02T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748480"
     },
@@ -482,8 +482,8 @@
         "tipo_temporada": 13546
       },
       "hora": "16:05",
-      "estado": "First Half",
-      "estado_corto": "2'",
+      "estado": "Second Half",
+      "estado_corto": "75'",
       "fecha_espn": "2026-05-02T19:05Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/746697"
     },
@@ -548,8 +548,8 @@
         "tipo_temporada": 13447
       },
       "hora": "15:45",
-      "estado": "First Half",
-      "estado_corto": "22'",
+      "estado": "Second Half",
+      "estado_corto": "61'",
       "fecha_espn": "2026-05-02T18:45Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/737132"
     },
@@ -768,10 +768,10 @@
         "tipo_temporada": 13567
       },
       "hora": "14:00",
-      "estado": "Second Half",
-      "estado_corto": "90'+11'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T17:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/750533"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/750533/benfica-fc-famalicao"
     },
     {
       "id": "750528",
@@ -790,10 +790,10 @@
         "tipo_temporada": 13567
       },
       "hora": "16:30",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
+      "estado": "First Half",
+      "estado_corto": "31'",
       "fecha_espn": "2026-05-02T19:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/750528/alverca-fc-porto"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/750528"
     },
     {
       "id": "741259",
@@ -856,10 +856,10 @@
         "tipo_temporada": 13484
       },
       "hora": "15:00",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/741256"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/741256/psv-eindhoven-ajax-amsterdam"
     },
     {
       "id": "741260",
@@ -879,7 +879,7 @@
       },
       "hora": "16:00",
       "estado": "First Half",
-      "estado_corto": "2'",
+      "estado_corto": "37'",
       "fecha_espn": "2026-05-02T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/741260"
     },
@@ -900,10 +900,10 @@
         "tipo_temporada": 13846
       },
       "hora": "14:00",
-      "estado": "Second Half",
-      "estado_corto": "90'+3'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T17:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/761597"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/761597/san-jose-earthquakes-toronto-fc"
     },
     {
       "id": "761585",
@@ -922,8 +922,8 @@
         "tipo_temporada": 13846
       },
       "hora": "15:30",
-      "estado": "First Half",
-      "estado_corto": "22'",
+      "estado": "Second Half",
+      "estado_corto": "67'",
       "fecha_espn": "2026-05-02T18:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/761585"
     },
@@ -1230,8 +1230,8 @@
         "tipo_temporada": 13907
       },
       "hora": "16:00",
-      "estado": "First Half",
-      "estado_corto": "0'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
       "fecha_espn": "2026-05-02T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401841107"
     },
@@ -1362,10 +1362,10 @@
         "tipo_temporada": 14010
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "48'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401857478"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401857478/sport-boys-fc-cajamarca"
     },
     {
       "id": "401857485",
@@ -1516,8 +1516,8 @@
         "tipo_temporada": 13942
       },
       "hora": "16:00",
-      "estado": "First Half",
-      "estado_corto": "4'",
+      "estado": "Second Half",
+      "estado_corto": "47'",
       "fecha_espn": "2026-05-02T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401850890"
     },
@@ -1692,8 +1692,8 @@
         "tipo_temporada": 14082
       },
       "hora": "16:00",
-      "estado": "First Half",
-      "estado_corto": "5'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
       "fecha_espn": "2026-05-02T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859566"
     },
@@ -1802,10 +1802,10 @@
         "tipo_temporada": 13657
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "45'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756180"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756180/al-hilal-al-hazem"
     },
     {
       "id": "743718",
@@ -2000,8 +2000,8 @@
         "tipo_temporada": 13498
       },
       "hora": "15:45",
-      "estado": "First Half",
-      "estado_corto": "18'",
+      "estado": "Second Half",
+      "estado_corto": "58'",
       "fecha_espn": "2026-05-02T18:45Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401866302"
     },
@@ -2792,8 +2792,8 @@
         "tipo_temporada": 13564
       },
       "hora": "16:00",
-      "estado": "First Half",
-      "estado_corto": "4'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
       "fecha_espn": "2026-05-02T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748931"
     },
@@ -2880,8 +2880,8 @@
         "tipo_temporada": 13548
       },
       "hora": "15:30",
-      "estado": "First Half",
-      "estado_corto": "33'",
+      "estado": "Second Half",
+      "estado_corto": "75'",
       "fecha_espn": "2026-05-02T18:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747304"
     },
@@ -2902,10 +2902,10 @@
         "tipo_temporada": 13553
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "45'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747750"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747750/annecy-boulogne"
     },
     {
       "id": "747752",
@@ -2924,10 +2924,10 @@
         "tipo_temporada": 13553
       },
       "hora": "15:00",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747752"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747752/grenoble-dunkerque"
     },
     {
       "id": "747753",
@@ -2946,10 +2946,10 @@
         "tipo_temporada": 13553
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "48'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747753"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747753/bastia-guingamp"
     },
     {
       "id": "747754",
@@ -2968,10 +2968,10 @@
         "tipo_temporada": 13553
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "45'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747754"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747754/stade-de-reims-le-mans"
     },
     {
       "id": "747755",
@@ -2990,10 +2990,10 @@
         "tipo_temporada": 13553
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "46'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747755"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747755/clermont-foot-montpellier"
     },
     {
       "id": "747756",
@@ -3012,10 +3012,10 @@
         "tipo_temporada": 13553
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "46'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747756"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747756/as-nancy-lorraine-pau"
     },
     {
       "id": "747757",
@@ -3034,10 +3034,10 @@
         "tipo_temporada": 13553
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "47'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747757"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747757/saint-etienne-rodez-aveyron"
     },
     {
       "id": "747751",
@@ -3056,10 +3056,10 @@
         "tipo_temporada": 13553
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "46'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747751"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747751/red-star-fc-93-sc-amiens"
     },
     {
       "id": "747758",
@@ -3078,10 +3078,10 @@
         "tipo_temporada": 13553
       },
       "hora": "15:00",
-      "estado": "Second Half",
-      "estado_corto": "48'",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
       "fecha_espn": "2026-05-02T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747758"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/747758/stade-laval-troyes"
     },
     {
       "id": "401870390",
@@ -3320,8 +3320,8 @@
         "tipo_temporada": 14086
       },
       "hora": "16:00",
-      "estado": "First Half",
-      "estado_corto": "4'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
       "fecha_espn": "2026-05-02T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401860130"
     },
