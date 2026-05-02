@@ -1,52 +1,121 @@
 import requests
-from bs4 import BeautifulSoup
-import base64
+import json
+from datetime import datetime, timedelta, timezone
 
-AGENDA_URL = "https://pelotalibrestv.org/agenda.html"
+OUTPUT_FILE = "agenda_espn.json"
+
+ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "application/json,text/plain,*/*",
+    "Referer": "https://www.espn.com.ar/futbol/calendario",
+}
 
 
-def obtener_html():
-    headers = {"User-Agent": "Mozilla/5.0"}
-    r = requests.get(AGENDA_URL, headers=headers, timeout=15)
+def fecha_argentina():
+    tz_arg = timezone(timedelta(hours=-3))
+    return datetime.now(tz_arg)
+
+
+def obtener_eventos(fecha=None):
+    if fecha is None:
+        fecha = fecha_argentina()
+
+    fecha_api = fecha.strftime("%Y%m%d")
+
+    params = {
+        "region": "ar",
+        "lang": "es",
+        "dates": fecha_api,
+        "limit": 300,
+    }
+
+    r = requests.get(
+        ESPN_API,
+        headers=HEADERS,
+        params=params,
+        timeout=20
+    )
     r.raise_for_status()
-    return r.text
+    return r.json()
 
 
-def decodificar_base64(href):
-    if not href or "r=" not in href:
-        return None
+def limpiar_evento(evento):
+    competencia = evento.get("competitions", [{}])[0]
+    competidores = competencia.get("competitors", [])
 
-    encoded = href.split("r=")[1]
-    return base64.b64decode(encoded).decode("utf-8")
+    local = None
+    visitante = None
+
+    for c in competidores:
+        equipo = c.get("team", {})
+        nombre = equipo.get("displayName") or equipo.get("shortDisplayName")
+
+        if c.get("homeAway") == "home":
+            local = nombre
+        elif c.get("homeAway") == "away":
+            visitante = nombre
+
+    liga = evento.get("league", {})
+    estado = competencia.get("status", {}).get("type", {})
+
+    fecha_utc = evento.get("date")
+    hora_arg = None
+
+    if fecha_utc:
+        dt = datetime.fromisoformat(fecha_utc.replace("Z", "+00:00"))
+        dt_arg = dt.astimezone(timezone(timedelta(hours=-3)))
+        hora_arg = dt_arg.strftime("%H:%M")
+
+    return {
+        "id": evento.get("id"),
+        "partido": f"{local} vs {visitante}" if local and visitante else evento.get("name"),
+        "local": local,
+        "visitante": visitante,
+        "liga": liga.get("name") or liga.get("abbreviation"),
+        "hora": hora_arg,
+        "estado": estado.get("description"),
+        "estado_corto": estado.get("shortDetail"),
+        "fecha_espn": fecha_utc,
+        "url_espn": evento.get("links", [{}])[0].get("href") if evento.get("links") else None,
+    }
 
 
 def scrapear_partidos():
-    html = obtener_html()
-    soup = BeautifulSoup(html, "html.parser")
+    data = obtener_eventos()
+    eventos = data.get("events", [])
 
     resultados = []
-    enlaces = soup.find_all("a")
 
-    for i in range(len(enlaces) - 1):
+    for evento in eventos:
+        item = limpiar_evento(evento)
 
-        texto = enlaces[i].get_text(strip=True)
-
-        if "vs" in texto.lower():
-
-            hora_tag = enlaces[i].find("span", class_="t")
-            hora = hora_tag.text if hora_tag else None
-
-            siguiente = enlaces[i + 1]
-            canal = siguiente.get_text(strip=True)
-            href = siguiente.get("href")
-
-            url_evento = decodificar_base64(href)
-
-            resultados.append({
-                "partido": texto.strip(),
-                "hora": hora,
-                "canal": canal.strip(),
-                "url_evento": url_evento
-            })
+        if item["local"] and item["visitante"]:
+            resultados.append(item)
 
     return resultados
+
+
+def guardar_json(data):
+    salida = {
+        "fuente": "ESPN Argentina",
+        "fecha_scrapeo": fecha_argentina().isoformat(),
+        "total": len(data),
+        "partidos": data,
+    }
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(salida, f, ensure_ascii=False, indent=2)
+
+
+def main():
+    print("Obteniendo agenda desde ESPN...")
+    partidos = scrapear_partidos()
+    guardar_json(partidos)
+
+    print(f"OK: {len(partidos)} partidos guardados en {OUTPUT_FILE}")
+
+
+if __name__ == "__main__":
+    main()
