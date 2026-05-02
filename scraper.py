@@ -57,9 +57,17 @@ def limpiar_evento(evento):
         elif c.get("homeAway") == "away":
             visitante = nombre
 
+    # 🔥 LIGA / COMPETICIÓN (MEJORADO)
     liga = evento.get("league", {})
-    estado = competencia.get("status", {}).get("type", {})
+    temporada = evento.get("season", {})
 
+    nombre_liga = (
+        liga.get("name")
+        or liga.get("shortName")
+        or liga.get("abbreviation")
+    )
+
+    # ⏰ Hora en Argentina
     fecha_utc = evento.get("date")
     hora_arg = None
 
@@ -68,15 +76,35 @@ def limpiar_evento(evento):
         dt_arg = dt.astimezone(timezone(timedelta(hours=-3)))
         hora_arg = dt_arg.strftime("%H:%M")
 
+    estado = competencia.get("status", {}).get("type", {})
+
     return {
         "id": evento.get("id"),
+
         "partido": f"{local} vs {visitante}" if local and visitante else evento.get("name"),
+
         "local": local,
         "visitante": visitante,
-        "liga": liga.get("name") or liga.get("abbreviation"),
+
+        # 🔥 LIGA SIMPLE (para tu app)
+        "liga": nombre_liga,
+        "liga_corta": liga.get("shortName") or liga.get("abbreviation"),
+        "liga_id": liga.get("id"),
+
+        # 🔥 INFO COMPLETA (por si la necesitás después)
+        "competicion": {
+            "nombre": liga.get("name"),
+            "nombre_corto": liga.get("shortName"),
+            "abreviatura": liga.get("abbreviation"),
+            "slug": liga.get("slug"),
+            "temporada": temporada.get("year"),
+            "tipo_temporada": temporada.get("type"),
+        },
+
         "hora": hora_arg,
         "estado": estado.get("description"),
         "estado_corto": estado.get("shortDetail"),
+
         "fecha_espn": fecha_utc,
         "url_espn": evento.get("links", [{}])[0].get("href") if evento.get("links") else None,
     }
