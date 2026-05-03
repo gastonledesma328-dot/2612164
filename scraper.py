@@ -297,17 +297,60 @@ LEAGUE_PRIORITY = {
     "usa.nwsl": 504,
 }
 
+# ============================================================
+# Estados que indican que el partido NO ha comenzado
+# ============================================================
+ESTADOS_NO_INICIADOS = {
+    "STATUS_SCHEDULED",
+    "STATUS_POSTPONED",
+    "STATUS_CANCELED",
+    "STATUS_SUSPENDED",
+    "STATUS_DELAYED",
+    "STATUS_ABANDONED",
+    "STATUS_RAIN_DELAY",
+}
+
+# Estados que indican partido en curso o finalizado
+ESTADOS_ACTIVOS = {
+    "STATUS_IN_PROGRESS",
+    "STATUS_HALFTIME",
+    "STATUS_END_PERIOD",
+    "STATUS_FINAL",
+    "STATUS_FULL_TIME",
+}
+
+
+# ============================================================
+# HELPERS DE FECHA / HORA
+# ============================================================
 
 def fecha_argentina():
+    """Hora actual en Argentina (UTC-3)."""
     return datetime.now(timezone(timedelta(hours=-3)))
 
 
-def fecha_api_argentina(fecha=None):
+def fecha_api(fecha=None):
+    """
+    FIX: Usamos UTC para la request a ESPN.
+    Si son las 23:00 ARG el día ya cambió en UTC,
+    y pedir con fecha argentina devolvería el día equivocado.
+    """
     if fecha is None:
-        fecha = fecha_argentina()
-
+        fecha = datetime.now(timezone.utc)
     return fecha.strftime("%Y%m%d")
 
+
+def utc_a_argentina(fecha_utc_str):
+    """Convierte string ISO UTC a datetime en zona Argentina."""
+    if not fecha_utc_str:
+        return None
+    dt = datetime.fromisoformat(fecha_utc_str.replace("Z", "+00:00"))
+    return dt.astimezone(timezone(timedelta(hours=-3)))
+
+
+# ============================================================
+# NORMALIZACIÓN DE SCORES
+# ============================================================
 
 def normalizar_score(score):
     if score is None:
@@ -331,19 +374,22 @@ def normalizar_score(score):
 
 def score_numero(score):
     score = normalizar_score(score)
-
     try:
         return int(score or 0)
     except Exception:
         return 0
 
 
+# ============================================================
+# FETCH DE LIGA (SCOREBOARD)
+# ============================================================
+
 def obtener_eventos_liga(league_slug, league_name, fecha=None):
     params = {
         "region": "ar",
         "lang": "es",
         "contentorigin": "espn",
-        "dates": fecha_api_argentina(fecha),
+        "dates": fecha_api(fecha),   # FIX: UTC
         "limit": 300,
         "_": int(datetime.now().timestamp()),
     }
@@ -380,15 +426,12 @@ def obtener_eventos_liga(league_slug, league_name, fecha=None):
     }
 
 
-def obtener_detalle_evento(league_slug, event_id):
-    """
-    Consulta summary de ESPN para datos más actualizados:
-    marcador, estado, minuto y goleadores.
-    Usa dos endpoints y se queda con el dato más vivo.
-    """
-    if not event_id:
-        return {}
+# ============================================================
+# FETCH DE DETALLE (SUMMARY) — ambos endpoints en paralelo
+# ============================================================
 
+def _fetch_summary_url(base_url, league_slug, event_id):
+    """Intenta obtener el summary desde una URL base. Retorna dict o None."""
     params = {
         "region": "ar",
         "lang": "es",
@@ -396,33 +439,53 @@ def obtener_detalle_evento(league_slug, event_id):
         "event": event_id,
         "_": int(datetime.now().timestamp()),
     }
+    url = base_url.format(league=league_slug)
+    try:
+        r = requests.get(url, headers=HEADERS, params=params, timeout=15)
+        r.raise_for_status()
+        return r.json()
+    except Exception:
+        return None
 
-    mejor_detalle = {}
 
-    for base_url in ESPN_SUMMARY_URLS:
-        url = base_url.format(league=league_slug)
+def obtener_detalle_evento(league_slug, event_id):
+    """
+    FIX: Consulta ambos endpoints del summary en paralelo
+    y elige el dato más actualizado. Evita requests secuenciales
+    que ralentizaban el scraper con muchos partidos.
+    """
+    if not event_id:
+        return {}
 
-        try:
-            r = requests.get(url, headers=HEADERS, params=params, timeout=15)
-            r.raise_for_status()
+    resultados = []
 
-            data = r.json()
+    # FIX: los dos endpoints se consultan en paralelo
+    with ThreadPoolExecutor(max_workers=2) as ex:
+        futuros = {
+            ex.submit(_fetch_summary_url, base_url, league_slug, event_id): base_url
+            for base_url in ESPN_SUMMARY_URLS
+        }
+        for futuro in as_completed(futuros):
+            data = futuro.result()
+            if data:
+                resultados.append(data)
 
-            if not mejor_detalle:
-                mejor_detalle = data
-                continue
+    if not resultados:
+        return {}
 
-            comp_actual = obtener_competencia_desde_detalle(mejor_detalle)
-            comp_nueva = obtener_competencia_desde_detalle(data)
+    if len(resultados) == 1:
+        return resultados[0]
 
-            if puntuar_competencia(comp_nueva) > puntuar_competencia(comp_actual):
-                mejor_detalle = data
+    # Elegir el más actualizado entre los dos
+    return max(
+        resultados,
+        key=lambda d: puntuar_competencia(obtener_competencia_desde_detalle(d))
+    )
 
-        except Exception:
-            continue
 
-    return mejor_detalle
-
+# ============================================================
+# LOGOS
+# ============================================================
 
 def obtener_logo(equipo):
     logos = equipo.get("logos") or []
@@ -432,7 +495,6 @@ def obtener_logo(equipo):
             href = logo.get("href")
             if href and ".png" in href.lower():
                 return href
-
         for logo in logos:
             href = logo.get("href")
             if href:
@@ -449,29 +511,29 @@ def obtener_logo(equipo):
     return None
 
 
+# ============================================================
+# COMPETENCIA: obtener y puntuar
+# ============================================================
+
 def obtener_competencia_desde_detalle(detalle):
     header = detalle.get("header") or {}
     competencias_header = header.get("competitions") or []
-
     if competencias_header:
         return competencias_header[0]
-
     return {}
 
 
 def obtener_competencia_desde_evento(evento):
     competencias_evento = evento.get("competitions") or []
-
     if competencias_evento:
         return competencias_evento[0]
-
     return {}
 
 
 def puntuar_competencia(competencia):
     """
-    Sirve para elegir la competencia más actualizada.
-    Mayor puntaje = dato más confiable.
+    Puntúa una competencia para elegir la más actualizada.
+    Mayor puntaje = dato más confiable / reciente.
     """
     if not competencia:
         return -1
@@ -485,23 +547,14 @@ def puntuar_competencia(competencia):
     estado_corto = estado.get("shortDetail") or ""
 
     competidores = competencia.get("competitors") or []
-
-    total_goles = 0
-    for c in competidores:
-        total_goles += score_numero(c.get("score"))
+    total_goles = sum(score_numero(c.get("score")) for c in competidores)
 
     puntaje = 0
 
     if completado:
         puntaje += 1000
 
-    if nombre in [
-        "STATUS_IN_PROGRESS",
-        "STATUS_HALFTIME",
-        "STATUS_END_PERIOD",
-        "STATUS_FINAL",
-        "STATUS_FULL_TIME",
-    ]:
+    if nombre in ESTADOS_ACTIVOS:
         puntaje += 800
 
     if clock:
@@ -517,23 +570,34 @@ def puntuar_competencia(competencia):
 
 def elegir_mejor_competencia(evento, detalle):
     """
-    Compara scoreboard vs summary y elige el dato más actualizado.
+    FIX: Si el summary indica partido activo o terminado,
+    tiene prioridad absoluta sobre el scoreboard.
+    Solo hacemos comparación por puntaje cuando el partido
+    no ha comenzado todavía.
     """
-    competencias = []
-
     comp_evento = obtener_competencia_desde_evento(evento)
-    if comp_evento:
-        competencias.append(comp_evento)
-
     comp_detalle = obtener_competencia_desde_detalle(detalle)
-    if comp_detalle:
-        competencias.append(comp_detalle)
 
-    if not competencias:
-        return {}
+    if not comp_detalle:
+        return comp_evento or {}
 
-    return max(competencias, key=puntuar_competencia)
+    if not comp_evento:
+        return comp_detalle
 
+    # FIX: si el summary tiene el partido activo/terminado, manda siempre
+    estado_detalle = (comp_detalle.get("status") or {}).get("type") or {}
+    nombre_estado_detalle = estado_detalle.get("name", "")
+
+    if nombre_estado_detalle in ESTADOS_ACTIVOS:
+        return comp_detalle
+
+    # Para partidos no iniciados, elegir por puntaje
+    return max([comp_evento, comp_detalle], key=puntuar_competencia)
+
+
+# ============================================================
+# EXTRAER ESTADO
+# ============================================================
 
 def extraer_estado(competencia):
     status = competencia.get("status") or {}
@@ -568,6 +632,10 @@ def extraer_estado(competencia):
         "mostrar_tiempo": mostrar_tiempo,
     }
 
+
+# ============================================================
+# EXTRAER EQUIPOS Y MARCADOR
+# ============================================================
 
 def extraer_equipos_y_marcador(competencia):
     competidores = competencia.get("competitors") or []
@@ -611,13 +679,16 @@ def extraer_equipos_y_marcador(competencia):
     return datos
 
 
+# ============================================================
+# EXTRAER GOLEADORES
+# ============================================================
+
 def extraer_goleadores(detalle):
     """
     ESPN suele mandar los goles en scoringPlays.
     No todos los partidos/ligas lo traen.
     """
     goleadores = []
-
     scoring_plays = detalle.get("scoringPlays") or []
 
     for play in scoring_plays:
@@ -641,7 +712,6 @@ def extraer_goleadores(detalle):
         )
 
         minuto = None
-
         if isinstance(clock, dict):
             minuto = clock.get("displayValue")
         elif isinstance(clock, str):
@@ -670,26 +740,31 @@ def extraer_goleadores(detalle):
     return goleadores
 
 
+# ============================================================
+# LÓGICA DE INICIO / ESTADO
+# ============================================================
+
 def partido_empezo_o_termino(estado_data, marcador_local=None, marcador_visitante=None):
+    """
+    FIX: Primero se excluyen explícitamente los estados no iniciados.
+    Evita falsos positivos cuando ESPN manda score 0-0 antes del partido.
+    """
     estado_nombre = estado_data.get("estado_nombre")
+
+    # FIX: Si el estado indica partido no iniciado, no mostrar marcador
+    if estado_nombre in ESTADOS_NO_INICIADOS:
+        return False
+
     estado_corto = estado_data.get("estado_corto")
     estado = estado_data.get("estado")
     completado = estado_data.get("completado")
     minuto = estado_data.get("minuto")
     mostrar_tiempo = estado_data.get("mostrar_tiempo")
 
-    estados_activos = [
-        "STATUS_IN_PROGRESS",
-        "STATUS_HALFTIME",
-        "STATUS_END_PERIOD",
-        "STATUS_FINAL",
-        "STATUS_FULL_TIME",
-    ]
-
     if completado:
         return True
 
-    if estado_nombre in estados_activos:
+    if estado_nombre in ESTADOS_ACTIVOS:
         return True
 
     if minuto:
@@ -716,7 +791,6 @@ def partido_empezo_o_termino(estado_data, marcador_local=None, marcador_visitant
     try:
         goles_local = int(marcador_local or 0)
         goles_visitante = int(marcador_visitante or 0)
-
         if goles_local > 0 or goles_visitante > 0:
             return True
     except Exception:
@@ -728,33 +802,49 @@ def partido_empezo_o_termino(estado_data, marcador_local=None, marcador_visitant
 def calcular_resultado(marcador_local, marcador_visitante, estado_data):
     if not partido_empezo_o_termino(estado_data, marcador_local, marcador_visitante):
         return None
-
     if marcador_local is None or marcador_visitante is None:
         return None
-
     return f"{marcador_local}-{marcador_visitante}"
 
 
 def normalizar_mostrar_tiempo(estado_data, hora_inicio):
+    """
+    FIX: Validación más estricta antes de devolver mostrar_tiempo.
+    Evita que valores inesperados de la API se cuelen al usuario.
+    """
     completado = estado_data.get("completado")
     minuto = estado_data.get("minuto")
     estado_corto = estado_data.get("estado_corto")
+    estado_nombre = estado_data.get("estado_nombre")
     mostrar_tiempo = estado_data.get("mostrar_tiempo")
 
     if completado:
         return "Fin"
 
+    # Partido en vivo: mostrar minuto
     if minuto:
         return minuto
 
+    # Estado corto con minuto explícito
     if estado_corto and ("'" in str(estado_corto) or "+" in str(estado_corto)):
         return estado_corto
 
-    if mostrar_tiempo and mostrar_tiempo not in ["Prox", "Programado", "Previa"]:
+    # Descanso / entretiempo
+    if estado_nombre == "STATUS_HALFTIME":
+        return "Descanso"
+
+    # FIX: Solo devolver mostrar_tiempo si es un valor conocido y válido
+    valores_validos_mostrar = {"Descanso", "Entretiempo", "Fin", "Suplementario"}
+    if mostrar_tiempo and mostrar_tiempo in valores_validos_mostrar:
         return mostrar_tiempo
 
+    # En cualquier otro caso, mostrar la hora de inicio del partido
     return hora_inicio
 
+
+# ============================================================
+# LIMPIAR EVENTO (procesamiento principal)
+# ============================================================
 
 def limpiar_evento(evento, league_slug, league_name):
     detalle = {}
@@ -784,8 +874,9 @@ def limpiar_evento(evento, league_slug, league_name):
         estado_data
     )
 
+    # FIX: usar la fecha del summary si está disponible (más precisa),
+    # y convertir siempre desde UTC a Argentina
     fecha_utc = evento.get("date")
-
     comp_detalle = obtener_competencia_desde_detalle(detalle)
     if comp_detalle:
         fecha_utc = comp_detalle.get("date") or fecha_utc
@@ -794,10 +885,10 @@ def limpiar_evento(evento, league_slug, league_name):
     hora_inicio = None
 
     if fecha_utc:
-        dt = datetime.fromisoformat(fecha_utc.replace("Z", "+00:00"))
-        dt_arg = dt.astimezone(timezone(timedelta(hours=-3)))
-        fecha_arg = dt_arg.strftime("%Y-%m-%d")
-        hora_inicio = dt_arg.strftime("%H:%M")
+        dt_arg = utc_a_argentina(fecha_utc)
+        if dt_arg:
+            fecha_arg = dt_arg.strftime("%Y-%m-%d")
+            hora_inicio = dt_arg.strftime("%H:%M")
 
     hora_mostrar = normalizar_mostrar_tiempo(estado_data, hora_inicio)
 
@@ -834,13 +925,14 @@ def limpiar_evento(evento, league_slug, league_name):
 
         "fecha": fecha_arg,
 
-        # Hora real de inicio
+        # Hora real de inicio (Argentina)
         "hora_inicio": hora_inicio,
 
         # Campo listo para mostrar en la app:
-        # - Partido próximo: 15:00
-        # - Partido en vivo: 71'
-        # - Partido terminado: Fin
+        # - Partido próximo:   "15:00"
+        # - Partido en vivo:   "71'"
+        # - Descanso:          "Descanso"
+        # - Partido terminado: "Fin"
         "hora": hora_mostrar,
         "mostrar_tiempo": hora_mostrar,
 
@@ -862,7 +954,18 @@ def limpiar_evento(evento, league_slug, league_name):
     }
 
 
+# ============================================================
+# SCRAPER PRINCIPAL
+# ============================================================
+
 def scrapear_partidos(fecha=None):
+    """
+    FIX: Separamos el fetching del scoreboard del procesamiento
+    de detalles. Los summaries de cada partido ya se piden en
+    paralelo dentro de obtener_detalle_evento(), pero el procesamiento
+    de limpiar_evento() sigue siendo secuencial por liga para no
+    saturar la API con demasiadas requests simultáneas.
+    """
     resultados = []
     errores = []
     ids_vistos = set()
@@ -870,17 +973,15 @@ def scrapear_partidos(fecha=None):
     print("Consultando competiciones de ESPN...")
 
     with ThreadPoolExecutor(max_workers=12) as executor:
-        tareas = []
-
-        for league_slug, league_name in LEAGUES.items():
-            tareas.append(
-                executor.submit(
-                    obtener_eventos_liga,
-                    league_slug,
-                    league_name,
-                    fecha
-                )
-            )
+        tareas = {
+            executor.submit(
+                obtener_eventos_liga,
+                league_slug,
+                league_name,
+                fecha
+            ): (league_slug, league_name)
+            for league_slug, league_name in LEAGUES.items()
+        }
 
         for tarea in as_completed(tareas):
             respuesta = tarea.result()
@@ -896,9 +997,7 @@ def scrapear_partidos(fecha=None):
                 })
                 continue
 
-            eventos = respuesta["events"]
-
-            for evento in eventos:
+            for evento in respuesta["events"]:
                 evento_id = evento.get("id")
                 clave = evento_id or f"{league_slug}-{evento.get('name')}-{evento.get('date')}"
 
@@ -922,6 +1021,10 @@ def scrapear_partidos(fecha=None):
 
     return resultados, errores
 
+
+# ============================================================
+# AGRUPAR POR LIGA
+# ============================================================
 
 def agrupar_por_liga(partidos):
     ligas = {}
@@ -969,23 +1072,29 @@ def agrupar_por_liga(partidos):
     return agrupado
 
 
+# ============================================================
+# GUARDAR JSON
+# ============================================================
+
 def guardar_json(partidos, errores):
     salida = {
         "fuente": "ESPN Argentina",
-        "metodo": "scoreboard + summary doble endpoint",
+        "metodo": "scoreboard + summary doble endpoint paralelo",
         "fecha_scrapeo": fecha_argentina().isoformat(),
         "total": len(partidos),
         "total_ligas_consultadas": len(LEAGUES),
-
         "partidos": partidos,
         "agrupado_por_liga": agrupar_por_liga(partidos),
-
         "errores": errores,
     }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, indent=2)
 
+
+# ============================================================
+# MAIN
+# ============================================================
 
 def main():
     print("Obteniendo agenda desde ESPN por competición...")
