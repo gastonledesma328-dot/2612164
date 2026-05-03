@@ -1,13 +1,18 @@
 name: ESPN Agenda Scraper
 
 on:
-  schedule:
-    - cron: '0 */2 * * *'  # cada 2 horas
   workflow_dispatch:
+
+  schedule:
+    # Cada 5 minutos
+    - cron: "*/5 * * * *"
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       # 1. Clonar repo
@@ -18,7 +23,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       # 3. Instalar dependencias
       - name: Install dependencies
@@ -35,11 +40,11 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          git add .
+          git add agenda_espn.json
 
           if git diff --staged --quiet; then
             echo "No changes"
           else
-            git commit -m "🤖 Update agenda ESPN $(date)"
+            git commit -m "🤖 Update agenda ESPN $(date -u)"
             git push
           fi
