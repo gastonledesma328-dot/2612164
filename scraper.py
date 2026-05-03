@@ -366,12 +366,6 @@ def obtener_detalle_evento(league_slug, event_id):
 
 
 def obtener_logo(equipo):
-    """
-    Obtiene logo de equipo desde varias rutas posibles de ESPN.
-    Primero intenta usar logos oficiales del JSON.
-    Si no aparecen, arma un fallback con el ID del equipo.
-    """
-
     logos = equipo.get("logos") or []
 
     if logos:
@@ -494,7 +488,6 @@ def extraer_equipos_y_marcador(competencia):
 
         equipo_id = equipo.get("id")
         logo = obtener_logo(equipo)
-
         score = normalizar_score(c.get("score"))
 
         if c.get("homeAway") == "home":
@@ -571,7 +564,68 @@ def extraer_goleadores(detalle):
     return goleadores
 
 
-def calcular_resultado(marcador_local, marcador_visitante):
+def partido_empezo_o_termino(estado_data, marcador_local=None, marcador_visitante=None):
+    estado_nombre = estado_data.get("estado_nombre")
+    estado_corto = estado_data.get("estado_corto")
+    estado = estado_data.get("estado")
+    completado = estado_data.get("completado")
+    minuto = estado_data.get("minuto")
+    mostrar_tiempo = estado_data.get("mostrar_tiempo")
+
+    estados_activos = [
+        "STATUS_IN_PROGRESS",
+        "STATUS_HALFTIME",
+        "STATUS_END_PERIOD",
+        "STATUS_FINAL",
+        "STATUS_FULL_TIME",
+    ]
+
+    if completado:
+        return True
+
+    if estado_nombre in estados_activos:
+        return True
+
+    # Si ESPN manda minuto/displayClock, el partido ya empezó
+    if minuto:
+        return True
+
+    textos = [
+        str(estado_corto or ""),
+        str(estado or ""),
+        str(mostrar_tiempo or ""),
+    ]
+
+    # Detecta 71', 90'+1', 45', PT, ET, Descanso, Fin, etc.
+    for texto in textos:
+        texto_lower = texto.lower()
+
+        if "'" in texto or "+" in texto:
+            return True
+
+        if texto_lower in ["fin", "final", "descanso", "entretiempo"]:
+            return True
+
+        if "half" in texto_lower or "final" in texto_lower:
+            return True
+
+    # Si ya hay goles, no puede ser próximo aunque ESPN diga Prox
+    try:
+        goles_local = int(marcador_local or 0)
+        goles_visitante = int(marcador_visitante or 0)
+
+        if goles_local > 0 or goles_visitante > 0:
+            return True
+    except Exception:
+        pass
+
+    return False
+
+
+def calcular_resultado(marcador_local, marcador_visitante, estado_data):
+    if not partido_empezo_o_termino(estado_data, marcador_local, marcador_visitante):
+        return None
+
     if marcador_local is None or marcador_visitante is None:
         return None
 
@@ -594,6 +648,18 @@ def limpiar_evento(evento, league_slug, league_name):
     marcador_local = equipos["marcador_local"]
     marcador_visitante = equipos["marcador_visitante"]
 
+    mostrar_marcador = partido_empezo_o_termino(
+        estado_data,
+        marcador_local,
+        marcador_visitante
+    )
+
+    resultado = calcular_resultado(
+        marcador_local,
+        marcador_visitante,
+        estado_data
+    )
+
     fecha_utc = evento.get("date")
 
     header = detalle.get("header") or {}
@@ -615,8 +681,8 @@ def limpiar_evento(evento, league_slug, league_name):
     url_espn = links[0].get("href") if links else None
 
     prioridad = LEAGUE_PRIORITY.get(league_slug, 9999)
-    resultado = calcular_resultado(marcador_local, marcador_visitante)
-    goleadores = extraer_goleadores(detalle) if detalle else []
+
+    goleadores = extraer_goleadores(detalle) if detalle and mostrar_marcador else []
 
     return {
         "id": evento.get("id"),
@@ -656,9 +722,10 @@ def limpiar_evento(evento, league_slug, league_name):
         "mostrar_tiempo": estado_data["mostrar_tiempo"],
 
         # Resultado actualizado
-        "marcador_local": marcador_local,
-        "marcador_visitante": marcador_visitante,
+        "marcador_local": marcador_local if mostrar_marcador else None,
+        "marcador_visitante": marcador_visitante if mostrar_marcador else None,
         "resultado": resultado,
+        "mostrar_marcador": mostrar_marcador,
         "goleadores": goleadores,
 
         "fecha_espn": fecha_utc,
