@@ -15,6 +15,8 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0",
     "Accept": "application/json,text/plain,*/*",
     "Referer": "https://www.espn.com.ar/futbol/calendario",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
 }
 
 # ============================================================
@@ -99,7 +101,6 @@ LEAGUES = {
     # MÁS EUROPA
     "sco.1": "Scottish Premiership",
     "sco.2": "Scottish Championship",
-
     "bel.1": "Belgian Pro League",
     "aut.1": "Austrian Bundesliga",
     "sui.1": "Swiss Super League",
@@ -310,6 +311,7 @@ def obtener_eventos_liga(league_slug, league_name, fecha=None):
         "lang": "es",
         "dates": fecha_api_argentina(fecha),
         "limit": 300,
+        "_": int(datetime.now().timestamp()),
     }
 
     try:
@@ -339,8 +341,8 @@ def obtener_eventos_liga(league_slug, league_name, fecha=None):
 
 def obtener_detalle_evento(league_slug, event_id):
     """
-    Consulta el summary de ESPN para intentar obtener datos extra:
-    goleadores, jugadas importantes, estadísticas, etc.
+    Consulta summary de ESPN para datos más actualizados:
+    marcador, estado, minuto, goleadores.
     """
     if not event_id:
         return {}
@@ -351,6 +353,7 @@ def obtener_detalle_evento(league_slug, event_id):
         "region": "ar",
         "lang": "es",
         "event": event_id,
+        "_": int(datetime.now().timestamp()),
     }
 
     try:
@@ -360,63 +363,6 @@ def obtener_detalle_evento(league_slug, event_id):
 
     except Exception:
         return {}
-
-
-def extraer_goleadores(detalle):
-    """
-    ESPN suele mandar los goles en scoringPlays.
-    No todos los partidos/ligas lo traen.
-    """
-    goleadores = []
-
-    scoring_plays = detalle.get("scoringPlays") or []
-
-    for play in scoring_plays:
-        atleta = play.get("athlete") or {}
-        equipo = play.get("team") or {}
-        clock = play.get("clock")
-
-        jugador = (
-            atleta.get("displayName")
-            or atleta.get("fullName")
-            or atleta.get("shortName")
-            or atleta.get("name")
-        )
-
-        equipo_nombre = (
-            equipo.get("displayName")
-            or equipo.get("shortDisplayName")
-            or equipo.get("name")
-            or equipo.get("abbreviation")
-        )
-
-        minuto = None
-
-        if isinstance(clock, dict):
-            minuto = clock.get("displayValue")
-        elif isinstance(clock, str):
-            minuto = clock
-
-        tipo = play.get("type") or {}
-
-        descripcion = (
-            play.get("text")
-            or play.get("displayValue")
-            or tipo.get("text")
-            or tipo.get("description")
-        )
-
-        score = play.get("score") or {}
-
-        goleadores.append({
-            "jugador": jugador,
-            "equipo": equipo_nombre,
-            "minuto": minuto,
-            "descripcion": descripcion,
-            "score": score,
-        })
-
-    return goleadores
 
 
 def obtener_logo(equipo):
@@ -450,59 +396,92 @@ def obtener_logo(equipo):
     return None
 
 
-def calcular_resultado(marcador_local, marcador_visitante):
-    if marcador_local is None or marcador_visitante is None:
-        return None
+def obtener_competencia_actualizada(evento, detalle):
+    """
+    Usa primero summary/header porque suele estar más actualizado.
+    Si no existe, usa el evento del scoreboard.
+    """
+    header = detalle.get("header") or {}
+    competencias_header = header.get("competitions") or []
 
-    return f"{marcador_local}-{marcador_visitante}"
+    if competencias_header:
+        return competencias_header[0]
+
+    competencias_evento = evento.get("competitions") or []
+
+    if competencias_evento:
+        return competencias_evento[0]
+
+    return {}
 
 
-def debe_consultar_goleadores(estado, marcador_local, marcador_visitante):
-    if not FETCH_SCORERS:
-        return False
+def extraer_estado(competencia):
+    status = competencia.get("status") or {}
+    estado = status.get("type") or {}
 
-    total_goles = 0
-
-    try:
-        total_goles = int(marcador_local or 0) + int(marcador_visitante or 0)
-    except Exception:
-        total_goles = 0
+    clock = status.get("displayClock")
+    periodo = status.get("period")
 
     estado_nombre = estado.get("name")
-    estado_id = estado.get("id")
+    estado_desc = estado.get("description")
+    estado_corto = estado.get("shortDetail")
 
-    # Consulta si hay goles, está en vivo o ya terminó
-    if total_goles > 0:
-        return True
+    completado = bool(estado.get("completed"))
 
-    if estado_nombre in [
-        "STATUS_IN_PROGRESS",
-        "STATUS_HALFTIME",
-        "STATUS_FULL_TIME",
-        "STATUS_FINAL",
-        "STATUS_END_PERIOD",
-    ]:
-        return True
+    if estado_nombre in ["STATUS_FINAL", "STATUS_FULL_TIME"]:
+        completado = True
 
-    # Algunos ESPN usan ids
-    if str(estado_id) in ["2", "3"]:
-        return True
+    if completado:
+        mostrar_tiempo = "Final"
+    elif clock:
+        mostrar_tiempo = clock
+    else:
+        mostrar_tiempo = estado_corto or estado_desc
 
-    return False
+    return {
+        "estado": estado_desc,
+        "estado_corto": estado_corto,
+        "estado_nombre": estado_nombre,
+        "completado": completado,
+        "minuto": clock,
+        "periodo": periodo,
+        "mostrar_tiempo": mostrar_tiempo,
+    }
 
 
-def limpiar_evento(evento, league_slug, league_name):
-    competencia = (evento.get("competitions") or [{}])[0]
+def normalizar_score(score):
+    if score is None:
+        return None
+
+    if isinstance(score, dict):
+        score = (
+            score.get("value")
+            or score.get("displayValue")
+            or score.get("score")
+        )
+
+    if score is None:
+        return None
+
+    try:
+        return str(int(float(score)))
+    except Exception:
+        return str(score)
+
+
+def extraer_equipos_y_marcador(competencia):
     competidores = competencia.get("competitors") or []
 
-    local = None
-    visitante = None
-    local_logo = None
-    visitante_logo = None
-    local_id = None
-    visitante_id = None
-    marcador_local = None
-    marcador_visitante = None
+    datos = {
+        "local": None,
+        "visitante": None,
+        "local_logo": None,
+        "visitante_logo": None,
+        "local_id": None,
+        "visitante_id": None,
+        "marcador_local": None,
+        "marcador_visitante": None,
+    }
 
     for c in competidores:
         equipo = c.get("team") or {}
@@ -515,21 +494,114 @@ def limpiar_evento(evento, league_slug, league_name):
 
         equipo_id = equipo.get("id")
         logo = obtener_logo(equipo)
-        score = c.get("score")
+
+        score = normalizar_score(c.get("score"))
 
         if c.get("homeAway") == "home":
-            local = nombre
-            local_logo = logo
-            local_id = equipo_id
-            marcador_local = score
+            datos["local"] = nombre
+            datos["local_logo"] = logo
+            datos["local_id"] = equipo_id
+            datos["marcador_local"] = score
 
         elif c.get("homeAway") == "away":
-            visitante = nombre
-            visitante_logo = logo
-            visitante_id = equipo_id
-            marcador_visitante = score
+            datos["visitante"] = nombre
+            datos["visitante_logo"] = logo
+            datos["visitante_id"] = equipo_id
+            datos["marcador_visitante"] = score
+
+    return datos
+
+
+def extraer_goleadores(detalle):
+    """
+    ESPN suele mandar los goles en scoringPlays.
+    No todos los partidos/ligas lo traen.
+    """
+    goleadores = []
+
+    scoring_plays = detalle.get("scoringPlays") or []
+
+    for play in scoring_plays:
+        atleta = play.get("athlete") or {}
+        equipo = play.get("team") or {}
+        clock = play.get("clock")
+        tipo = play.get("type") or {}
+
+        jugador = (
+            atleta.get("displayName")
+            or atleta.get("fullName")
+            or atleta.get("shortName")
+            or atleta.get("name")
+        )
+
+        equipo_nombre = (
+            equipo.get("displayName")
+            or equipo.get("shortDisplayName")
+            or equipo.get("name")
+            or equipo.get("abbreviation")
+        )
+
+        minuto = None
+
+        if isinstance(clock, dict):
+            minuto = clock.get("displayValue")
+        elif isinstance(clock, str):
+            minuto = clock
+
+        descripcion = (
+            play.get("text")
+            or play.get("displayValue")
+            or tipo.get("text")
+            or tipo.get("description")
+        )
+
+        score = play.get("score") or {}
+
+        if not jugador and not descripcion:
+            continue
+
+        goleadores.append({
+            "jugador": jugador,
+            "equipo": equipo_nombre,
+            "minuto": minuto,
+            "descripcion": descripcion,
+            "score": score,
+        })
+
+    return goleadores
+
+
+def calcular_resultado(marcador_local, marcador_visitante):
+    if marcador_local is None or marcador_visitante is None:
+        return None
+
+    return f"{marcador_local}-{marcador_visitante}"
+
+
+def limpiar_evento(evento, league_slug, league_name):
+    detalle = {}
+
+    if FETCH_SCORERS and evento.get("id"):
+        detalle = obtener_detalle_evento(league_slug, evento.get("id"))
+
+    competencia = obtener_competencia_actualizada(evento, detalle)
+
+    equipos = extraer_equipos_y_marcador(competencia)
+    estado_data = extraer_estado(competencia)
+
+    local = equipos["local"]
+    visitante = equipos["visitante"]
+    marcador_local = equipos["marcador_local"]
+    marcador_visitante = equipos["marcador_visitante"]
 
     fecha_utc = evento.get("date")
+
+    header = detalle.get("header") or {}
+    competencias_header = header.get("competitions") or []
+
+    if competencias_header:
+        fecha_utc = competencias_header[0].get("date") or fecha_utc
+
     fecha_arg = None
     hora_arg = None
 
@@ -539,21 +611,12 @@ def limpiar_evento(evento, league_slug, league_name):
         fecha_arg = dt_arg.strftime("%Y-%m-%d")
         hora_arg = dt_arg.strftime("%H:%M")
 
-    status = competencia.get("status") or {}
-    estado = status.get("type") or {}
-
     links = evento.get("links") or []
     url_espn = links[0].get("href") if links else None
 
     prioridad = LEAGUE_PRIORITY.get(league_slug, 9999)
-
     resultado = calcular_resultado(marcador_local, marcador_visitante)
-
-    goleadores = []
-
-    if debe_consultar_goleadores(estado, marcador_local, marcador_visitante):
-        detalle = obtener_detalle_evento(league_slug, evento.get("id"))
-        goleadores = extraer_goleadores(detalle)
+    goleadores = extraer_goleadores(detalle) if detalle else []
 
     return {
         "id": evento.get("id"),
@@ -562,10 +625,10 @@ def limpiar_evento(evento, league_slug, league_name):
 
         "local": local,
         "visitante": visitante,
-        "local_id": local_id,
-        "visitante_id": visitante_id,
-        "local_logo": local_logo,
-        "visitante_logo": visitante_logo,
+        "local_id": equipos["local_id"],
+        "visitante_id": equipos["visitante_id"],
+        "local_logo": equipos["local_logo"],
+        "visitante_logo": equipos["visitante_logo"],
 
         "liga": league_name,
         "liga_corta": league_name,
@@ -579,14 +642,20 @@ def limpiar_evento(evento, league_slug, league_name):
             "prioridad": prioridad,
         },
 
+        # Hora de inicio del partido
         "fecha": fecha_arg,
         "hora": hora_arg,
 
-        "estado": estado.get("description"),
-        "estado_corto": estado.get("shortDetail"),
-        "estado_nombre": estado.get("name"),
-        "completado": estado.get("completed"),
+        # Estado actualizado
+        "estado": estado_data["estado"],
+        "estado_corto": estado_data["estado_corto"],
+        "estado_nombre": estado_data["estado_nombre"],
+        "completado": estado_data["completado"],
+        "minuto": estado_data["minuto"],
+        "periodo": estado_data["periodo"],
+        "mostrar_tiempo": estado_data["mostrar_tiempo"],
 
+        # Resultado actualizado
         "marcador_local": marcador_local,
         "marcador_visitante": marcador_visitante,
         "resultado": resultado,
@@ -635,7 +704,6 @@ def scrapear_partidos(fecha=None):
 
             for evento in eventos:
                 evento_id = evento.get("id")
-
                 clave = evento_id or f"{league_slug}-{evento.get('name')}-{evento.get('date')}"
 
                 if clave in ids_vistos:
@@ -708,7 +776,7 @@ def agrupar_por_liga(partidos):
 def guardar_json(partidos, errores):
     salida = {
         "fuente": "ESPN Argentina",
-        "metodo": "scoreboard por competición + summary para goleadores",
+        "metodo": "scoreboard por competición + summary actualizado",
         "fecha_scrapeo": fecha_argentina().isoformat(),
         "total": len(partidos),
         "total_ligas_consultadas": len(LEAGUES),
