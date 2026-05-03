@@ -1,7 +1,7 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard por competición",
-  "fecha_scrapeo": "2026-05-03T10:14:38.495235-03:00",
+  "fecha_scrapeo": "2026-05-03T11:51:03.201709-03:00",
   "total": 144,
   "total_ligas_consultadas": 116,
   "partidos": [
@@ -3296,14 +3296,14 @@
       },
       "fecha": "2026-05-03",
       "hora": "02:00",
-      "estado": "Second Half",
-      "estado_corto": "67'",
-      "estado_nombre": "STATUS_SECOND_HALF",
-      "completado": false,
-      "marcador_local": "0",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "marcador_local": "1",
       "marcador_visitante": "0",
       "fecha_espn": "2026-05-03T05:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859372"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859372/kashiwa-reysol-tokyo-verdy-1969"
     },
     {
       "id": "401859373",
@@ -3326,14 +3326,14 @@
       },
       "fecha": "2026-05-03",
       "hora": "03:00",
-      "estado": "First Half",
-      "estado_corto": "24'",
-      "estado_nombre": "STATUS_FIRST_HALF",
-      "completado": false,
-      "marcador_local": "0",
+      "estado": "Final Score - After Penalties",
+      "estado_corto": "MF - Pens",
+      "estado_nombre": "STATUS_FINAL_PEN",
+      "completado": true,
+      "marcador_local": "1",
       "marcador_visitante": "1",
       "fecha_espn": "2026-05-03T06:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859373"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859373/avispa-fukuoka-cerezo-osaka"
     },
     {
       "id": "401859374",
@@ -3356,12 +3356,12 @@
       },
       "fecha": "2026-05-03",
       "hora": "04:00",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
-      "completado": false,
-      "marcador_local": "0",
-      "marcador_visitante": "0",
+      "estado": "Final Score - After Penalties",
+      "estado_corto": "MF - Pens",
+      "estado_nombre": "STATUS_FINAL_PEN",
+      "completado": true,
+      "marcador_local": "1",
+      "marcador_visitante": "1",
       "fecha_espn": "2026-05-03T07:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859374/machida-zelvia-kashima-antlers"
     },
@@ -3386,14 +3386,14 @@
       },
       "fecha": "2026-05-03",
       "hora": "05:00",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "estado": "Second Half",
+      "estado_corto": "62'",
+      "estado_nombre": "STATUS_SECOND_HALF",
       "completado": false,
-      "marcador_local": "0",
-      "marcador_visitante": "0",
+      "marcador_local": "1",
+      "marcador_visitante": "2",
       "fecha_espn": "2026-05-03T08:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859375/nagoya-grampus-v-varen-nagasaki"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859375"
     },
     {
       "id": "401842608",
@@ -7856,14 +7856,14 @@
           },
           "fecha": "2026-05-03",
           "hora": "02:00",
-          "estado": "Second Half",
-          "estado_corto": "67'",
-          "estado_nombre": "STATUS_SECOND_HALF",
-          "completado": false,
-          "marcador_local": "0",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "marcador_local": "1",
           "marcador_visitante": "0",
           "fecha_espn": "2026-05-03T05:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859372"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859372/kashiwa-reysol-tokyo-verdy-1969"
         },
         {
           "id": "401859373",
@@ -7886,14 +7886,14 @@
           },
           "fecha": "2026-05-03",
           "hora": "03:00",
-          "estado": "First Half",
-          "estado_corto": "24'",
-          "estado_nombre": "STATUS_FIRST_HALF",
-          "completado": false,
-          "marcador_local": "0",
+          "estado": "Final Score - After Penalties",
+          "estado_corto": "MF - Pens",
+          "estado_nombre": "STATUS_FINAL_PEN",
+          "completado": true,
+          "marcador_local": "1",
           "marcador_visitante": "1",
           "fecha_espn": "2026-05-03T06:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859373"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859373/avispa-fukuoka-cerezo-osaka"
         },
         {
           "id": "401859374",
@@ -7916,12 +7916,12 @@
           },
           "fecha": "2026-05-03",
           "hora": "04:00",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
-          "completado": false,
-          "marcador_local": "0",
-          "marcador_visitante": "0",
+          "estado": "Final Score - After Penalties",
+          "estado_corto": "MF - Pens",
+          "estado_nombre": "STATUS_FINAL_PEN",
+          "completado": true,
+          "marcador_local": "1",
+          "marcador_visitante": "1",
           "fecha_espn": "2026-05-03T07:00Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859374/machida-zelvia-kashima-antlers"
         },
@@ -7946,14 +7946,14 @@
           },
           "fecha": "2026-05-03",
           "hora": "05:00",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "estado": "Second Half",
+          "estado_corto": "62'",
+          "estado_nombre": "STATUS_SECOND_HALF",
           "completado": false,
-          "marcador_local": "0",
-          "marcador_visitante": "0",
+          "marcador_local": "1",
+          "marcador_visitante": "2",
           "fecha_espn": "2026-05-03T08:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859375/nagoya-grampus-v-varen-nagasaki"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859375"
         }
       ]
     },
@@ -8980,6 +8980,11 @@
       "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
     },
     {
+      "liga": "KNVB Beker",
+      "slug": "ned.knvb_beker",
+      "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
+    },
+    {
       "liga": "Liga Portugal 2",
       "slug": "por.2",
       "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
@@ -8988,11 +8993,6 @@
       "liga": "Taça de Portugal",
       "slug": "por.taca_de_portugal",
       "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
-    },
-    {
-      "liga": "KNVB Beker",
-      "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
     },
     {
       "liga": "Ekstraklasa Polonia",
@@ -9010,14 +9010,14 @@
       "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
     },
     {
-      "liga": "Premier League Ucrania",
-      "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
-    },
-    {
       "liga": "Liga I Rumania",
       "slug": "rom.1",
       "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
+    },
+    {
+      "liga": "Premier League Ucrania",
+      "slug": "ukr.1",
+      "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
     },
     {
       "liga": "USL Championship",
@@ -9050,24 +9050,24 @@
       "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
     },
     {
-      "liga": "Qatar Stars League",
-      "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
-    },
-    {
-      "liga": "Botola Marruecos",
-      "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
-    },
-    {
       "liga": "Premier League Egipto",
       "slug": "egy.1",
       "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
     },
     {
+      "liga": "Qatar Stars League",
+      "slug": "qat.1",
+      "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
+    },
+    {
       "liga": "Copa Intercontinental FIFA",
       "slug": "fifa.intercontinental",
       "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
+    },
+    {
+      "liga": "Botola Marruecos",
+      "slug": "mar.1",
+      "error": "400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&dates=20260503&limit=300"
     }
   ]
 }
