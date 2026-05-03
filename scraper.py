@@ -368,12 +368,43 @@ def obtener_eventos_liga(league_slug, league_name, fecha=None):
 
 
 def obtener_logo(equipo):
+    """
+    Obtiene logo de equipo desde varias rutas posibles de ESPN.
+    Primero intenta usar logos oficiales del JSON.
+    Si no aparecen, arma un fallback con el ID del equipo.
+    """
+
+    # 1) Forma más común en ESPN:
+    # "logos": [{"href": "..."}]
     logos = equipo.get("logos") or []
 
     if logos:
-        return logos[0].get("href")
+        # Preferimos PNG si existe
+        for logo in logos:
+            href = logo.get("href")
+            if href and ".png" in href.lower():
+                return href
 
-    return equipo.get("logo")
+        # Si no hay PNG, usamos cualquier href válido
+        for logo in logos:
+            href = logo.get("href")
+            if href:
+                return href
+
+    # 2) Fallback directo:
+    # "logo": "https://..."
+    logo_directo = equipo.get("logo")
+    if logo_directo:
+        return logo_directo
+
+    # 3) Fallback por ID de equipo ESPN
+    # Muchos equipos usan este formato:
+    # https://a.espncdn.com/i/teamlogos/soccer/500/{id}.png
+    equipo_id = equipo.get("id")
+    if equipo_id:
+        return f"https://a.espncdn.com/i/teamlogos/soccer/500/{equipo_id}.png"
+
+    return None
 
 
 def limpiar_evento(evento, league_slug, league_name):
