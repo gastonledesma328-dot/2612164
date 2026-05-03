@@ -13,8 +13,10 @@ HEADERS = {
     "Referer": "https://www.espn.com.ar/futbol/calendario",
 }
 
-# Agregá o quitá competiciones acá.
-# La clave es el slug de ESPN.
+# ============================================================
+# LIGAS / COMPETICIONES ESPN
+# ============================================================
+
 LEAGUES = {
     # =========================
     # ARGENTINA
@@ -190,6 +192,135 @@ LEAGUES = {
     "usa.nwsl": "NWSL Estados Unidos",
 }
 
+# ============================================================
+# PRIORIDAD DE ORDEN
+# Menor número = aparece más arriba
+# ============================================================
+
+LEAGUE_PRIORITY = {
+    # =========================
+    # 1. COPA DEL MUNDO / FIFA
+    # =========================
+    "fifa.world": 1,
+    "fifa.cwc": 2,
+    "fifa.intercontinental": 3,
+
+    "fifa.worldq.conmebol": 4,
+    "fifa.worldq.uefa": 5,
+    "fifa.worldq.concacaf": 6,
+    "fifa.worldq.afc": 7,
+    "fifa.worldq.caf": 8,
+    "fifa.worldq.ofc": 9,
+
+    # =========================
+    # 2. EUROPA PRINCIPAL
+    # =========================
+    "uefa.champions": 10,
+    "uefa.europa": 11,
+    "uefa.europa.conf": 12,
+    "uefa.super_cup": 13,
+    "uefa.nations": 14,
+    "uefa.euro": 15,
+
+    "eng.1": 20,
+    "esp.1": 21,
+    "ita.1": 22,
+    "ger.1": 23,
+    "fra.1": 24,
+
+    "eng.fa": 30,
+    "eng.league_cup": 31,
+    "eng.community": 32,
+    "eng.2": 33,
+
+    "esp.copa_del_rey": 34,
+    "esp.super_cup": 35,
+    "esp.2": 36,
+
+    "ita.coppa_italia": 37,
+    "ita.super_cup": 38,
+    "ita.2": 39,
+
+    "ger.dfb_pokal": 40,
+    "ger.super_cup": 41,
+    "ger.2": 42,
+
+    "fra.coupe_de_france": 43,
+    "fra.2": 44,
+
+    "por.1": 50,
+    "ned.1": 51,
+    "bel.1": 52,
+    "tur.1": 53,
+    "sco.1": 54,
+    "aut.1": 55,
+    "sui.1": 56,
+
+    # =========================
+    # 3. SUDAMÉRICA PRINCIPAL
+    # =========================
+    "conmebol.libertadores": 100,
+    "conmebol.sudamericana": 101,
+    "conmebol.recopa": 102,
+    "conmebol.america": 103,
+
+    "bra.1": 110,
+    "bra.copa_do_brazil": 111,
+    "bra.2": 112,
+
+    "arg.1": 120,
+    "arg.copa": 121,
+    "arg.supercopa": 122,
+    "arg.2": 123,
+
+    "uru.1": 130,
+    "chi.1": 131,
+    "col.1": 132,
+    "ecu.1": 133,
+    "per.1": 134,
+    "par.1": 135,
+    "bol.1": 136,
+    "ven.1": 137,
+
+    # =========================
+    # 4. NORTE / CENTROAMÉRICA
+    # =========================
+    "mex.1": 200,
+    "usa.1": 201,
+    "concacaf.champions": 202,
+    "concacaf.gold": 203,
+    "concacaf.nations": 204,
+    "mex.2": 205,
+    "usa.2": 206,
+    "usa.open": 207,
+
+    # =========================
+    # 5. ASIA / ÁFRICA / OTROS
+    # =========================
+    "afc.champions": 300,
+    "afc.cup": 301,
+    "afc.asian.cup": 302,
+    "ksa.1": 310,
+    "jpn.1": 311,
+    "kor.1": 312,
+    "aus.1": 313,
+    "chn.1": 314,
+
+    "caf.champions": 400,
+    "caf.confed": 401,
+    "caf.nations": 402,
+
+    # =========================
+    # 6. FEMENINO
+    # =========================
+    "fifa.wwc": 500,
+    "uefa.wchampions": 501,
+    "uefa.weuro": 502,
+    "eng.w.1": 503,
+    "usa.nwsl": 504,
+}
+
+
 def fecha_argentina():
     return datetime.now(timezone(timedelta(hours=-3)))
 
@@ -197,6 +328,7 @@ def fecha_argentina():
 def fecha_api_argentina(fecha=None):
     if fecha is None:
         fecha = fecha_argentina()
+
     return fecha.strftime("%Y%m%d")
 
 
@@ -213,8 +345,8 @@ def obtener_eventos_liga(league_slug, league_name, fecha=None):
     try:
         r = requests.get(url, headers=HEADERS, params=params, timeout=20)
         r.raise_for_status()
-        data = r.json()
 
+        data = r.json()
         eventos = data.get("events") or []
 
         return {
@@ -237,8 +369,10 @@ def obtener_eventos_liga(league_slug, league_name, fecha=None):
 
 def obtener_logo(equipo):
     logos = equipo.get("logos") or []
+
     if logos:
         return logos[0].get("href")
+
     return equipo.get("logo")
 
 
@@ -252,6 +386,8 @@ def limpiar_evento(evento, league_slug, league_name):
     visitante_logo = None
     local_id = None
     visitante_id = None
+    marcador_local = None
+    marcador_visitante = None
 
     for c in competidores:
         equipo = c.get("team") or {}
@@ -264,15 +400,19 @@ def limpiar_evento(evento, league_slug, league_name):
 
         equipo_id = equipo.get("id")
         logo = obtener_logo(equipo)
+        score = c.get("score")
 
         if c.get("homeAway") == "home":
             local = nombre
             local_logo = logo
             local_id = equipo_id
+            marcador_local = score
+
         elif c.get("homeAway") == "away":
             visitante = nombre
             visitante_logo = logo
             visitante_id = equipo_id
+            marcador_visitante = score
 
     fecha_utc = evento.get("date")
     fecha_arg = None
@@ -290,14 +430,7 @@ def limpiar_evento(evento, league_slug, league_name):
     links = evento.get("links") or []
     url_espn = links[0].get("href") if links else None
 
-    marcador_local = None
-    marcador_visitante = None
-
-    for c in competidores:
-        if c.get("homeAway") == "home":
-            marcador_local = c.get("score")
-        elif c.get("homeAway") == "away":
-            marcador_visitante = c.get("score")
+    prioridad = LEAGUE_PRIORITY.get(league_slug, 9999)
 
     return {
         "id": evento.get("id"),
@@ -311,15 +444,16 @@ def limpiar_evento(evento, league_slug, league_name):
         "local_logo": local_logo,
         "visitante_logo": visitante_logo,
 
-        # ESTA ES LA COMPETICIÓN REAL
         "liga": league_name,
         "liga_corta": league_name,
         "liga_slug": league_slug,
+        "prioridad_liga": prioridad,
 
         "competicion": {
             "nombre": league_name,
             "nombre_corto": league_name,
             "slug": league_slug,
+            "prioridad": prioridad,
         },
 
         "fecha": fecha_arg,
@@ -345,7 +479,7 @@ def scrapear_partidos(fecha=None):
 
     print("Consultando competiciones de ESPN...")
 
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=12) as executor:
         tareas = []
 
         for league_slug, league_name in LEAGUES.items():
@@ -377,7 +511,6 @@ def scrapear_partidos(fecha=None):
             for evento in eventos:
                 evento_id = evento.get("id")
 
-                # Evita duplicados si ESPN muestra el mismo partido en más de una competición.
                 clave = evento_id or f"{league_slug}-{evento.get('name')}-{evento.get('date')}"
 
                 if clave in ids_vistos:
@@ -391,10 +524,10 @@ def scrapear_partidos(fecha=None):
 
     resultados.sort(
         key=lambda x: (
-            x["fecha"] or "",
-            x["hora"] or "",
-            x["liga"] or "",
-            x["partido"] or "",
+            x.get("prioridad_liga", 9999),
+            x.get("fecha") or "",
+            x.get("hora") or "",
+            x.get("partido") or "",
         )
     )
 
@@ -406,20 +539,45 @@ def agrupar_por_liga(partidos):
 
     for partido in partidos:
         liga = partido.get("liga") or "Sin competición"
+        prioridad = partido.get("prioridad_liga", 9999)
 
         if liga not in ligas:
-            ligas[liga] = []
+            ligas[liga] = {
+                "liga": liga,
+                "liga_slug": partido.get("liga_slug"),
+                "prioridad": prioridad,
+                "partidos": []
+            }
 
-        ligas[liga].append(partido)
+        ligas[liga]["partidos"].append(partido)
 
-    return [
-        {
-            "liga": liga,
-            "total": len(items),
-            "partidos": items,
-        }
-        for liga, items in ligas.items()
-    ]
+    agrupado = []
+
+    for liga_data in ligas.values():
+        liga_data["partidos"].sort(
+            key=lambda x: (
+                x.get("fecha") or "",
+                x.get("hora") or "",
+                x.get("partido") or "",
+            )
+        )
+
+        agrupado.append({
+            "liga": liga_data["liga"],
+            "liga_slug": liga_data["liga_slug"],
+            "prioridad": liga_data["prioridad"],
+            "total": len(liga_data["partidos"]),
+            "partidos": liga_data["partidos"],
+        })
+
+    agrupado.sort(
+        key=lambda x: (
+            x.get("prioridad", 9999),
+            x.get("liga") or "",
+        )
+    )
+
+    return agrupado
 
 
 def guardar_json(partidos, errores):
@@ -429,8 +587,10 @@ def guardar_json(partidos, errores):
         "fecha_scrapeo": fecha_argentina().isoformat(),
         "total": len(partidos),
         "total_ligas_consultadas": len(LEAGUES),
+
         "partidos": partidos,
         "agrupado_por_liga": agrupar_por_liga(partidos),
+
         "errores": errores,
     }
 
