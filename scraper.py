@@ -1,5 +1,6 @@
 import requests
 import json
+import re
 from datetime import datetime, timedelta, timezone
 
 OUTPUT_FILE = "agenda_espn.json"
@@ -14,8 +15,7 @@ HEADERS = {
 
 
 def fecha_argentina():
-    tz_arg = timezone(timedelta(hours=-3))
-    return datetime.now(tz_arg)
+    return datetime.now(timezone(timedelta(hours=-3)))
 
 
 def obtener_eventos(fecha=None):
@@ -29,38 +29,97 @@ def obtener_eventos(fecha=None):
         "limit": 500,
     }
 
-    r = requests.get(ESPN_API, headers=HEADERS, params=params, timeout=20)
+    r = requests.get(ESPN_API, headers=HEADERS, params=params, timeout=25)
     r.raise_for_status()
     return r.json()
 
 
-def tomar_liga(evento, competencia):
-    liga_competencia = competencia.get("league") or {}
-    liga_evento = evento.get("league") or {}
+def limpiar_slug_competicion(slug):
+    if not slug:
+        return None
+
+    texto = slug.lower()
+
+    # Borra años tipo:
+    # 2025-
+    # 2025-26-
+    # 2026-
+    texto = re.sub(r"^\d{4}(-\d{2})?-", "", texto)
+
+    reemplazos = {
+        "english-premier-league": "Premier League",
+        "spanish-laliga": "LaLiga",
+        "italian-serie-a": "Serie A",
+        "german-bundesliga": "Bundesliga",
+        "french-ligue-1": "Ligue 1",
+        "uefa-champions-league": "UEFA Champions League",
+        "uefa-europa-league": "UEFA Europa League",
+        "uefa-europa-conference-league": "UEFA Conference League",
+        "conmebol-libertadores": "CONMEBOL Libertadores",
+        "conmebol-sudamericana": "CONMEBOL Sudamericana",
+        "argentine-liga-profesional": "Liga Profesional Argentina",
+        "argentine-primera-nacional": "Primera Nacional Argentina",
+        "brazilian-serie-a": "Brasileirão",
+        "mls": "MLS",
+        "fifa-world-cup": "Mundial FIFA",
+        "fifa-world-cup-qualifying-conmebol": "Eliminatorias CONMEBOL",
+        "fifa-world-cup-qualifying-uefa": "Eliminatorias UEFA",
+        "fifa-world-cup-qualifying-concacaf": "Eliminatorias CONCACAF",
+    }
+
+    if texto in reemplazos:
+        return reemplazos[texto]
+
+    return texto.replace("-", " ").title()
+
+
+def obtener_liga(evento, competencia):
     temporada = evento.get("season") or {}
 
-    liga = liga_competencia if liga_competencia else liga_evento
+    posibles_ligas = [
+        competencia.get("league") or {},
+        evento.get("league") or {},
+    ]
 
-    nombre = (
-        liga.get("name")
-        or liga.get("displayName")
-        or liga.get("shortName")
-        or liga.get("abbreviation")
-        or "Sin competición"
-    )
+    for liga in posibles_ligas:
+        nombre = (
+            liga.get("displayName")
+            or liga.get("name")
+            or liga.get("shortName")
+            or liga.get("abbreviation")
+        )
+
+        if nombre and nombre.lower() not in ["soccer", "fútbol", "all"]:
+            return {
+                "liga": nombre,
+                "liga_corta": liga.get("shortName") or liga.get("abbreviation") or nombre,
+                "liga_id": liga.get("id"),
+                "liga_slug": liga.get("slug"),
+                "temporada": temporada.get("year"),
+                "temporada_slug": temporada.get("slug"),
+            }
+
+    # Fallback importante para ESPN soccer/all
+    temporada_slug = temporada.get("slug")
+    nombre_desde_slug = limpiar_slug_competicion(temporada_slug)
+
+    if nombre_desde_slug:
+        return {
+            "liga": nombre_desde_slug,
+            "liga_corta": nombre_desde_slug,
+            "liga_id": None,
+            "liga_slug": None,
+            "temporada": temporada.get("year"),
+            "temporada_slug": temporada_slug,
+        }
 
     return {
-        "liga": nombre,
-        "liga_corta": liga.get("shortName") or liga.get("abbreviation") or nombre,
-        "liga_id": liga.get("id") or liga_evento.get("id"),
-        "competicion": {
-            "nombre": nombre,
-            "nombre_corto": liga.get("shortName"),
-            "abreviatura": liga.get("abbreviation"),
-            "slug": liga.get("slug"),
-            "temporada": temporada.get("year"),
-            "tipo_temporada": temporada.get("type"),
-        }
+        "liga": "Sin competición",
+        "liga_corta": "Sin competición",
+        "liga_id": None,
+        "liga_slug": None,
+        "temporada": temporada.get("year"),
+        "temporada_slug": temporada.get("slug"),
     }
 
 
@@ -75,7 +134,12 @@ def limpiar_evento(evento):
 
     for c in competidores:
         equipo = c.get("team") or {}
-        nombre = equipo.get("displayName") or equipo.get("shortDisplayName") or equipo.get("name")
+
+        nombre = (
+            equipo.get("displayName")
+            or equipo.get("shortDisplayName")
+            or equipo.get("name")
+        )
 
         logos = equipo.get("logos") or []
         logo = logos[0].get("href") if logos else None
@@ -98,8 +162,7 @@ def limpiar_evento(evento):
         hora_arg = dt_arg.strftime("%H:%M")
 
     estado = (competencia.get("status") or {}).get("type") or {}
-
-    liga_data = tomar_liga(evento, competencia)
+    liga_data = obtener_liga(evento, competencia)
 
     links = evento.get("links") or []
     url_espn = links[0].get("href") if links else None
@@ -116,7 +179,16 @@ def limpiar_evento(evento):
         "liga": liga_data["liga"],
         "liga_corta": liga_data["liga_corta"],
         "liga_id": liga_data["liga_id"],
-        "competicion": liga_data["competicion"],
+        "liga_slug": liga_data["liga_slug"],
+
+        "competicion": {
+            "nombre": liga_data["liga"],
+            "nombre_corto": liga_data["liga_corta"],
+            "id": liga_data["liga_id"],
+            "slug": liga_data["liga_slug"],
+            "temporada": liga_data["temporada"],
+            "temporada_slug": liga_data["temporada_slug"],
+        },
 
         "fecha": fecha_arg,
         "hora": hora_arg,
@@ -140,7 +212,14 @@ def scrapear_partidos():
         if item["local"] and item["visitante"]:
             resultados.append(item)
 
-    resultados.sort(key=lambda x: (x["fecha"] or "", x["hora"] or "", x["liga"] or ""))
+    resultados.sort(
+        key=lambda x: (
+            x["fecha"] or "",
+            x["hora"] or "",
+            x["liga"] or "",
+            x["partido"] or "",
+        )
+    )
 
     return resultados
 
@@ -161,7 +240,6 @@ def main():
     print("Obteniendo agenda desde ESPN...")
     partidos = scrapear_partidos()
     guardar_json(partidos)
-
     print(f"OK: {len(partidos)} partidos guardados en {OUTPUT_FILE}")
 
 
