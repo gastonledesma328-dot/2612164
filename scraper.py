@@ -1,11 +1,11 @@
 import requests
 import json
-import re
 from datetime import datetime, timedelta, timezone
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 OUTPUT_FILE = "agenda_espn.json"
 
-ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard"
+ESPN_API_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/scoreboard"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
@@ -13,117 +13,134 @@ HEADERS = {
     "Referer": "https://www.espn.com.ar/futbol/calendario",
 }
 
+# Agregá o quitá competiciones acá.
+# La clave es el slug de ESPN.
+LEAGUES = {
+    # Argentina
+    "arg.1": "Liga Profesional Argentina",
+    "arg.2": "Primera Nacional Argentina",
+    "arg.copa": "Copa Argentina",
+
+    # CONMEBOL
+    "conmebol.libertadores": "CONMEBOL Libertadores",
+    "conmebol.sudamericana": "CONMEBOL Sudamericana",
+    "conmebol.recopa": "CONMEBOL Recopa",
+    "fifa.worldq.conmebol": "Eliminatorias CONMEBOL",
+
+    # Europa principales
+    "eng.1": "Premier League",
+    "esp.1": "LaLiga",
+    "ita.1": "Serie A",
+    "ger.1": "Bundesliga",
+    "fra.1": "Ligue 1",
+    "ned.1": "Eredivisie",
+    "por.1": "Primeira Liga",
+
+    # Copas europeas
+    "uefa.champions": "UEFA Champions League",
+    "uefa.europa": "UEFA Europa League",
+    "uefa.europa.conf": "UEFA Conference League",
+    "uefa.super_cup": "UEFA Super Cup",
+
+    # Selecciones / FIFA
+    "fifa.world": "Mundial FIFA",
+    "fifa.worldq.uefa": "Eliminatorias UEFA",
+    "fifa.worldq.concacaf": "Eliminatorias CONCACAF",
+    "fifa.worldq.caf": "Eliminatorias África",
+    "fifa.worldq.afc": "Eliminatorias Asia",
+    "fifa.worldq.ofc": "Eliminatorias Oceanía",
+    "uefa.euro": "Eurocopa",
+    "conmebol.america": "Copa América",
+
+    # Norteamérica
+    "usa.1": "MLS",
+    "mex.1": "Liga MX",
+    "concacaf.champions": "CONCACAF Champions Cup",
+
+    # Brasil / Sudamérica
+    "bra.1": "Brasileirão",
+    "bra.copa_do_brazil": "Copa do Brasil",
+    "uru.1": "Primera División Uruguay",
+    "chi.1": "Primera División Chile",
+    "col.1": "Primera A Colombia",
+    "ecu.1": "LigaPro Ecuador",
+    "per.1": "Liga 1 Perú",
+
+    # Inglaterra copas
+    "eng.fa": "FA Cup",
+    "eng.league_cup": "Carabao Cup",
+    "eng.2": "Championship",
+
+    # España copas
+    "esp.copa_del_rey": "Copa del Rey",
+    "esp.super_cup": "Supercopa de España",
+
+    # Italia copas
+    "ita.coppa_italia": "Coppa Italia",
+    "ita.super_cup": "Supercoppa Italiana",
+
+    # Alemania copas
+    "ger.dfb_pokal": "DFB Pokal",
+    "ger.super_cup": "Supercopa Alemania",
+
+    # Francia copas
+    "fra.coupe_de_france": "Coupe de France",
+}
+
 
 def fecha_argentina():
     return datetime.now(timezone(timedelta(hours=-3)))
 
 
-def obtener_eventos(fecha=None):
+def fecha_api_argentina(fecha=None):
     if fecha is None:
         fecha = fecha_argentina()
+    return fecha.strftime("%Y%m%d")
+
+
+def obtener_eventos_liga(league_slug, league_name, fecha=None):
+    url = ESPN_API_BASE.format(league=league_slug)
 
     params = {
         "region": "ar",
         "lang": "es",
-        "dates": fecha.strftime("%Y%m%d"),
-        "limit": 500,
+        "dates": fecha_api_argentina(fecha),
+        "limit": 300,
     }
 
-    r = requests.get(ESPN_API, headers=HEADERS, params=params, timeout=25)
-    r.raise_for_status()
-    return r.json()
+    try:
+        r = requests.get(url, headers=HEADERS, params=params, timeout=20)
+        r.raise_for_status()
+        data = r.json()
 
+        eventos = data.get("events") or []
 
-def limpiar_slug_competicion(slug):
-    if not slug:
-        return None
-
-    texto = slug.lower()
-
-    # Borra años tipo:
-    # 2025-
-    # 2025-26-
-    # 2026-
-    texto = re.sub(r"^\d{4}(-\d{2})?-", "", texto)
-
-    reemplazos = {
-        "english-premier-league": "Premier League",
-        "spanish-laliga": "LaLiga",
-        "italian-serie-a": "Serie A",
-        "german-bundesliga": "Bundesliga",
-        "french-ligue-1": "Ligue 1",
-        "uefa-champions-league": "UEFA Champions League",
-        "uefa-europa-league": "UEFA Europa League",
-        "uefa-europa-conference-league": "UEFA Conference League",
-        "conmebol-libertadores": "CONMEBOL Libertadores",
-        "conmebol-sudamericana": "CONMEBOL Sudamericana",
-        "argentine-liga-profesional": "Liga Profesional Argentina",
-        "argentine-primera-nacional": "Primera Nacional Argentina",
-        "brazilian-serie-a": "Brasileirão",
-        "mls": "MLS",
-        "fifa-world-cup": "Mundial FIFA",
-        "fifa-world-cup-qualifying-conmebol": "Eliminatorias CONMEBOL",
-        "fifa-world-cup-qualifying-uefa": "Eliminatorias UEFA",
-        "fifa-world-cup-qualifying-concacaf": "Eliminatorias CONCACAF",
-    }
-
-    if texto in reemplazos:
-        return reemplazos[texto]
-
-    return texto.replace("-", " ").title()
-
-
-def obtener_liga(evento, competencia):
-    temporada = evento.get("season") or {}
-
-    posibles_ligas = [
-        competencia.get("league") or {},
-        evento.get("league") or {},
-    ]
-
-    for liga in posibles_ligas:
-        nombre = (
-            liga.get("displayName")
-            or liga.get("name")
-            or liga.get("shortName")
-            or liga.get("abbreviation")
-        )
-
-        if nombre and nombre.lower() not in ["soccer", "fútbol", "all"]:
-            return {
-                "liga": nombre,
-                "liga_corta": liga.get("shortName") or liga.get("abbreviation") or nombre,
-                "liga_id": liga.get("id"),
-                "liga_slug": liga.get("slug"),
-                "temporada": temporada.get("year"),
-                "temporada_slug": temporada.get("slug"),
-            }
-
-    # Fallback importante para ESPN soccer/all
-    temporada_slug = temporada.get("slug")
-    nombre_desde_slug = limpiar_slug_competicion(temporada_slug)
-
-    if nombre_desde_slug:
         return {
-            "liga": nombre_desde_slug,
-            "liga_corta": nombre_desde_slug,
-            "liga_id": None,
-            "liga_slug": None,
-            "temporada": temporada.get("year"),
-            "temporada_slug": temporada_slug,
+            "league_slug": league_slug,
+            "league_name": league_name,
+            "events": eventos,
+            "ok": True,
+            "error": None,
         }
 
-    return {
-        "liga": "Sin competición",
-        "liga_corta": "Sin competición",
-        "liga_id": None,
-        "liga_slug": None,
-        "temporada": temporada.get("year"),
-        "temporada_slug": temporada.get("slug"),
-    }
+    except Exception as e:
+        return {
+            "league_slug": league_slug,
+            "league_name": league_name,
+            "events": [],
+            "ok": False,
+            "error": str(e),
+        }
 
 
-def limpiar_evento(evento):
+def obtener_logo(equipo):
+    logos = equipo.get("logos") or []
+    if logos:
+        return logos[0].get("href")
+    return equipo.get("logo")
+
+
+def limpiar_evento(evento, league_slug, league_name):
     competencia = (evento.get("competitions") or [{}])[0]
     competidores = competencia.get("competitors") or []
 
@@ -131,6 +148,8 @@ def limpiar_evento(evento):
     visitante = None
     local_logo = None
     visitante_logo = None
+    local_id = None
+    visitante_id = None
 
     for c in competidores:
         equipo = c.get("team") or {}
@@ -141,15 +160,17 @@ def limpiar_evento(evento):
             or equipo.get("name")
         )
 
-        logos = equipo.get("logos") or []
-        logo = logos[0].get("href") if logos else None
+        equipo_id = equipo.get("id")
+        logo = obtener_logo(equipo)
 
         if c.get("homeAway") == "home":
             local = nombre
             local_logo = logo
+            local_id = equipo_id
         elif c.get("homeAway") == "away":
             visitante = nombre
             visitante_logo = logo
+            visitante_id = equipo_id
 
     fecha_utc = evento.get("date")
     fecha_arg = None
@@ -161,56 +182,110 @@ def limpiar_evento(evento):
         fecha_arg = dt_arg.strftime("%Y-%m-%d")
         hora_arg = dt_arg.strftime("%H:%M")
 
-    estado = (competencia.get("status") or {}).get("type") or {}
-    liga_data = obtener_liga(evento, competencia)
+    status = competencia.get("status") or {}
+    estado = status.get("type") or {}
 
     links = evento.get("links") or []
     url_espn = links[0].get("href") if links else None
 
+    marcador_local = None
+    marcador_visitante = None
+
+    for c in competidores:
+        if c.get("homeAway") == "home":
+            marcador_local = c.get("score")
+        elif c.get("homeAway") == "away":
+            marcador_visitante = c.get("score")
+
     return {
         "id": evento.get("id"),
+
         "partido": f"{local} vs {visitante}" if local and visitante else evento.get("name"),
 
         "local": local,
         "visitante": visitante,
+        "local_id": local_id,
+        "visitante_id": visitante_id,
         "local_logo": local_logo,
         "visitante_logo": visitante_logo,
 
-        "liga": liga_data["liga"],
-        "liga_corta": liga_data["liga_corta"],
-        "liga_id": liga_data["liga_id"],
-        "liga_slug": liga_data["liga_slug"],
+        # ESTA ES LA COMPETICIÓN REAL
+        "liga": league_name,
+        "liga_corta": league_name,
+        "liga_slug": league_slug,
 
         "competicion": {
-            "nombre": liga_data["liga"],
-            "nombre_corto": liga_data["liga_corta"],
-            "id": liga_data["liga_id"],
-            "slug": liga_data["liga_slug"],
-            "temporada": liga_data["temporada"],
-            "temporada_slug": liga_data["temporada_slug"],
+            "nombre": league_name,
+            "nombre_corto": league_name,
+            "slug": league_slug,
         },
 
         "fecha": fecha_arg,
         "hora": hora_arg,
+
         "estado": estado.get("description"),
         "estado_corto": estado.get("shortDetail"),
+        "estado_nombre": estado.get("name"),
+        "completado": estado.get("completed"),
+
+        "marcador_local": marcador_local,
+        "marcador_visitante": marcador_visitante,
 
         "fecha_espn": fecha_utc,
         "url_espn": url_espn,
     }
 
 
-def scrapear_partidos():
-    data = obtener_eventos()
-    eventos = data.get("events") or []
-
+def scrapear_partidos(fecha=None):
     resultados = []
+    errores = []
+    ids_vistos = set()
 
-    for evento in eventos:
-        item = limpiar_evento(evento)
+    print("Consultando competiciones de ESPN...")
 
-        if item["local"] and item["visitante"]:
-            resultados.append(item)
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        tareas = []
+
+        for league_slug, league_name in LEAGUES.items():
+            tareas.append(
+                executor.submit(
+                    obtener_eventos_liga,
+                    league_slug,
+                    league_name,
+                    fecha
+                )
+            )
+
+        for tarea in as_completed(tareas):
+            respuesta = tarea.result()
+
+            league_slug = respuesta["league_slug"]
+            league_name = respuesta["league_name"]
+
+            if not respuesta["ok"]:
+                errores.append({
+                    "liga": league_name,
+                    "slug": league_slug,
+                    "error": respuesta["error"],
+                })
+                continue
+
+            eventos = respuesta["events"]
+
+            for evento in eventos:
+                evento_id = evento.get("id")
+
+                # Evita duplicados si ESPN muestra el mismo partido en más de una competición.
+                clave = evento_id or f"{league_slug}-{evento.get('name')}-{evento.get('date')}"
+
+                if clave in ids_vistos:
+                    continue
+
+                item = limpiar_evento(evento, league_slug, league_name)
+
+                if item["local"] and item["visitante"]:
+                    resultados.append(item)
+                    ids_vistos.add(clave)
 
     resultados.sort(
         key=lambda x: (
@@ -221,15 +296,40 @@ def scrapear_partidos():
         )
     )
 
-    return resultados
+    return resultados, errores
 
 
-def guardar_json(data):
+def agrupar_por_liga(partidos):
+    ligas = {}
+
+    for partido in partidos:
+        liga = partido.get("liga") or "Sin competición"
+
+        if liga not in ligas:
+            ligas[liga] = []
+
+        ligas[liga].append(partido)
+
+    return [
+        {
+            "liga": liga,
+            "total": len(items),
+            "partidos": items,
+        }
+        for liga, items in ligas.items()
+    ]
+
+
+def guardar_json(partidos, errores):
     salida = {
         "fuente": "ESPN Argentina",
+        "metodo": "scoreboard por competición",
         "fecha_scrapeo": fecha_argentina().isoformat(),
-        "total": len(data),
-        "partidos": data,
+        "total": len(partidos),
+        "total_ligas_consultadas": len(LEAGUES),
+        "partidos": partidos,
+        "agrupado_por_liga": agrupar_por_liga(partidos),
+        "errores": errores,
     }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
@@ -237,10 +337,14 @@ def guardar_json(data):
 
 
 def main():
-    print("Obteniendo agenda desde ESPN...")
-    partidos = scrapear_partidos()
-    guardar_json(partidos)
+    print("Obteniendo agenda desde ESPN por competición...")
+
+    partidos, errores = scrapear_partidos()
+    guardar_json(partidos, errores)
+
     print(f"OK: {len(partidos)} partidos guardados en {OUTPUT_FILE}")
+    print(f"Ligas consultadas: {len(LEAGUES)}")
+    print(f"Errores: {len(errores)}")
 
 
 if __name__ == "__main__":
