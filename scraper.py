@@ -6,6 +6,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 OUTPUT_FILE = "agenda_espn.json"
 
 ESPN_API_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/scoreboard"
+ESPN_SUMMARY_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/summary"
+
+# Si lo ponés en False, no consulta goleadores y corre más rápido
+FETCH_SCORERS = True
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
@@ -18,17 +22,13 @@ HEADERS = {
 # ============================================================
 
 LEAGUES = {
-    # =========================
     # ARGENTINA
-    # =========================
     "arg.1": "Liga Profesional Argentina",
     "arg.2": "Primera Nacional Argentina",
     "arg.copa": "Copa Argentina",
     "arg.supercopa": "Supercopa Argentina",
 
-    # =========================
     # CONMEBOL / SUDAMÉRICA
-    # =========================
     "conmebol.libertadores": "CONMEBOL Libertadores",
     "conmebol.sudamericana": "CONMEBOL Sudamericana",
     "conmebol.recopa": "CONMEBOL Recopa",
@@ -48,9 +48,7 @@ LEAGUES = {
     "bol.1": "Primera División Bolivia",
     "ven.1": "Primera División Venezuela",
 
-    # =========================
     # EUROPA - PRINCIPALES
-    # =========================
     "eng.1": "Premier League",
     "eng.2": "Championship",
     "eng.3": "League One",
@@ -89,9 +87,7 @@ LEAGUES = {
     "por.2": "Liga Portugal 2",
     "por.taca_de_portugal": "Taça de Portugal",
 
-    # =========================
     # UEFA / INTERNACIONALES EUROPA
-    # =========================
     "uefa.champions": "UEFA Champions League",
     "uefa.europa": "UEFA Europa League",
     "uefa.europa.conf": "UEFA Conference League",
@@ -100,9 +96,7 @@ LEAGUES = {
     "uefa.euro": "Eurocopa",
     "fifa.worldq.uefa": "Eliminatorias UEFA",
 
-    # =========================
     # MÁS EUROPA
-    # =========================
     "sco.1": "Scottish Premiership",
     "sco.2": "Scottish Championship",
 
@@ -123,9 +117,7 @@ LEAGUES = {
     "rus.1": "Premier League Rusia",
     "irl.1": "Premier Division Irlanda",
 
-    # =========================
     # NORTE / CENTROAMÉRICA
-    # =========================
     "usa.1": "MLS",
     "usa.2": "USL Championship",
     "usa.open": "US Open Cup",
@@ -139,9 +131,7 @@ LEAGUES = {
     "concacaf.nations": "CONCACAF Nations League",
     "fifa.worldq.concacaf": "Eliminatorias CONCACAF",
 
-    # =========================
     # ASIA
-    # =========================
     "afc.champions": "AFC Champions League",
     "afc.cup": "AFC Cup",
     "afc.asian.cup": "AFC Asian Cup",
@@ -157,9 +147,7 @@ LEAGUES = {
     "uae.1": "UAE Pro League",
     "qat.1": "Qatar Stars League",
 
-    # =========================
     # ÁFRICA
-    # =========================
     "caf.champions": "CAF Champions League",
     "caf.confed": "CAF Confederation Cup",
     "caf.nations": "Copa Africana de Naciones",
@@ -169,22 +157,16 @@ LEAGUES = {
     "egy.1": "Premier League Egipto",
     "mar.1": "Botola Marruecos",
 
-    # =========================
     # OCEANÍA / FIFA
-    # =========================
     "fifa.world": "Mundial FIFA",
     "fifa.worldq.ofc": "Eliminatorias Oceanía",
     "fifa.confederations": "Copa Confederaciones",
 
-    # =========================
     # MUNDIALES / TORNEOS FIFA
-    # =========================
     "fifa.cwc": "Mundial de Clubes FIFA",
     "fifa.intercontinental": "Copa Intercontinental FIFA",
 
-    # =========================
     # FEMENINO
-    # =========================
     "fifa.wwc": "Mundial Femenino FIFA",
     "uefa.wchampions": "UEFA Women's Champions League",
     "uefa.weuro": "Eurocopa Femenina",
@@ -198,9 +180,7 @@ LEAGUES = {
 # ============================================================
 
 LEAGUE_PRIORITY = {
-    # =========================
-    # 1. COPA DEL MUNDO / FIFA
-    # =========================
+    # COPA DEL MUNDO / FIFA
     "fifa.world": 1,
     "fifa.cwc": 2,
     "fifa.intercontinental": 3,
@@ -212,9 +192,7 @@ LEAGUE_PRIORITY = {
     "fifa.worldq.caf": 8,
     "fifa.worldq.ofc": 9,
 
-    # =========================
-    # 2. EUROPA PRINCIPAL
-    # =========================
+    # EUROPA PRINCIPAL
     "uefa.champions": 10,
     "uefa.europa": 11,
     "uefa.europa.conf": 12,
@@ -256,9 +234,7 @@ LEAGUE_PRIORITY = {
     "aut.1": 55,
     "sui.1": 56,
 
-    # =========================
-    # 3. SUDAMÉRICA PRINCIPAL
-    # =========================
+    # SUDAMÉRICA PRINCIPAL
     "conmebol.libertadores": 100,
     "conmebol.sudamericana": 101,
     "conmebol.recopa": 102,
@@ -282,9 +258,7 @@ LEAGUE_PRIORITY = {
     "bol.1": 136,
     "ven.1": 137,
 
-    # =========================
-    # 4. NORTE / CENTROAMÉRICA
-    # =========================
+    # NORTE / CENTROAMÉRICA
     "mex.1": 200,
     "usa.1": 201,
     "concacaf.champions": 202,
@@ -294,9 +268,7 @@ LEAGUE_PRIORITY = {
     "usa.2": 206,
     "usa.open": 207,
 
-    # =========================
-    # 5. ASIA / ÁFRICA / OTROS
-    # =========================
+    # ASIA / ÁFRICA / OTROS
     "afc.champions": 300,
     "afc.cup": 301,
     "afc.asian.cup": 302,
@@ -310,9 +282,7 @@ LEAGUE_PRIORITY = {
     "caf.confed": 401,
     "caf.nations": 402,
 
-    # =========================
-    # 6. FEMENINO
-    # =========================
+    # FEMENINO
     "fifa.wwc": 500,
     "uefa.wchampions": 501,
     "uefa.weuro": 502,
@@ -367,6 +337,88 @@ def obtener_eventos_liga(league_slug, league_name, fecha=None):
         }
 
 
+def obtener_detalle_evento(league_slug, event_id):
+    """
+    Consulta el summary de ESPN para intentar obtener datos extra:
+    goleadores, jugadas importantes, estadísticas, etc.
+    """
+    if not event_id:
+        return {}
+
+    url = ESPN_SUMMARY_BASE.format(league=league_slug)
+
+    params = {
+        "region": "ar",
+        "lang": "es",
+        "event": event_id,
+    }
+
+    try:
+        r = requests.get(url, headers=HEADERS, params=params, timeout=15)
+        r.raise_for_status()
+        return r.json()
+
+    except Exception:
+        return {}
+
+
+def extraer_goleadores(detalle):
+    """
+    ESPN suele mandar los goles en scoringPlays.
+    No todos los partidos/ligas lo traen.
+    """
+    goleadores = []
+
+    scoring_plays = detalle.get("scoringPlays") or []
+
+    for play in scoring_plays:
+        atleta = play.get("athlete") or {}
+        equipo = play.get("team") or {}
+        clock = play.get("clock")
+
+        jugador = (
+            atleta.get("displayName")
+            or atleta.get("fullName")
+            or atleta.get("shortName")
+            or atleta.get("name")
+        )
+
+        equipo_nombre = (
+            equipo.get("displayName")
+            or equipo.get("shortDisplayName")
+            or equipo.get("name")
+            or equipo.get("abbreviation")
+        )
+
+        minuto = None
+
+        if isinstance(clock, dict):
+            minuto = clock.get("displayValue")
+        elif isinstance(clock, str):
+            minuto = clock
+
+        tipo = play.get("type") or {}
+
+        descripcion = (
+            play.get("text")
+            or play.get("displayValue")
+            or tipo.get("text")
+            or tipo.get("description")
+        )
+
+        score = play.get("score") or {}
+
+        goleadores.append({
+            "jugador": jugador,
+            "equipo": equipo_nombre,
+            "minuto": minuto,
+            "descripcion": descripcion,
+            "score": score,
+        })
+
+    return goleadores
+
+
 def obtener_logo(equipo):
     """
     Obtiene logo de equipo desde varias rutas posibles de ESPN.
@@ -374,37 +426,69 @@ def obtener_logo(equipo):
     Si no aparecen, arma un fallback con el ID del equipo.
     """
 
-    # 1) Forma más común en ESPN:
-    # "logos": [{"href": "..."}]
     logos = equipo.get("logos") or []
 
     if logos:
-        # Preferimos PNG si existe
         for logo in logos:
             href = logo.get("href")
             if href and ".png" in href.lower():
                 return href
 
-        # Si no hay PNG, usamos cualquier href válido
         for logo in logos:
             href = logo.get("href")
             if href:
                 return href
 
-    # 2) Fallback directo:
-    # "logo": "https://..."
     logo_directo = equipo.get("logo")
     if logo_directo:
         return logo_directo
 
-    # 3) Fallback por ID de equipo ESPN
-    # Muchos equipos usan este formato:
-    # https://a.espncdn.com/i/teamlogos/soccer/500/{id}.png
     equipo_id = equipo.get("id")
     if equipo_id:
         return f"https://a.espncdn.com/i/teamlogos/soccer/500/{equipo_id}.png"
 
     return None
+
+
+def calcular_resultado(marcador_local, marcador_visitante):
+    if marcador_local is None or marcador_visitante is None:
+        return None
+
+    return f"{marcador_local}-{marcador_visitante}"
+
+
+def debe_consultar_goleadores(estado, marcador_local, marcador_visitante):
+    if not FETCH_SCORERS:
+        return False
+
+    total_goles = 0
+
+    try:
+        total_goles = int(marcador_local or 0) + int(marcador_visitante or 0)
+    except Exception:
+        total_goles = 0
+
+    estado_nombre = estado.get("name")
+    estado_id = estado.get("id")
+
+    # Consulta si hay goles, está en vivo o ya terminó
+    if total_goles > 0:
+        return True
+
+    if estado_nombre in [
+        "STATUS_IN_PROGRESS",
+        "STATUS_HALFTIME",
+        "STATUS_FULL_TIME",
+        "STATUS_FINAL",
+        "STATUS_END_PERIOD",
+    ]:
+        return True
+
+    # Algunos ESPN usan ids
+    if str(estado_id) in ["2", "3"]:
+        return True
+
+    return False
 
 
 def limpiar_evento(evento, league_slug, league_name):
@@ -463,6 +547,14 @@ def limpiar_evento(evento, league_slug, league_name):
 
     prioridad = LEAGUE_PRIORITY.get(league_slug, 9999)
 
+    resultado = calcular_resultado(marcador_local, marcador_visitante)
+
+    goleadores = []
+
+    if debe_consultar_goleadores(estado, marcador_local, marcador_visitante):
+        detalle = obtener_detalle_evento(league_slug, evento.get("id"))
+        goleadores = extraer_goleadores(detalle)
+
     return {
         "id": evento.get("id"),
 
@@ -497,6 +589,8 @@ def limpiar_evento(evento, league_slug, league_name):
 
         "marcador_local": marcador_local,
         "marcador_visitante": marcador_visitante,
+        "resultado": resultado,
+        "goleadores": goleadores,
 
         "fecha_espn": fecha_utc,
         "url_espn": url_espn,
@@ -614,7 +708,7 @@ def agrupar_por_liga(partidos):
 def guardar_json(partidos, errores):
     salida = {
         "fuente": "ESPN Argentina",
-        "metodo": "scoreboard por competición",
+        "metodo": "scoreboard por competición + summary para goleadores",
         "fecha_scrapeo": fecha_argentina().isoformat(),
         "total": len(partidos),
         "total_ligas_consultadas": len(LEAGUES),
