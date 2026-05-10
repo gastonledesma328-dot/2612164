@@ -1,7 +1,7 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-05-10T05:33:01.342258-03:00",
+  "fecha_scrapeo": "2026-05-10T07:01:48.455548-03:00",
   "total": 135,
   "total_ligas_consultadas": 116,
   "partidos": [
@@ -3481,7 +3481,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T05:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859385/avispa-fukuoka-shimizu-s-pulse"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859385"
     },
     {
       "id": "401859386",
@@ -3518,7 +3518,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T05:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859386/fagiano-okayama-vissel-kobe"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859386"
     },
     {
       "id": "401859387",
@@ -3555,7 +3555,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T05:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859387/kashima-antlers-yokohama-f-marinos"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859387"
     },
     {
       "id": "401859388",
@@ -3592,7 +3592,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T06:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859388/tokyo-verdy-1969-fc-tokyo"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859388"
     },
     {
       "id": "401859389",
@@ -3615,21 +3615,21 @@
       },
       "fecha": "2026-05-10",
       "hora_inicio": "03:00",
-      "hora": "42'",
-      "mostrar_tiempo": "42'",
-      "estado": "First Half",
-      "estado_corto": "42'",
-      "estado_nombre": "STATUS_FIRST_HALF",
+      "hora": "90'+5'",
+      "mostrar_tiempo": "90'+5'",
+      "estado": "Second Half",
+      "estado_corto": "90'+5'",
+      "estado_nombre": "STATUS_SECOND_HALF",
       "completado": false,
-      "minuto": "42'",
-      "periodo": 1,
+      "minuto": "90'+5'",
+      "periodo": 2,
       "marcador_local": "0",
-      "marcador_visitante": "0",
-      "resultado": "0-0",
+      "marcador_visitante": "1",
+      "resultado": "0-1",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T06:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859389/sanfrecce-hiroshima-gamba-osaka"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859389"
     },
     {
       "id": "401859390",
@@ -3652,17 +3652,17 @@
       },
       "fecha": "2026-05-10",
       "hora_inicio": "04:00",
-      "hora": "40'",
-      "mostrar_tiempo": "40'",
-      "estado": "First Half",
-      "estado_corto": "40'",
-      "estado_nombre": "STATUS_FIRST_HALF",
-      "completado": false,
-      "minuto": "40'",
-      "periodo": 1,
-      "marcador_local": "0",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
+      "marcador_local": "1",
       "marcador_visitante": "0",
-      "resultado": "0-0",
+      "resultado": "1-0",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T07:00Z",
@@ -3689,17 +3689,17 @@
       },
       "fecha": "2026-05-10",
       "hora_inicio": "04:00",
-      "hora": "41'",
-      "mostrar_tiempo": "41'",
-      "estado": "First Half",
-      "estado_corto": "41'",
-      "estado_nombre": "STATUS_FIRST_HALF",
-      "completado": false,
-      "minuto": "41'",
-      "periodo": 1,
-      "marcador_local": "2",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
+      "marcador_local": "3",
       "marcador_visitante": "0",
-      "resultado": "2-0",
+      "resultado": "3-0",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T07:00Z",
@@ -3726,17 +3726,17 @@
       },
       "fecha": "2026-05-10",
       "hora_inicio": "05:00",
-      "hora": "29'",
-      "mostrar_tiempo": "29'",
-      "estado": "First Half",
-      "estado_corto": "29'",
-      "estado_nombre": "STATUS_FIRST_HALF",
-      "completado": false,
-      "minuto": "29'",
-      "periodo": 1,
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
       "marcador_local": "0",
-      "marcador_visitante": "1",
-      "resultado": "0-1",
+      "marcador_visitante": "2",
+      "resultado": "0-2",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T08:00Z",
@@ -3763,18 +3763,18 @@
       },
       "fecha": "2026-05-10",
       "hora_inicio": "06:30",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "13'",
+      "mostrar_tiempo": "13'",
+      "estado": "First Half",
+      "estado_corto": "13'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "13'",
+      "periodo": 1,
+      "marcador_local": "0",
+      "marcador_visitante": "0",
+      "resultado": "0-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T09:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401861375/wuhan-three-towns-qingdao-west-coast"
@@ -4096,18 +4096,18 @@
       },
       "fecha": "2026-05-10",
       "hora_inicio": "06:30",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "27'",
+      "mostrar_tiempo": "27'",
+      "estado": "First Half",
+      "estado_corto": "27'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "27'",
+      "periodo": 1,
+      "marcador_local": "0",
+      "marcador_visitante": "0",
+      "resultado": "0-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-10T09:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/743728/krylia-sovetov-gazovik-orenburg"
@@ -8684,7 +8684,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T05:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859385/avispa-fukuoka-shimizu-s-pulse"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859385"
         },
         {
           "id": "401859386",
@@ -8721,7 +8721,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T05:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859386/fagiano-okayama-vissel-kobe"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859386"
         },
         {
           "id": "401859387",
@@ -8758,7 +8758,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T05:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859387/kashima-antlers-yokohama-f-marinos"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859387"
         },
         {
           "id": "401859388",
@@ -8795,7 +8795,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T06:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859388/tokyo-verdy-1969-fc-tokyo"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859388"
         },
         {
           "id": "401859389",
@@ -8818,21 +8818,21 @@
           },
           "fecha": "2026-05-10",
           "hora_inicio": "03:00",
-          "hora": "42'",
-          "mostrar_tiempo": "42'",
-          "estado": "First Half",
-          "estado_corto": "42'",
-          "estado_nombre": "STATUS_FIRST_HALF",
+          "hora": "90'+5'",
+          "mostrar_tiempo": "90'+5'",
+          "estado": "Second Half",
+          "estado_corto": "90'+5'",
+          "estado_nombre": "STATUS_SECOND_HALF",
           "completado": false,
-          "minuto": "42'",
-          "periodo": 1,
+          "minuto": "90'+5'",
+          "periodo": 2,
           "marcador_local": "0",
-          "marcador_visitante": "0",
-          "resultado": "0-0",
+          "marcador_visitante": "1",
+          "resultado": "0-1",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T06:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859389/sanfrecce-hiroshima-gamba-osaka"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859389"
         },
         {
           "id": "401859390",
@@ -8855,17 +8855,17 @@
           },
           "fecha": "2026-05-10",
           "hora_inicio": "04:00",
-          "hora": "40'",
-          "mostrar_tiempo": "40'",
-          "estado": "First Half",
-          "estado_corto": "40'",
-          "estado_nombre": "STATUS_FIRST_HALF",
-          "completado": false,
-          "minuto": "40'",
-          "periodo": 1,
-          "marcador_local": "0",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
+          "marcador_local": "1",
           "marcador_visitante": "0",
-          "resultado": "0-0",
+          "resultado": "1-0",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T07:00Z",
@@ -8892,17 +8892,17 @@
           },
           "fecha": "2026-05-10",
           "hora_inicio": "04:00",
-          "hora": "41'",
-          "mostrar_tiempo": "41'",
-          "estado": "First Half",
-          "estado_corto": "41'",
-          "estado_nombre": "STATUS_FIRST_HALF",
-          "completado": false,
-          "minuto": "41'",
-          "periodo": 1,
-          "marcador_local": "2",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
+          "marcador_local": "3",
           "marcador_visitante": "0",
-          "resultado": "2-0",
+          "resultado": "3-0",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T07:00Z",
@@ -8929,17 +8929,17 @@
           },
           "fecha": "2026-05-10",
           "hora_inicio": "05:00",
-          "hora": "29'",
-          "mostrar_tiempo": "29'",
-          "estado": "First Half",
-          "estado_corto": "29'",
-          "estado_nombre": "STATUS_FIRST_HALF",
-          "completado": false,
-          "minuto": "29'",
-          "periodo": 1,
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
           "marcador_local": "0",
-          "marcador_visitante": "1",
-          "resultado": "0-1",
+          "marcador_visitante": "2",
+          "resultado": "0-2",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T08:00Z",
@@ -8974,18 +8974,18 @@
           },
           "fecha": "2026-05-10",
           "hora_inicio": "06:30",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "13'",
+          "mostrar_tiempo": "13'",
+          "estado": "First Half",
+          "estado_corto": "13'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "13'",
+          "periodo": 1,
+          "marcador_local": "0",
+          "marcador_visitante": "0",
+          "resultado": "0-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T09:30Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401861375/wuhan-three-towns-qingdao-west-coast"
@@ -9807,18 +9807,18 @@
           },
           "fecha": "2026-05-10",
           "hora_inicio": "06:30",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "27'",
+          "mostrar_tiempo": "27'",
+          "estado": "First Half",
+          "estado_corto": "27'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "27'",
+          "periodo": 1,
+          "marcador_local": "0",
+          "marcador_visitante": "0",
+          "resultado": "0-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-10T09:30Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/743728/krylia-sovetov-gazovik-orenburg"
@@ -10298,102 +10298,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401964"
-    },
-    {
-      "liga": "KNVB Beker",
-      "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401964"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407276"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401964"
-    },
-    {
-      "liga": "Taça de Portugal",
-      "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407276"
     },
     {
       "liga": "Liga Portugal 2",
       "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407276"
     },
     {
-      "liga": "Ekstraklasa Polonia",
-      "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "liga": "KNVB Beker",
+      "slug": "ned.knvb_beker",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407276"
+    },
+    {
+      "liga": "Taça de Portugal",
+      "slug": "por.taca_de_portugal",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407276"
     },
     {
       "liga": "HNL Croacia",
       "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407276"
     },
     {
-      "liga": "Liga I Rumania",
-      "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "liga": "Ekstraklasa Polonia",
+      "slug": "pol.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407276"
     },
     {
       "liga": "Premier League Ucrania",
       "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
+    },
+    {
+      "liga": "Liga I Rumania",
+      "slug": "rom.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
     },
     {
       "liga": "SuperLiga Serbia",
       "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407276"
     },
     {
       "liga": "USL Championship",
       "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
     },
     {
       "liga": "Copa MX",
       "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
     },
     {
       "liga": "K League 1 Corea",
       "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
-    },
-    {
-      "liga": "J2 League Japón",
-      "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
-    },
-    {
-      "liga": "UAE Pro League",
-      "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
     },
     {
       "liga": "Qatar Stars League",
       "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401965"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
+    },
+    {
+      "liga": "J2 League Japón",
+      "slug": "jpn.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
+    },
+    {
+      "liga": "UAE Pro League",
+      "slug": "uae.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
     },
     {
       "liga": "Premier League Egipto",
       "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401966"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
     },
     {
       "liga": "Botola Marruecos",
       "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401966"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
     },
     {
       "liga": "Copa Intercontinental FIFA",
       "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778401966"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260510&limit=300&_=1778407277"
     }
   ]
 }
