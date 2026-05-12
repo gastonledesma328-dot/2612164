@@ -1,7 +1,7 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-05-12T17:12:12.674043-03:00",
+  "fecha_scrapeo": "2026-05-12T18:42:02.302160-03:00",
   "total": 31,
   "total_ligas_consultadas": 116,
   "partidos": [
@@ -40,7 +40,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-12T17:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748500/levante-celta-vigo"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748500"
     },
     {
       "id": "748499",
@@ -100,21 +100,21 @@
       },
       "fecha": "2026-05-12",
       "hora_inicio": "16:30",
-      "hora": "38'",
-      "mostrar_tiempo": "38'",
-      "estado": "First Half",
-      "estado_corto": "38'",
-      "estado_nombre": "STATUS_FIRST_HALF",
-      "completado": false,
-      "minuto": "38'",
-      "periodo": 1,
-      "marcador_local": "0",
-      "marcador_visitante": "1",
-      "resultado": "0-1",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
+      "marcador_local": "1",
+      "marcador_visitante": "2",
+      "resultado": "1-2",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-12T19:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748494"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748494/atletico-madrid-osasuna"
     },
     {
       "id": "401871356",
@@ -188,7 +188,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-12T16:45Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401872116"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401872116/juve-stabia-modena"
     },
     {
       "id": "401872117",
@@ -211,18 +211,18 @@
       },
       "fecha": "2026-05-12",
       "hora_inicio": "16:00",
-      "hora": "51'",
-      "mostrar_tiempo": "51'",
-      "estado": "Second Half",
-      "estado_corto": "51'",
-      "estado_nombre": "STATUS_SECOND_HALF",
+      "hora": "0'",
+      "mostrar_tiempo": "0'",
+      "estado": "Agendado",
+      "estado_corto": "Scheduled",
+      "estado_nombre": "STATUS_SCHEDULED",
       "completado": false,
-      "minuto": "51'",
-      "periodo": 2,
-      "marcador_local": "1",
-      "marcador_visitante": "0",
-      "resultado": "1-0",
-      "mostrar_marcador": true,
+      "minuto": "0'",
+      "periodo": null,
+      "marcador_local": null,
+      "marcador_visitante": null,
+      "resultado": null,
+      "mostrar_marcador": false,
       "goleadores": [],
       "fecha_espn": "2026-05-12T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401872117/us-avellino-catanzaro"
@@ -248,17 +248,17 @@
       },
       "fecha": "2026-05-12",
       "hora_inicio": "15:45",
-      "hora": "70'",
-      "mostrar_tiempo": "70'",
-      "estado": "Second Half",
-      "estado_corto": "70'",
-      "estado_nombre": "STATUS_SECOND_HALF",
-      "completado": false,
-      "minuto": "70'",
-      "periodo": 2,
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
       "marcador_local": "0",
-      "marcador_visitante": "1",
-      "resultado": "0-1",
+      "marcador_visitante": "2",
+      "resultado": "0-2",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-12T18:45Z",
@@ -285,14 +285,14 @@
       },
       "fecha": "2026-05-12",
       "hora_inicio": "15:45",
-      "hora": "66'",
-      "mostrar_tiempo": "66'",
-      "estado": "Second Half",
-      "estado_corto": "66'",
-      "estado_nombre": "STATUS_SECOND_HALF",
-      "completado": false,
-      "minuto": "66'",
-      "periodo": 2,
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
       "marcador_local": "0",
       "marcador_visitante": "0",
       "resultado": "0-0",
@@ -322,13 +322,13 @@
       },
       "fecha": "2026-05-12",
       "hora_inicio": "15:45",
-      "hora": "69'",
-      "mostrar_tiempo": "69'",
-      "estado": "Second Half",
-      "estado_corto": "69'",
-      "estado_nombre": "STATUS_SECOND_HALF",
-      "completado": false,
-      "minuto": "69'",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": "90'+6'",
       "periodo": 2,
       "marcador_local": "1",
       "marcador_visitante": "0",
@@ -692,18 +692,18 @@
       },
       "fecha": "2026-05-12",
       "hora_inicio": "16:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
-      "completado": false,
-      "minuto": "0'",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
       "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "marcador_local": "0",
+      "marcador_visitante": "0",
+      "resultado": "0-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-12T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867143/universitario-de-vinto-san-antonio-bulo-bulo"
@@ -891,7 +891,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-12T16:20Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756190"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756190/al-okhdood-al-kholood"
     },
     {
       "id": "756183",
@@ -928,7 +928,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-12T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756183"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756183/al-hilal-al-nassr"
     },
     {
       "id": "401854054",
@@ -1142,15 +1142,15 @@
       "estado_corto": "F",
       "estado_nombre": "STATUS_FULL_TIME",
       "completado": true,
-      "minuto": "90'+6'",
-      "periodo": 2,
+      "minuto": null,
+      "periodo": null,
       "marcador_local": "3",
       "marcador_visitante": "2",
       "resultado": "3-2",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-05-12T17:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/755446"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/755446/mamelodi-sundowns-ts-galaxy"
     }
   ],
   "agrupado_por_liga": [
@@ -1195,7 +1195,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-12T17:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748500/levante-celta-vigo"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748500"
         },
         {
           "id": "748499",
@@ -1255,21 +1255,21 @@
           },
           "fecha": "2026-05-12",
           "hora_inicio": "16:30",
-          "hora": "38'",
-          "mostrar_tiempo": "38'",
-          "estado": "First Half",
-          "estado_corto": "38'",
-          "estado_nombre": "STATUS_FIRST_HALF",
-          "completado": false,
-          "minuto": "38'",
-          "periodo": 1,
-          "marcador_local": "0",
-          "marcador_visitante": "1",
-          "resultado": "0-1",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
+          "marcador_local": "1",
+          "marcador_visitante": "2",
+          "resultado": "1-2",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-12T19:30Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748494"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/748494/atletico-madrid-osasuna"
         }
       ]
     },
@@ -1359,7 +1359,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-12T16:45Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401872116"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401872116/juve-stabia-modena"
         },
         {
           "id": "401872117",
@@ -1382,18 +1382,18 @@
           },
           "fecha": "2026-05-12",
           "hora_inicio": "16:00",
-          "hora": "51'",
-          "mostrar_tiempo": "51'",
-          "estado": "Second Half",
-          "estado_corto": "51'",
-          "estado_nombre": "STATUS_SECOND_HALF",
+          "hora": "0'",
+          "mostrar_tiempo": "0'",
+          "estado": "Agendado",
+          "estado_corto": "Scheduled",
+          "estado_nombre": "STATUS_SCHEDULED",
           "completado": false,
-          "minuto": "51'",
-          "periodo": 2,
-          "marcador_local": "1",
-          "marcador_visitante": "0",
-          "resultado": "1-0",
-          "mostrar_marcador": true,
+          "minuto": "0'",
+          "periodo": null,
+          "marcador_local": null,
+          "marcador_visitante": null,
+          "resultado": null,
+          "mostrar_marcador": false,
           "goleadores": [],
           "fecha_espn": "2026-05-12T19:00Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401872117/us-avellino-catanzaro"
@@ -1427,17 +1427,17 @@
           },
           "fecha": "2026-05-12",
           "hora_inicio": "15:45",
-          "hora": "70'",
-          "mostrar_tiempo": "70'",
-          "estado": "Second Half",
-          "estado_corto": "70'",
-          "estado_nombre": "STATUS_SECOND_HALF",
-          "completado": false,
-          "minuto": "70'",
-          "periodo": 2,
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
           "marcador_local": "0",
-          "marcador_visitante": "1",
-          "resultado": "0-1",
+          "marcador_visitante": "2",
+          "resultado": "0-2",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-12T18:45Z",
@@ -1464,14 +1464,14 @@
           },
           "fecha": "2026-05-12",
           "hora_inicio": "15:45",
-          "hora": "66'",
-          "mostrar_tiempo": "66'",
-          "estado": "Second Half",
-          "estado_corto": "66'",
-          "estado_nombre": "STATUS_SECOND_HALF",
-          "completado": false,
-          "minuto": "66'",
-          "periodo": 2,
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
           "marcador_local": "0",
           "marcador_visitante": "0",
           "resultado": "0-0",
@@ -1501,13 +1501,13 @@
           },
           "fecha": "2026-05-12",
           "hora_inicio": "15:45",
-          "hora": "69'",
-          "mostrar_tiempo": "69'",
-          "estado": "Second Half",
-          "estado_corto": "69'",
-          "estado_nombre": "STATUS_SECOND_HALF",
-          "completado": false,
-          "minuto": "69'",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": "90'+6'",
           "periodo": 2,
           "marcador_local": "1",
           "marcador_visitante": "0",
@@ -1919,18 +1919,18 @@
           },
           "fecha": "2026-05-12",
           "hora_inicio": "16:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
-          "completado": false,
-          "minuto": "0'",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
           "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "marcador_local": "0",
+          "marcador_visitante": "0",
+          "resultado": "0-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-12T19:00Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867143/universitario-de-vinto-san-antonio-bulo-bulo"
@@ -2134,7 +2134,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-12T16:20Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756190"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756190/al-okhdood-al-kholood"
         },
         {
           "id": "756183",
@@ -2171,7 +2171,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-12T18:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756183"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/756183/al-hilal-al-nassr"
         }
       ]
     },
@@ -2298,15 +2298,15 @@
           "estado_corto": "F",
           "estado_nombre": "STATUS_FULL_TIME",
           "completado": true,
-          "minuto": "90'+6'",
-          "periodo": 2,
+          "minuto": null,
+          "periodo": null,
           "marcador_local": "3",
           "marcador_visitante": "2",
           "resultado": "3-2",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-05-12T17:30Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/755446"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/755446/mamelodi-sundowns-ts-galaxy"
         }
       ]
     },
@@ -2434,102 +2434,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616722"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622116"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616722"
-    },
-    {
-      "liga": "Liga Portugal 2",
-      "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
-    },
-    {
-      "liga": "Taça de Portugal",
-      "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622116"
     },
     {
       "liga": "KNVB Beker",
       "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616722"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
+    },
+    {
+      "liga": "Taça de Portugal",
+      "slug": "por.taca_de_portugal",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
+    },
+    {
+      "liga": "Liga Portugal 2",
+      "slug": "por.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
     },
     {
       "liga": "Ekstraklasa Polonia",
       "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
-    },
-    {
-      "liga": "HNL Croacia",
-      "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
-    },
-    {
-      "liga": "Premier League Ucrania",
-      "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
     },
     {
       "liga": "SuperLiga Serbia",
       "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
-    },
-    {
-      "liga": "Liga I Rumania",
-      "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
     },
     {
       "liga": "USL Championship",
       "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
+    },
+    {
+      "liga": "Liga I Rumania",
+      "slug": "rom.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
+    },
+    {
+      "liga": "HNL Croacia",
+      "slug": "cro.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
     },
     {
       "liga": "Copa MX",
       "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
+    },
+    {
+      "liga": "Premier League Ucrania",
+      "slug": "ukr.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
-    },
-    {
-      "liga": "J2 League Japón",
-      "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
-    },
-    {
-      "liga": "UAE Pro League",
-      "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616724"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
     },
     {
       "liga": "K League 1 Corea",
       "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616723"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
+    },
+    {
+      "liga": "J2 League Japón",
+      "slug": "jpn.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
+    },
+    {
+      "liga": "UAE Pro League",
+      "slug": "uae.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
     },
     {
       "liga": "Qatar Stars League",
       "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616724"
-    },
-    {
-      "liga": "Botola Marruecos",
-      "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616724"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622117"
     },
     {
       "liga": "Premier League Egipto",
       "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616724"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622118"
     },
     {
       "liga": "Copa Intercontinental FIFA",
       "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778616724"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622118"
+    },
+    {
+      "liga": "Botola Marruecos",
+      "slug": "mar.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260512&limit=300&_=1778622118"
     }
   ]
 }
