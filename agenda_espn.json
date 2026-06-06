@@ -1,7 +1,7 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-06-06T15:52:46.534825-03:00",
+  "fecha_scrapeo": "2026-06-06T17:07:38.477509-03:00",
   "total": 25,
   "total_ligas_consultadas": 116,
   "partidos": [
@@ -26,18 +26,18 @@
       },
       "fecha": "2026-06-06",
       "hora_inicio": "16:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "11'",
+      "mostrar_tiempo": "11'",
+      "estado": "First Half",
+      "estado_corto": "11'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "11'",
+      "periodo": 1,
+      "marcador_local": "0",
+      "marcador_visitante": "0",
+      "resultado": "0-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-06-06T19:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874275/almeria-castellon"
@@ -100,21 +100,21 @@
       },
       "fecha": "2026-06-06",
       "hora_inicio": "14:00",
-      "hora": "32'",
-      "mostrar_tiempo": "32'",
-      "estado": "En progreso",
-      "estado_corto": "32'",
-      "estado_nombre": "STATUS_IN_PROGRESS",
-      "completado": false,
-      "minuto": "32'",
-      "periodo": 1,
-      "marcador_local": "0",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
+      "marcador_local": "3",
       "marcador_visitante": "0",
-      "resultado": "0-0",
+      "resultado": "3-0",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-06-06T17:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843906"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843906/gimnasia-y-esgrima-jujuy-atlanta"
     },
     {
       "id": "401843915",
@@ -137,21 +137,21 @@
       },
       "fecha": "2026-06-06",
       "hora_inicio": "15:00",
-      "hora": "40'",
-      "mostrar_tiempo": "40'",
-      "estado": "En progreso",
-      "estado_corto": "40'",
-      "estado_nombre": "STATUS_IN_PROGRESS",
-      "completado": false,
-      "minuto": "40'",
-      "periodo": 1,
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
       "marcador_local": "0",
       "marcador_visitante": "0",
       "resultado": "0-0",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-06-06T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843915"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843915/estudiantes-buenos-aires-los-andes"
     },
     {
       "id": "401843903",
@@ -248,21 +248,21 @@
       },
       "fecha": "2026-06-06",
       "hora_inicio": "16:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "45'+3'",
+      "mostrar_tiempo": "45'+3'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
+      "estado_nombre": "STATUS_HALFTIME",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "45'+3'",
+      "periodo": 1,
+      "marcador_local": "1",
+      "marcador_visitante": "0",
+      "resultado": "1-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-06-06T19:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843916/nueva-chicago-san-martin-san-juan"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843916"
     },
     {
       "id": "401843907",
@@ -285,21 +285,21 @@
       },
       "fecha": "2026-06-06",
       "hora_inicio": "16:30",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "28'",
+      "mostrar_tiempo": "28'",
+      "estado": "First Half",
+      "estado_corto": "28'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "28'",
+      "periodo": 1,
+      "marcador_local": "1",
+      "marcador_visitante": "0",
+      "resultado": "1-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-06-06T19:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843907/colegiales-atletico-rafaela"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843907"
     },
     {
       "id": "401843904",
@@ -396,21 +396,21 @@
       },
       "fecha": "2026-06-06",
       "hora_inicio": "15:00",
-      "hora": "10'",
-      "mostrar_tiempo": "10'",
-      "estado": "En progreso",
-      "estado_corto": "10'",
-      "estado_nombre": "STATUS_IN_PROGRESS",
-      "completado": false,
-      "minuto": "10'",
-      "periodo": 1,
-      "marcador_local": "1",
-      "marcador_visitante": "1",
-      "resultado": "1-1",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
+      "marcador_local": "2",
+      "marcador_visitante": "4",
+      "resultado": "2-4",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-06-06T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874092"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874092/deportivo-maldonado-montevideo-city-torque"
     },
     {
       "id": "401874023",
@@ -959,18 +959,18 @@
           },
           "fecha": "2026-06-06",
           "hora_inicio": "16:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "11'",
+          "mostrar_tiempo": "11'",
+          "estado": "First Half",
+          "estado_corto": "11'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "11'",
+          "periodo": 1,
+          "marcador_local": "0",
+          "marcador_visitante": "0",
+          "resultado": "0-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-06-06T19:00Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874275/almeria-castellon"
@@ -1049,21 +1049,21 @@
           },
           "fecha": "2026-06-06",
           "hora_inicio": "14:00",
-          "hora": "32'",
-          "mostrar_tiempo": "32'",
-          "estado": "En progreso",
-          "estado_corto": "32'",
-          "estado_nombre": "STATUS_IN_PROGRESS",
-          "completado": false,
-          "minuto": "32'",
-          "periodo": 1,
-          "marcador_local": "0",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
+          "marcador_local": "3",
           "marcador_visitante": "0",
-          "resultado": "0-0",
+          "resultado": "3-0",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-06-06T17:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843906"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843906/gimnasia-y-esgrima-jujuy-atlanta"
         },
         {
           "id": "401843915",
@@ -1086,21 +1086,21 @@
           },
           "fecha": "2026-06-06",
           "hora_inicio": "15:00",
-          "hora": "40'",
-          "mostrar_tiempo": "40'",
-          "estado": "En progreso",
-          "estado_corto": "40'",
-          "estado_nombre": "STATUS_IN_PROGRESS",
-          "completado": false,
-          "minuto": "40'",
-          "periodo": 1,
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
           "marcador_local": "0",
           "marcador_visitante": "0",
           "resultado": "0-0",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-06-06T18:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843915"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843915/estudiantes-buenos-aires-los-andes"
         },
         {
           "id": "401843903",
@@ -1197,21 +1197,21 @@
           },
           "fecha": "2026-06-06",
           "hora_inicio": "16:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "45'+3'",
+          "mostrar_tiempo": "45'+3'",
+          "estado": "Medio Tiempo",
+          "estado_corto": "MT",
+          "estado_nombre": "STATUS_HALFTIME",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "45'+3'",
+          "periodo": 1,
+          "marcador_local": "1",
+          "marcador_visitante": "0",
+          "resultado": "1-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-06-06T19:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843916/nueva-chicago-san-martin-san-juan"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843916"
         },
         {
           "id": "401843907",
@@ -1234,21 +1234,21 @@
           },
           "fecha": "2026-06-06",
           "hora_inicio": "16:30",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "28'",
+          "mostrar_tiempo": "28'",
+          "estado": "First Half",
+          "estado_corto": "28'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "28'",
+          "periodo": 1,
+          "marcador_local": "1",
+          "marcador_visitante": "0",
+          "resultado": "1-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-06-06T19:30Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843907/colegiales-atletico-rafaela"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401843907"
         },
         {
           "id": "401843904",
@@ -1353,21 +1353,21 @@
           },
           "fecha": "2026-06-06",
           "hora_inicio": "15:00",
-          "hora": "10'",
-          "mostrar_tiempo": "10'",
-          "estado": "En progreso",
-          "estado_corto": "10'",
-          "estado_nombre": "STATUS_IN_PROGRESS",
-          "completado": false,
-          "minuto": "10'",
-          "periodo": 1,
-          "marcador_local": "1",
-          "marcador_visitante": "1",
-          "resultado": "1-1",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
+          "marcador_local": "2",
+          "marcador_visitante": "4",
+          "resultado": "2-4",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-06-06T18:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874092"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874092/deportivo-maldonado-montevideo-city-torque"
         },
         {
           "id": "401874023",
@@ -1908,104 +1908,104 @@
   ],
   "errores": [
     {
-      "liga": "3. Liga",
-      "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771963"
-    },
-    {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771963"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776453"
+    },
+    {
+      "liga": "3. Liga",
+      "slug": "ger.3",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776453"
     },
     {
       "liga": "Liga Portugal 2",
       "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771963"
-    },
-    {
-      "liga": "KNVB Beker",
-      "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771963"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
     },
     {
       "liga": "Taça de Portugal",
       "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771963"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
+    },
+    {
+      "liga": "KNVB Beker",
+      "slug": "ned.knvb_beker",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
     },
     {
       "liga": "SuperLiga Serbia",
       "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771963"
-    },
-    {
-      "liga": "HNL Croacia",
-      "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771963"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
     },
     {
       "liga": "Ekstraklasa Polonia",
       "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771963"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
     },
     {
-      "liga": "USL Championship",
-      "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
+      "liga": "HNL Croacia",
+      "slug": "cro.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
     },
     {
       "liga": "Premier League Ucrania",
       "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
     },
     {
       "liga": "Liga I Rumania",
       "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771963"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
+    },
+    {
+      "liga": "USL Championship",
+      "slug": "usa.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
     },
     {
       "liga": "Copa MX",
       "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
-    },
-    {
-      "liga": "K League 1 Corea",
-      "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776454"
     },
     {
       "liga": "J2 League Japón",
       "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776455"
+    },
+    {
+      "liga": "K League 1 Corea",
+      "slug": "kor.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776455"
     },
     {
       "liga": "UAE Pro League",
       "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776455"
     },
     {
       "liga": "Qatar Stars League",
       "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776455"
     },
     {
       "liga": "Botola Marruecos",
       "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
-    },
-    {
-      "liga": "Copa Intercontinental FIFA",
-      "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776455"
     },
     {
       "liga": "Premier League Egipto",
       "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780771964"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776455"
+    },
+    {
+      "liga": "Copa Intercontinental FIFA",
+      "slug": "fifa.intercontinental",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260606&limit=300&_=1780776455"
     }
   ]
 }
