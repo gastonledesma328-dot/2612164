@@ -1,31 +1,31 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-06-08T20:02:09.279860-03:00",
-  "total": 4,
+  "fecha_scrapeo": "2026-06-08T21:14:10.952155-03:00",
+  "total": 3,
   "total_ligas_consultadas": 116,
   "partidos": [
     {
-      "id": "401873960",
-      "partido": "América Mineiro vs Atlético Goianiense",
-      "local": "América Mineiro",
-      "visitante": "Atlético Goianiense",
-      "local_id": "6154",
-      "visitante_id": "10357",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6154.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10357.png",
-      "liga": "Brasileirão Serie B",
-      "liga_corta": "Brasileirão Serie B",
-      "liga_slug": "bra.2",
-      "prioridad_liga": 112,
+      "id": "401874290",
+      "partido": "Almería vs Castellón",
+      "local": "Almería",
+      "visitante": "Castellón",
+      "local_id": "6832",
+      "visitante_id": "4438",
+      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6832.png",
+      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4438.png",
+      "liga": "LaLiga 2",
+      "liga_corta": "LaLiga 2",
+      "liga_slug": "esp.2",
+      "prioridad_liga": 36,
       "competicion": {
-        "nombre": "Brasileirão Serie B",
-        "nombre_corto": "Brasileirão Serie B",
-        "slug": "bra.2",
-        "prioridad": 112
+        "nombre": "LaLiga 2",
+        "nombre_corto": "LaLiga 2",
+        "slug": "esp.2",
+        "prioridad": 36
       },
-      "fecha": "2026-06-08",
-      "hora_inicio": "20:00",
+      "fecha": "2026-06-09",
+      "hora_inicio": "16:00",
       "hora": "0'",
       "mostrar_tiempo": "0'",
       "estado": "Agendado",
@@ -39,18 +39,18 @@
       "resultado": null,
       "mostrar_marcador": false,
       "goleadores": [],
-      "fecha_espn": "2026-06-08T23:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873960/atletico-goianiense-america-mineiro"
+      "fecha_espn": "2026-06-09T19:00Z",
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874290/castellon-almeria"
     },
     {
-      "id": "401873942",
-      "partido": "Vila Nova vs Botafogo-SP",
-      "local": "Vila Nova",
-      "visitante": "Botafogo-SP",
-      "local_id": "9973",
-      "visitante_id": "10281",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9973.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10281.png",
+      "id": "401860175",
+      "partido": "Náutico vs Fortaleza",
+      "local": "Náutico",
+      "visitante": "Fortaleza",
+      "local_id": "7633",
+      "visitante_id": "6272",
+      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7633.png",
+      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6272.png",
       "liga": "Brasileirão Serie B",
       "liga_corta": "Brasileirão Serie B",
       "liga_slug": "bra.2",
@@ -61,8 +61,8 @@
         "slug": "bra.2",
         "prioridad": 112
       },
-      "fecha": "2026-06-08",
-      "hora_inicio": "20:00",
+      "fecha": "2026-06-09",
+      "hora_inicio": "19:00",
       "hora": "0'",
       "mostrar_tiempo": "0'",
       "estado": "Agendado",
@@ -76,85 +76,93 @@
       "resultado": null,
       "mostrar_marcador": false,
       "goleadores": [],
-      "fecha_espn": "2026-06-08T23:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873942/botafogo-sp-vila-nova"
+      "fecha_espn": "2026-06-09T22:00Z",
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401860175/fortaleza-nautico"
     },
     {
-      "id": "401874024",
-      "partido": "Liverpool vs Cerro Largo",
-      "local": "Liverpool",
-      "visitante": "Cerro Largo",
-      "local_id": "5492",
-      "visitante_id": "9902",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5492.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9902.png",
-      "liga": "Primera División Uruguay",
-      "liga_corta": "Primera División Uruguay",
-      "liga_slug": "uru.1",
-      "prioridad_liga": 130,
+      "id": "401860173",
+      "partido": "Ponte Preta vs Cuiabá",
+      "local": "Ponte Preta",
+      "visitante": "Cuiabá",
+      "local_id": "3459",
+      "visitante_id": "17313",
+      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3459.png",
+      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17313.png",
+      "liga": "Brasileirão Serie B",
+      "liga_corta": "Brasileirão Serie B",
+      "liga_slug": "bra.2",
+      "prioridad_liga": 112,
       "competicion": {
-        "nombre": "Primera División Uruguay",
-        "nombre_corto": "Primera División Uruguay",
-        "slug": "uru.1",
-        "prioridad": 130
+        "nombre": "Brasileirão Serie B",
+        "nombre_corto": "Brasileirão Serie B",
+        "slug": "bra.2",
+        "prioridad": 112
       },
-      "fecha": "2026-06-08",
+      "fecha": "2026-06-09",
       "hora_inicio": "19:00",
-      "hora": "45'+2'",
-      "mostrar_tiempo": "45'+2'",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
-      "estado_nombre": "STATUS_HALFTIME",
+      "hora": "0'",
+      "mostrar_tiempo": "0'",
+      "estado": "Agendado",
+      "estado_corto": "Scheduled",
+      "estado_nombre": "STATUS_SCHEDULED",
       "completado": false,
-      "minuto": "45'+2'",
-      "periodo": 1,
-      "marcador_local": "0",
-      "marcador_visitante": "0",
-      "resultado": "0-0",
-      "mostrar_marcador": true,
+      "minuto": "0'",
+      "periodo": null,
+      "marcador_local": null,
+      "marcador_visitante": null,
+      "resultado": null,
+      "mostrar_marcador": false,
       "goleadores": [],
-      "fecha_espn": "2026-06-08T22:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874024"
-    },
-    {
-      "id": "401873659",
-      "partido": "Atlético Nacional vs Atlético Junior",
-      "local": "Atlético Nacional",
-      "visitante": "Atlético Junior",
-      "local_id": "5264",
-      "visitante_id": "4815",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5264.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
-      "liga": "Primera A Colombia",
-      "liga_corta": "Primera A Colombia",
-      "liga_slug": "col.1",
-      "prioridad_liga": 132,
-      "competicion": {
-        "nombre": "Primera A Colombia",
-        "nombre_corto": "Primera A Colombia",
-        "slug": "col.1",
-        "prioridad": 132
-      },
-      "fecha": "2026-06-08",
-      "hora_inicio": "19:00",
-      "hora": "45'+5'",
-      "mostrar_tiempo": "45'+5'",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
-      "estado_nombre": "STATUS_HALFTIME",
-      "completado": false,
-      "minuto": "45'+5'",
-      "periodo": 1,
-      "marcador_local": "0",
-      "marcador_visitante": "0",
-      "resultado": "0-0",
-      "mostrar_marcador": true,
-      "goleadores": [],
-      "fecha_espn": "2026-06-08T22:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873659"
+      "fecha_espn": "2026-06-09T22:00Z",
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401860173/cuiaba-ponte-preta"
     }
   ],
   "agrupado_por_liga": [
+    {
+      "liga": "LaLiga 2",
+      "liga_slug": "esp.2",
+      "prioridad": 36,
+      "total": 1,
+      "partidos": [
+        {
+          "id": "401874290",
+          "partido": "Almería vs Castellón",
+          "local": "Almería",
+          "visitante": "Castellón",
+          "local_id": "6832",
+          "visitante_id": "4438",
+          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6832.png",
+          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4438.png",
+          "liga": "LaLiga 2",
+          "liga_corta": "LaLiga 2",
+          "liga_slug": "esp.2",
+          "prioridad_liga": 36,
+          "competicion": {
+            "nombre": "LaLiga 2",
+            "nombre_corto": "LaLiga 2",
+            "slug": "esp.2",
+            "prioridad": 36
+          },
+          "fecha": "2026-06-09",
+          "hora_inicio": "16:00",
+          "hora": "0'",
+          "mostrar_tiempo": "0'",
+          "estado": "Agendado",
+          "estado_corto": "Scheduled",
+          "estado_nombre": "STATUS_SCHEDULED",
+          "completado": false,
+          "minuto": "0'",
+          "periodo": null,
+          "marcador_local": null,
+          "marcador_visitante": null,
+          "resultado": null,
+          "mostrar_marcador": false,
+          "goleadores": [],
+          "fecha_espn": "2026-06-09T19:00Z",
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874290/castellon-almeria"
+        }
+      ]
+    },
     {
       "liga": "Brasileirão Serie B",
       "liga_slug": "bra.2",
@@ -162,14 +170,14 @@
       "total": 2,
       "partidos": [
         {
-          "id": "401873960",
-          "partido": "América Mineiro vs Atlético Goianiense",
-          "local": "América Mineiro",
-          "visitante": "Atlético Goianiense",
-          "local_id": "6154",
-          "visitante_id": "10357",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6154.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10357.png",
+          "id": "401860175",
+          "partido": "Náutico vs Fortaleza",
+          "local": "Náutico",
+          "visitante": "Fortaleza",
+          "local_id": "7633",
+          "visitante_id": "6272",
+          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7633.png",
+          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6272.png",
           "liga": "Brasileirão Serie B",
           "liga_corta": "Brasileirão Serie B",
           "liga_slug": "bra.2",
@@ -180,8 +188,8 @@
             "slug": "bra.2",
             "prioridad": 112
           },
-          "fecha": "2026-06-08",
-          "hora_inicio": "20:00",
+          "fecha": "2026-06-09",
+          "hora_inicio": "19:00",
           "hora": "0'",
           "mostrar_tiempo": "0'",
           "estado": "Agendado",
@@ -195,18 +203,18 @@
           "resultado": null,
           "mostrar_marcador": false,
           "goleadores": [],
-          "fecha_espn": "2026-06-08T23:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873960/atletico-goianiense-america-mineiro"
+          "fecha_espn": "2026-06-09T22:00Z",
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401860175/fortaleza-nautico"
         },
         {
-          "id": "401873942",
-          "partido": "Vila Nova vs Botafogo-SP",
-          "local": "Vila Nova",
-          "visitante": "Botafogo-SP",
-          "local_id": "9973",
-          "visitante_id": "10281",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9973.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10281.png",
+          "id": "401860173",
+          "partido": "Ponte Preta vs Cuiabá",
+          "local": "Ponte Preta",
+          "visitante": "Cuiabá",
+          "local_id": "3459",
+          "visitante_id": "17313",
+          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3459.png",
+          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17313.png",
           "liga": "Brasileirão Serie B",
           "liga_corta": "Brasileirão Serie B",
           "liga_slug": "bra.2",
@@ -217,8 +225,8 @@
             "slug": "bra.2",
             "prioridad": 112
           },
-          "fecha": "2026-06-08",
-          "hora_inicio": "20:00",
+          "fecha": "2026-06-09",
+          "hora_inicio": "19:00",
           "hora": "0'",
           "mostrar_tiempo": "0'",
           "estado": "Agendado",
@@ -232,98 +240,8 @@
           "resultado": null,
           "mostrar_marcador": false,
           "goleadores": [],
-          "fecha_espn": "2026-06-08T23:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873942/botafogo-sp-vila-nova"
-        }
-      ]
-    },
-    {
-      "liga": "Primera División Uruguay",
-      "liga_slug": "uru.1",
-      "prioridad": 130,
-      "total": 1,
-      "partidos": [
-        {
-          "id": "401874024",
-          "partido": "Liverpool vs Cerro Largo",
-          "local": "Liverpool",
-          "visitante": "Cerro Largo",
-          "local_id": "5492",
-          "visitante_id": "9902",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5492.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9902.png",
-          "liga": "Primera División Uruguay",
-          "liga_corta": "Primera División Uruguay",
-          "liga_slug": "uru.1",
-          "prioridad_liga": 130,
-          "competicion": {
-            "nombre": "Primera División Uruguay",
-            "nombre_corto": "Primera División Uruguay",
-            "slug": "uru.1",
-            "prioridad": 130
-          },
-          "fecha": "2026-06-08",
-          "hora_inicio": "19:00",
-          "hora": "45'+2'",
-          "mostrar_tiempo": "45'+2'",
-          "estado": "Medio Tiempo",
-          "estado_corto": "MT",
-          "estado_nombre": "STATUS_HALFTIME",
-          "completado": false,
-          "minuto": "45'+2'",
-          "periodo": 1,
-          "marcador_local": "0",
-          "marcador_visitante": "0",
-          "resultado": "0-0",
-          "mostrar_marcador": true,
-          "goleadores": [],
-          "fecha_espn": "2026-06-08T22:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401874024"
-        }
-      ]
-    },
-    {
-      "liga": "Primera A Colombia",
-      "liga_slug": "col.1",
-      "prioridad": 132,
-      "total": 1,
-      "partidos": [
-        {
-          "id": "401873659",
-          "partido": "Atlético Nacional vs Atlético Junior",
-          "local": "Atlético Nacional",
-          "visitante": "Atlético Junior",
-          "local_id": "5264",
-          "visitante_id": "4815",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5264.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
-          "liga": "Primera A Colombia",
-          "liga_corta": "Primera A Colombia",
-          "liga_slug": "col.1",
-          "prioridad_liga": 132,
-          "competicion": {
-            "nombre": "Primera A Colombia",
-            "nombre_corto": "Primera A Colombia",
-            "slug": "col.1",
-            "prioridad": 132
-          },
-          "fecha": "2026-06-08",
-          "hora_inicio": "19:00",
-          "hora": "45'+5'",
-          "mostrar_tiempo": "45'+5'",
-          "estado": "Medio Tiempo",
-          "estado_corto": "MT",
-          "estado_nombre": "STATUS_HALFTIME",
-          "completado": false,
-          "minuto": "45'+5'",
-          "periodo": 1,
-          "marcador_local": "0",
-          "marcador_visitante": "0",
-          "resultado": "0-0",
-          "mostrar_marcador": true,
-          "goleadores": [],
-          "fecha_espn": "2026-06-08T22:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873659"
+          "fecha_espn": "2026-06-09T22:00Z",
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401860173/cuiaba-ponte-preta"
         }
       ]
     }
@@ -332,102 +250,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959727"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964049"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959727"
-    },
-    {
-      "liga": "KNVB Beker",
-      "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959727"
-    },
-    {
-      "liga": "Taça de Portugal",
-      "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959727"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964049"
     },
     {
       "liga": "Liga Portugal 2",
       "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959727"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964049"
     },
     {
-      "liga": "HNL Croacia",
-      "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "liga": "Taça de Portugal",
+      "slug": "por.taca_de_portugal",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964049"
     },
     {
-      "liga": "Ekstraklasa Polonia",
-      "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "liga": "KNVB Beker",
+      "slug": "ned.knvb_beker",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964049"
     },
     {
       "liga": "Premier League Ucrania",
       "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
-      "liga": "SuperLiga Serbia",
-      "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "liga": "HNL Croacia",
+      "slug": "cro.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
       "liga": "USL Championship",
       "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
+    },
+    {
+      "liga": "SuperLiga Serbia",
+      "slug": "ser.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
       "liga": "Liga I Rumania",
       "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
+    },
+    {
+      "liga": "Ekstraklasa Polonia",
+      "slug": "pol.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
       "liga": "Copa MX",
       "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
-    },
-    {
-      "liga": "J2 League Japón",
-      "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
       "liga": "K League 1 Corea",
       "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
-      "liga": "Qatar Stars League",
-      "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "liga": "J2 League Japón",
+      "slug": "jpn.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
       "liga": "UAE Pro League",
       "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
-      "liga": "Premier League Egipto",
-      "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "liga": "Qatar Stars League",
+      "slug": "qat.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
       "liga": "Botola Marruecos",
       "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959728"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
+    },
+    {
+      "liga": "Premier League Egipto",
+      "slug": "egy.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     },
     {
       "liga": "Copa Intercontinental FIFA",
       "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260608&limit=300&_=1780959729"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260609&limit=300&_=1780964050"
     }
   ]
 }
