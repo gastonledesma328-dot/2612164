@@ -1,7 +1,7 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-06-20T19:48:55.898903-03:00",
+  "fecha_scrapeo": "2026-06-20T20:57:01.237569-03:00",
   "total": 18,
   "total_ligas_consultadas": 116,
   "partidos": [
@@ -211,13 +211,13 @@
       },
       "fecha": "2026-06-20",
       "hora_inicio": "19:00",
-      "hora": "45'+4'",
-      "mostrar_tiempo": "45'+4'",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
-      "estado_nombre": "STATUS_HALFTIME",
+      "hora": "20'",
+      "mostrar_tiempo": "20'",
+      "estado": "First Half",
+      "estado_corto": "20'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "45'+4'",
+      "minuto": "20'",
       "periodo": 1,
       "marcador_local": "0",
       "marcador_visitante": "0",
@@ -225,7 +225,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-06-20T22:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873966"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873966/botafogo-sp-ceara"
     },
     {
       "id": "401873974",
@@ -248,21 +248,21 @@
       },
       "fecha": "2026-06-20",
       "hora_inicio": "19:00",
-      "hora": "45'+3'",
-      "mostrar_tiempo": "45'+3'",
-      "estado": "En progreso",
-      "estado_corto": "45'+3'",
-      "estado_nombre": "STATUS_IN_PROGRESS",
+      "hora": "18'",
+      "mostrar_tiempo": "18'",
+      "estado": "First Half",
+      "estado_corto": "18'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "45'+3'",
+      "minuto": "18'",
       "periodo": 1,
-      "marcador_local": "3",
+      "marcador_local": "2",
       "marcador_visitante": "0",
-      "resultado": "3-0",
+      "resultado": "2-0",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-06-20T22:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873974"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873974/nautico-vila-nova"
     },
     {
       "id": "401843678",
@@ -402,8 +402,8 @@
       "estado_corto": "F",
       "estado_nombre": "STATUS_FULL_TIME",
       "completado": true,
-      "minuto": "90'+5'",
-      "periodo": 2,
+      "minuto": null,
+      "periodo": null,
       "marcador_local": "2",
       "marcador_visitante": "0",
       "resultado": "2-0",
@@ -901,13 +901,13 @@
           },
           "fecha": "2026-06-20",
           "hora_inicio": "19:00",
-          "hora": "45'+4'",
-          "mostrar_tiempo": "45'+4'",
-          "estado": "Medio Tiempo",
-          "estado_corto": "MT",
-          "estado_nombre": "STATUS_HALFTIME",
+          "hora": "20'",
+          "mostrar_tiempo": "20'",
+          "estado": "First Half",
+          "estado_corto": "20'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "45'+4'",
+          "minuto": "20'",
           "periodo": 1,
           "marcador_local": "0",
           "marcador_visitante": "0",
@@ -915,7 +915,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-06-20T22:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873966"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873966/botafogo-sp-ceara"
         },
         {
           "id": "401873974",
@@ -938,21 +938,21 @@
           },
           "fecha": "2026-06-20",
           "hora_inicio": "19:00",
-          "hora": "45'+3'",
-          "mostrar_tiempo": "45'+3'",
-          "estado": "En progreso",
-          "estado_corto": "45'+3'",
-          "estado_nombre": "STATUS_IN_PROGRESS",
+          "hora": "18'",
+          "mostrar_tiempo": "18'",
+          "estado": "First Half",
+          "estado_corto": "18'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "45'+3'",
+          "minuto": "18'",
           "periodo": 1,
-          "marcador_local": "3",
+          "marcador_local": "2",
           "marcador_visitante": "0",
-          "resultado": "3-0",
+          "resultado": "2-0",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-06-20T22:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873974"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873974/nautico-vila-nova"
         }
       ]
     },
@@ -1100,8 +1100,8 @@
           "estado_corto": "F",
           "estado_nombre": "STATUS_FULL_TIME",
           "completado": true,
-          "minuto": "90'+5'",
-          "periodo": 2,
+          "minuto": null,
+          "periodo": null,
           "marcador_local": "2",
           "marcador_visitante": "0",
           "resultado": "2-0",
@@ -1384,102 +1384,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995731"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999818"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995731"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999818"
     },
     {
       "liga": "Taça de Portugal",
       "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995731"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999818"
     },
     {
       "liga": "Liga Portugal 2",
       "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995731"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999818"
     },
     {
       "liga": "KNVB Beker",
       "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995731"
-    },
-    {
-      "liga": "HNL Croacia",
-      "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999818"
     },
     {
       "liga": "Ekstraklasa Polonia",
       "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
+    },
+    {
+      "liga": "HNL Croacia",
+      "slug": "cro.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
     },
     {
       "liga": "USL Championship",
       "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
-    },
-    {
-      "liga": "Premier League Ucrania",
-      "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
     },
     {
       "liga": "Liga I Rumania",
       "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
+    },
+    {
+      "liga": "Premier League Ucrania",
+      "slug": "ukr.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
     },
     {
       "liga": "SuperLiga Serbia",
       "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
     },
     {
       "liga": "Copa MX",
       "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
-    },
-    {
-      "liga": "J2 League Japón",
-      "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
-    },
-    {
-      "liga": "K League 1 Corea",
-      "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
     },
     {
       "liga": "UAE Pro League",
       "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
     },
     {
-      "liga": "Qatar Stars League",
-      "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "liga": "K League 1 Corea",
+      "slug": "kor.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
+    },
+    {
+      "liga": "J2 League Japón",
+      "slug": "jpn.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
     },
     {
       "liga": "Premier League Egipto",
       "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
-    },
-    {
-      "liga": "Copa Intercontinental FIFA",
-      "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
     },
     {
       "liga": "Botola Marruecos",
       "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781995732"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
+    },
+    {
+      "liga": "Qatar Stars League",
+      "slug": "qat.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999819"
+    },
+    {
+      "liga": "Copa Intercontinental FIFA",
+      "slug": "fifa.intercontinental",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260620&limit=300&_=1781999820"
     }
   ]
 }
