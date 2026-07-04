@@ -1,7 +1,7 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-07-04T09:49:00.769002-03:00",
+  "fecha_scrapeo": "2026-07-04T11:21:36.461902-03:00",
   "total": 25,
   "total_ligas_consultadas": 116,
   "partidos": [
@@ -618,14 +618,14 @@
       },
       "fecha": "2026-07-04",
       "hora_inicio": "08:00",
-      "hora": "45'+5'",
-      "mostrar_tiempo": "45'+5'",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
-      "estado_nombre": "STATUS_HALFTIME",
-      "completado": false,
-      "minuto": "45'+5'",
-      "periodo": 1,
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
       "marcador_local": "0",
       "marcador_visitante": "1",
       "resultado": "0-1",
@@ -655,13 +655,13 @@
       },
       "fecha": "2026-07-04",
       "hora_inicio": "08:00",
-      "hora": "45'+12'",
-      "mostrar_tiempo": "45'+12'",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
-      "estado_nombre": "STATUS_HALFTIME",
+      "hora": "42'",
+      "mostrar_tiempo": "42'",
+      "estado": "First Half",
+      "estado_corto": "42'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "45'+12'",
+      "minuto": "42'",
       "periodo": 1,
       "marcador_local": "0",
       "marcador_visitante": "0",
@@ -692,13 +692,13 @@
       },
       "fecha": "2026-07-04",
       "hora_inicio": "08:35",
-      "hora": "55'",
-      "mostrar_tiempo": "55'",
+      "hora": "65'",
+      "mostrar_tiempo": "65'",
       "estado": "Second Half",
-      "estado_corto": "55'",
+      "estado_corto": "65'",
       "estado_nombre": "STATUS_SECOND_HALF",
       "completado": false,
-      "minuto": "55'",
+      "minuto": "65'",
       "periodo": 2,
       "marcador_local": "0",
       "marcador_visitante": "0",
@@ -706,7 +706,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-07-04T11:35Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401861412"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401861412/shandong-taishan-beijing-guoan"
     },
     {
       "id": "401861413",
@@ -729,17 +729,17 @@
       },
       "fecha": "2026-07-04",
       "hora_inicio": "08:35",
-      "hora": "25'",
-      "mostrar_tiempo": "25'",
-      "estado": "First Half",
-      "estado_corto": "25'",
-      "estado_nombre": "STATUS_FIRST_HALF",
-      "completado": false,
-      "minuto": "25'",
-      "periodo": 1,
-      "marcador_local": "0",
-      "marcador_visitante": "1",
-      "resultado": "0-1",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
+      "marcador_local": "3",
+      "marcador_visitante": "2",
+      "resultado": "3-2",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-07-04T11:35Z",
@@ -766,17 +766,17 @@
       },
       "fecha": "2026-07-04",
       "hora_inicio": "09:00",
-      "hora": "45'+4'",
-      "mostrar_tiempo": "45'+4'",
-      "estado": "First Half",
-      "estado_corto": "45'+4'",
-      "estado_nombre": "STATUS_FIRST_HALF",
+      "hora": "45'+6'",
+      "mostrar_tiempo": "45'+6'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
+      "estado_nombre": "STATUS_HALFTIME",
       "completado": false,
-      "minuto": "45'+4'",
+      "minuto": "45'+6'",
       "periodo": 1,
-      "marcador_local": "1",
+      "marcador_local": "0",
       "marcador_visitante": "0",
-      "resultado": "1-0",
+      "resultado": "0-0",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-07-04T12:00Z",
@@ -1583,14 +1583,14 @@
           },
           "fecha": "2026-07-04",
           "hora_inicio": "08:00",
-          "hora": "45'+5'",
-          "mostrar_tiempo": "45'+5'",
-          "estado": "Medio Tiempo",
-          "estado_corto": "MT",
-          "estado_nombre": "STATUS_HALFTIME",
-          "completado": false,
-          "minuto": "45'+5'",
-          "periodo": 1,
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
           "marcador_local": "0",
           "marcador_visitante": "1",
           "resultado": "0-1",
@@ -1620,13 +1620,13 @@
           },
           "fecha": "2026-07-04",
           "hora_inicio": "08:00",
-          "hora": "45'+12'",
-          "mostrar_tiempo": "45'+12'",
-          "estado": "Medio Tiempo",
-          "estado_corto": "MT",
-          "estado_nombre": "STATUS_HALFTIME",
+          "hora": "42'",
+          "mostrar_tiempo": "42'",
+          "estado": "First Half",
+          "estado_corto": "42'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "45'+12'",
+          "minuto": "42'",
           "periodo": 1,
           "marcador_local": "0",
           "marcador_visitante": "0",
@@ -1657,13 +1657,13 @@
           },
           "fecha": "2026-07-04",
           "hora_inicio": "08:35",
-          "hora": "55'",
-          "mostrar_tiempo": "55'",
+          "hora": "65'",
+          "mostrar_tiempo": "65'",
           "estado": "Second Half",
-          "estado_corto": "55'",
+          "estado_corto": "65'",
           "estado_nombre": "STATUS_SECOND_HALF",
           "completado": false,
-          "minuto": "55'",
+          "minuto": "65'",
           "periodo": 2,
           "marcador_local": "0",
           "marcador_visitante": "0",
@@ -1671,7 +1671,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-07-04T11:35Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401861412"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401861412/shandong-taishan-beijing-guoan"
         },
         {
           "id": "401861413",
@@ -1694,17 +1694,17 @@
           },
           "fecha": "2026-07-04",
           "hora_inicio": "08:35",
-          "hora": "25'",
-          "mostrar_tiempo": "25'",
-          "estado": "First Half",
-          "estado_corto": "25'",
-          "estado_nombre": "STATUS_FIRST_HALF",
-          "completado": false,
-          "minuto": "25'",
-          "periodo": 1,
-          "marcador_local": "0",
-          "marcador_visitante": "1",
-          "resultado": "0-1",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
+          "marcador_local": "3",
+          "marcador_visitante": "2",
+          "resultado": "3-2",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-07-04T11:35Z",
@@ -1731,17 +1731,17 @@
           },
           "fecha": "2026-07-04",
           "hora_inicio": "09:00",
-          "hora": "45'+4'",
-          "mostrar_tiempo": "45'+4'",
-          "estado": "First Half",
-          "estado_corto": "45'+4'",
-          "estado_nombre": "STATUS_FIRST_HALF",
+          "hora": "45'+6'",
+          "mostrar_tiempo": "45'+6'",
+          "estado": "Medio Tiempo",
+          "estado_corto": "MT",
+          "estado_nombre": "STATUS_HALFTIME",
           "completado": false,
-          "minuto": "45'+4'",
+          "minuto": "45'+6'",
           "periodo": 1,
-          "marcador_local": "1",
+          "marcador_local": "0",
           "marcador_visitante": "0",
-          "resultado": "1-0",
+          "resultado": "0-0",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-07-04T12:00Z",
@@ -1918,102 +1918,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169336"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174890"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169336"
-    },
-    {
-      "liga": "Taça de Portugal",
-      "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169336"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174890"
     },
     {
       "liga": "KNVB Beker",
       "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169336"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174890"
+    },
+    {
+      "liga": "Taça de Portugal",
+      "slug": "por.taca_de_portugal",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174890"
     },
     {
       "liga": "Liga Portugal 2",
       "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169336"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174890"
     },
     {
       "liga": "Ekstraklasa Polonia",
       "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
-    },
-    {
-      "liga": "SuperLiga Serbia",
-      "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174891"
     },
     {
       "liga": "Liga I Rumania",
       "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174891"
     },
     {
-      "liga": "HNL Croacia",
-      "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "liga": "SuperLiga Serbia",
+      "slug": "ser.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174891"
     },
     {
       "liga": "Premier League Ucrania",
       "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
-    },
-    {
-      "liga": "USL Championship",
-      "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174891"
     },
     {
       "liga": "Copa MX",
       "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174891"
+    },
+    {
+      "liga": "USL Championship",
+      "slug": "usa.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174891"
+    },
+    {
+      "liga": "HNL Croacia",
+      "slug": "cro.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174891"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174891"
     },
     {
       "liga": "K League 1 Corea",
       "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174892"
     },
     {
       "liga": "J2 League Japón",
       "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174892"
     },
     {
       "liga": "UAE Pro League",
       "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174892"
     },
     {
       "liga": "Qatar Stars League",
       "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
-    },
-    {
-      "liga": "Premier League Egipto",
-      "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174892"
     },
     {
       "liga": "Botola Marruecos",
       "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174892"
     },
     {
       "liga": "Copa Intercontinental FIFA",
       "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783169337"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174892"
+    },
+    {
+      "liga": "Premier League Egipto",
+      "slug": "egy.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260704&limit=300&_=1783174892"
     }
   ]
 }
