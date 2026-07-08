@@ -1,93 +1,19 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-07-07T20:11:45.589304-03:00",
-  "total": 5,
+  "fecha_scrapeo": "2026-07-07T21:13:18.345842-03:00",
+  "total": 3,
   "total_ligas_consultadas": 116,
   "partidos": [
     {
-      "id": "760509",
-      "partido": "Argentina vs Egipto",
-      "local": "Argentina",
-      "visitante": "Egipto",
-      "local_id": "202",
-      "visitante_id": "2620",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "liga": "Mundial FIFA",
-      "liga_corta": "Mundial FIFA",
-      "liga_slug": "fifa.world",
-      "prioridad_liga": 1,
-      "competicion": {
-        "nombre": "Mundial FIFA",
-        "nombre_corto": "Mundial FIFA",
-        "slug": "fifa.world",
-        "prioridad": 1
-      },
-      "fecha": "2026-07-07",
-      "hora_inicio": "13:00",
-      "hora": "Fin",
-      "mostrar_tiempo": "Fin",
-      "estado": "Tiempo Completo",
-      "estado_corto": "F",
-      "estado_nombre": "STATUS_FULL_TIME",
-      "completado": true,
-      "minuto": null,
-      "periodo": null,
-      "marcador_local": "3",
-      "marcador_visitante": "2",
-      "resultado": "3-2",
-      "mostrar_marcador": true,
-      "goleadores": [],
-      "fecha_espn": "2026-07-07T16:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/760509/egipto-argentina"
-    },
-    {
-      "id": "760508",
-      "partido": "Suiza vs Colombia",
-      "local": "Suiza",
-      "visitante": "Colombia",
-      "local_id": "475",
-      "visitante_id": "208",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "liga": "Mundial FIFA",
-      "liga_corta": "Mundial FIFA",
-      "liga_slug": "fifa.world",
-      "prioridad_liga": 1,
-      "competicion": {
-        "nombre": "Mundial FIFA",
-        "nombre_corto": "Mundial FIFA",
-        "slug": "fifa.world",
-        "prioridad": 1
-      },
-      "fecha": "2026-07-07",
-      "hora_inicio": "17:00",
-      "hora": "Fin",
-      "mostrar_tiempo": "Fin",
-      "estado": "Final Score - After Penalties",
-      "estado_corto": "MF - Pens",
-      "estado_nombre": "STATUS_FINAL_PEN",
-      "completado": true,
-      "minuto": "120'",
-      "periodo": 5,
-      "marcador_local": "0",
-      "marcador_visitante": "0",
-      "resultado": "0-0",
-      "mostrar_marcador": true,
-      "goleadores": [],
-      "fecha_espn": "2026-07-07T20:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/760508/colombia-suiza"
-    },
-    {
-      "id": "401873987",
-      "partido": "Athletic vs Operário PR",
-      "local": "Athletic",
-      "visitante": "Operário PR",
-      "local_id": "20851",
-      "visitante_id": "18187",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20851.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18187.png",
+      "id": "401873986",
+      "partido": "Ponte Preta vs Criciúma",
+      "local": "Ponte Preta",
+      "visitante": "Criciúma",
+      "local_id": "3459",
+      "visitante_id": "9971",
+      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3459.png",
+      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9971.png",
       "liga": "Brasileirão Serie B",
       "liga_corta": "Brasileirão Serie B",
       "liga_slug": "bra.2",
@@ -98,44 +24,81 @@
         "slug": "bra.2",
         "prioridad": 112
       },
-      "fecha": "2026-07-07",
+      "fecha": "2026-07-08",
       "hora_inicio": "20:00",
-      "hora": "5'",
-      "mostrar_tiempo": "5'",
-      "estado": "First Half",
-      "estado_corto": "5'",
-      "estado_nombre": "STATUS_FIRST_HALF",
+      "hora": "0'",
+      "mostrar_tiempo": "0'",
+      "estado": "Agendado",
+      "estado_corto": "Scheduled",
+      "estado_nombre": "STATUS_SCHEDULED",
       "completado": false,
-      "minuto": "5'",
-      "periodo": 1,
-      "marcador_local": "0",
-      "marcador_visitante": "0",
-      "resultado": "0-0",
-      "mostrar_marcador": true,
+      "minuto": "0'",
+      "periodo": null,
+      "marcador_local": null,
+      "marcador_visitante": null,
+      "resultado": null,
+      "mostrar_marcador": false,
       "goleadores": [],
-      "fecha_espn": "2026-07-07T23:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873987"
+      "fecha_espn": "2026-07-08T23:00Z",
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873986/criciuma-ponte-preta"
     },
     {
-      "id": "401859601",
-      "partido": "Aucas vs Guayaquil City FC",
-      "local": "Aucas",
-      "visitante": "Guayaquil City FC",
-      "local_id": "6017",
-      "visitante_id": "11124",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6017.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11124.png",
-      "liga": "LigaPro Ecuador",
-      "liga_corta": "LigaPro Ecuador",
-      "liga_slug": "ecu.1",
-      "prioridad_liga": 133,
+      "id": "401866923",
+      "partido": "Real Oruro vs Universitario de Vinto",
+      "local": "Real Oruro",
+      "visitante": "Universitario de Vinto",
+      "local_id": "22523",
+      "visitante_id": "21379",
+      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22523.png",
+      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21379.png",
+      "liga": "Primera División Bolivia",
+      "liga_corta": "Primera División Bolivia",
+      "liga_slug": "bol.1",
+      "prioridad_liga": 136,
       "competicion": {
-        "nombre": "LigaPro Ecuador",
-        "nombre_corto": "LigaPro Ecuador",
-        "slug": "ecu.1",
-        "prioridad": 133
+        "nombre": "Primera División Bolivia",
+        "nombre_corto": "Primera División Bolivia",
+        "slug": "bol.1",
+        "prioridad": 136
       },
-      "fecha": "2026-07-07",
+      "fecha": "2026-07-08",
+      "hora_inicio": "19:00",
+      "hora": "0'",
+      "mostrar_tiempo": "0'",
+      "estado": "Agendado",
+      "estado_corto": "Scheduled",
+      "estado_nombre": "STATUS_SCHEDULED",
+      "completado": false,
+      "minuto": "0'",
+      "periodo": null,
+      "marcador_local": null,
+      "marcador_visitante": null,
+      "resultado": null,
+      "mostrar_marcador": false,
+      "goleadores": [],
+      "fecha_espn": "2026-07-08T22:00Z",
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401866923/universitario-de-vinto-real-oruro"
+    },
+    {
+      "id": "401867149",
+      "partido": "Real Potosí vs ABB",
+      "local": "Real Potosí",
+      "visitante": "ABB",
+      "local_id": "6051",
+      "visitante_id": "130875",
+      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6051.png",
+      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/130875.png",
+      "liga": "Primera División Bolivia",
+      "liga_corta": "Primera División Bolivia",
+      "liga_slug": "bol.1",
+      "prioridad_liga": 136,
+      "competicion": {
+        "nombre": "Primera División Bolivia",
+        "nombre_corto": "Primera División Bolivia",
+        "slug": "bol.1",
+        "prioridad": 136
+      },
+      "fecha": "2026-07-08",
       "hora_inicio": "21:00",
       "hora": "0'",
       "mostrar_tiempo": "0'",
@@ -150,130 +113,11 @@
       "resultado": null,
       "mostrar_marcador": false,
       "goleadores": [],
-      "fecha_espn": "2026-07-08T00:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859601/guayaquil-city-fc-aucas"
-    },
-    {
-      "id": "401867144",
-      "partido": "GV San José vs Real Tomayapo",
-      "local": "GV San José",
-      "visitante": "Real Tomayapo",
-      "local_id": "22174",
-      "visitante_id": "20890",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22174.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20890.png",
-      "liga": "Primera División Bolivia",
-      "liga_corta": "Primera División Bolivia",
-      "liga_slug": "bol.1",
-      "prioridad_liga": 136,
-      "competicion": {
-        "nombre": "Primera División Bolivia",
-        "nombre_corto": "Primera División Bolivia",
-        "slug": "bol.1",
-        "prioridad": 136
-      },
-      "fecha": "2026-07-07",
-      "hora_inicio": "20:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
-      "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
-      "goleadores": [],
-      "fecha_espn": "2026-07-07T23:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867144/real-tomayapo-gv-san-jose"
+      "fecha_espn": "2026-07-09T00:00Z",
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867149/abb-real-potosi"
     }
   ],
   "agrupado_por_liga": [
-    {
-      "liga": "Mundial FIFA",
-      "liga_slug": "fifa.world",
-      "prioridad": 1,
-      "total": 2,
-      "partidos": [
-        {
-          "id": "760509",
-          "partido": "Argentina vs Egipto",
-          "local": "Argentina",
-          "visitante": "Egipto",
-          "local_id": "202",
-          "visitante_id": "2620",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-          "liga": "Mundial FIFA",
-          "liga_corta": "Mundial FIFA",
-          "liga_slug": "fifa.world",
-          "prioridad_liga": 1,
-          "competicion": {
-            "nombre": "Mundial FIFA",
-            "nombre_corto": "Mundial FIFA",
-            "slug": "fifa.world",
-            "prioridad": 1
-          },
-          "fecha": "2026-07-07",
-          "hora_inicio": "13:00",
-          "hora": "Fin",
-          "mostrar_tiempo": "Fin",
-          "estado": "Tiempo Completo",
-          "estado_corto": "F",
-          "estado_nombre": "STATUS_FULL_TIME",
-          "completado": true,
-          "minuto": null,
-          "periodo": null,
-          "marcador_local": "3",
-          "marcador_visitante": "2",
-          "resultado": "3-2",
-          "mostrar_marcador": true,
-          "goleadores": [],
-          "fecha_espn": "2026-07-07T16:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/760509/egipto-argentina"
-        },
-        {
-          "id": "760508",
-          "partido": "Suiza vs Colombia",
-          "local": "Suiza",
-          "visitante": "Colombia",
-          "local_id": "475",
-          "visitante_id": "208",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-          "liga": "Mundial FIFA",
-          "liga_corta": "Mundial FIFA",
-          "liga_slug": "fifa.world",
-          "prioridad_liga": 1,
-          "competicion": {
-            "nombre": "Mundial FIFA",
-            "nombre_corto": "Mundial FIFA",
-            "slug": "fifa.world",
-            "prioridad": 1
-          },
-          "fecha": "2026-07-07",
-          "hora_inicio": "17:00",
-          "hora": "Fin",
-          "mostrar_tiempo": "Fin",
-          "estado": "Final Score - After Penalties",
-          "estado_corto": "MF - Pens",
-          "estado_nombre": "STATUS_FINAL_PEN",
-          "completado": true,
-          "minuto": "120'",
-          "periodo": 5,
-          "marcador_local": "0",
-          "marcador_visitante": "0",
-          "resultado": "0-0",
-          "mostrar_marcador": true,
-          "goleadores": [],
-          "fecha_espn": "2026-07-07T20:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/760508/colombia-suiza"
-        }
-      ]
-    },
     {
       "liga": "Brasileirão Serie B",
       "liga_slug": "bra.2",
@@ -281,14 +125,14 @@
       "total": 1,
       "partidos": [
         {
-          "id": "401873987",
-          "partido": "Athletic vs Operário PR",
-          "local": "Athletic",
-          "visitante": "Operário PR",
-          "local_id": "20851",
-          "visitante_id": "18187",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20851.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18187.png",
+          "id": "401873986",
+          "partido": "Ponte Preta vs Criciúma",
+          "local": "Ponte Preta",
+          "visitante": "Criciúma",
+          "local_id": "3459",
+          "visitante_id": "9971",
+          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3459.png",
+          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9971.png",
           "liga": "Brasileirão Serie B",
           "liga_corta": "Brasileirão Serie B",
           "liga_slug": "bra.2",
@@ -299,52 +143,89 @@
             "slug": "bra.2",
             "prioridad": 112
           },
-          "fecha": "2026-07-07",
+          "fecha": "2026-07-08",
           "hora_inicio": "20:00",
-          "hora": "5'",
-          "mostrar_tiempo": "5'",
-          "estado": "First Half",
-          "estado_corto": "5'",
-          "estado_nombre": "STATUS_FIRST_HALF",
+          "hora": "0'",
+          "mostrar_tiempo": "0'",
+          "estado": "Agendado",
+          "estado_corto": "Scheduled",
+          "estado_nombre": "STATUS_SCHEDULED",
           "completado": false,
-          "minuto": "5'",
-          "periodo": 1,
-          "marcador_local": "0",
-          "marcador_visitante": "0",
-          "resultado": "0-0",
-          "mostrar_marcador": true,
+          "minuto": "0'",
+          "periodo": null,
+          "marcador_local": null,
+          "marcador_visitante": null,
+          "resultado": null,
+          "mostrar_marcador": false,
           "goleadores": [],
-          "fecha_espn": "2026-07-07T23:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873987"
+          "fecha_espn": "2026-07-08T23:00Z",
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401873986/criciuma-ponte-preta"
         }
       ]
     },
     {
-      "liga": "LigaPro Ecuador",
-      "liga_slug": "ecu.1",
-      "prioridad": 133,
-      "total": 1,
+      "liga": "Primera División Bolivia",
+      "liga_slug": "bol.1",
+      "prioridad": 136,
+      "total": 2,
       "partidos": [
         {
-          "id": "401859601",
-          "partido": "Aucas vs Guayaquil City FC",
-          "local": "Aucas",
-          "visitante": "Guayaquil City FC",
-          "local_id": "6017",
-          "visitante_id": "11124",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6017.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11124.png",
-          "liga": "LigaPro Ecuador",
-          "liga_corta": "LigaPro Ecuador",
-          "liga_slug": "ecu.1",
-          "prioridad_liga": 133,
+          "id": "401866923",
+          "partido": "Real Oruro vs Universitario de Vinto",
+          "local": "Real Oruro",
+          "visitante": "Universitario de Vinto",
+          "local_id": "22523",
+          "visitante_id": "21379",
+          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22523.png",
+          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21379.png",
+          "liga": "Primera División Bolivia",
+          "liga_corta": "Primera División Bolivia",
+          "liga_slug": "bol.1",
+          "prioridad_liga": 136,
           "competicion": {
-            "nombre": "LigaPro Ecuador",
-            "nombre_corto": "LigaPro Ecuador",
-            "slug": "ecu.1",
-            "prioridad": 133
+            "nombre": "Primera División Bolivia",
+            "nombre_corto": "Primera División Bolivia",
+            "slug": "bol.1",
+            "prioridad": 136
           },
-          "fecha": "2026-07-07",
+          "fecha": "2026-07-08",
+          "hora_inicio": "19:00",
+          "hora": "0'",
+          "mostrar_tiempo": "0'",
+          "estado": "Agendado",
+          "estado_corto": "Scheduled",
+          "estado_nombre": "STATUS_SCHEDULED",
+          "completado": false,
+          "minuto": "0'",
+          "periodo": null,
+          "marcador_local": null,
+          "marcador_visitante": null,
+          "resultado": null,
+          "mostrar_marcador": false,
+          "goleadores": [],
+          "fecha_espn": "2026-07-08T22:00Z",
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401866923/universitario-de-vinto-real-oruro"
+        },
+        {
+          "id": "401867149",
+          "partido": "Real Potosí vs ABB",
+          "local": "Real Potosí",
+          "visitante": "ABB",
+          "local_id": "6051",
+          "visitante_id": "130875",
+          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6051.png",
+          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/130875.png",
+          "liga": "Primera División Bolivia",
+          "liga_corta": "Primera División Bolivia",
+          "liga_slug": "bol.1",
+          "prioridad_liga": 136,
+          "competicion": {
+            "nombre": "Primera División Bolivia",
+            "nombre_corto": "Primera División Bolivia",
+            "slug": "bol.1",
+            "prioridad": 136
+          },
+          "fecha": "2026-07-08",
           "hora_inicio": "21:00",
           "hora": "0'",
           "mostrar_tiempo": "0'",
@@ -359,53 +240,8 @@
           "resultado": null,
           "mostrar_marcador": false,
           "goleadores": [],
-          "fecha_espn": "2026-07-08T00:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859601/guayaquil-city-fc-aucas"
-        }
-      ]
-    },
-    {
-      "liga": "Primera División Bolivia",
-      "liga_slug": "bol.1",
-      "prioridad": 136,
-      "total": 1,
-      "partidos": [
-        {
-          "id": "401867144",
-          "partido": "GV San José vs Real Tomayapo",
-          "local": "GV San José",
-          "visitante": "Real Tomayapo",
-          "local_id": "22174",
-          "visitante_id": "20890",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22174.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20890.png",
-          "liga": "Primera División Bolivia",
-          "liga_corta": "Primera División Bolivia",
-          "liga_slug": "bol.1",
-          "prioridad_liga": 136,
-          "competicion": {
-            "nombre": "Primera División Bolivia",
-            "nombre_corto": "Primera División Bolivia",
-            "slug": "bol.1",
-            "prioridad": 136
-          },
-          "fecha": "2026-07-07",
-          "hora_inicio": "20:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
-          "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
-          "goleadores": [],
-          "fecha_espn": "2026-07-07T23:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867144/real-tomayapo-gv-san-jose"
+          "fecha_espn": "2026-07-09T00:00Z",
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867149/abb-real-potosi"
         }
       ]
     }
@@ -414,102 +250,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465902"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469596"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465902"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469596"
     },
     {
       "liga": "KNVB Beker",
       "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465902"
-    },
-    {
-      "liga": "Liga Portugal 2",
-      "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469596"
     },
     {
       "liga": "Taça de Portugal",
       "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469596"
     },
     {
-      "liga": "SuperLiga Serbia",
-      "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
-    },
-    {
-      "liga": "USL Championship",
-      "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
+      "liga": "Liga Portugal 2",
+      "slug": "por.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469596"
     },
     {
       "liga": "HNL Croacia",
       "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
-      "liga": "Premier League Ucrania",
-      "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
-    },
-    {
-      "liga": "Liga I Rumania",
-      "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
+      "liga": "SuperLiga Serbia",
+      "slug": "ser.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
       "liga": "Ekstraklasa Polonia",
       "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
+    },
+    {
+      "liga": "Premier League Ucrania",
+      "slug": "ukr.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
+    },
+    {
+      "liga": "USL Championship",
+      "slug": "usa.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
+    },
+    {
+      "liga": "Liga I Rumania",
+      "slug": "rom.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
       "liga": "Copa MX",
       "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465903"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
       "liga": "J2 League Japón",
       "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465904"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
       "liga": "K League 1 Corea",
       "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465904"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
       "liga": "UAE Pro League",
       "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465904"
-    },
-    {
-      "liga": "Premier League Egipto",
-      "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465904"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
       "liga": "Qatar Stars League",
       "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465904"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
+    },
+    {
+      "liga": "Premier League Egipto",
+      "slug": "egy.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
       "liga": "Botola Marruecos",
       "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465904"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     },
     {
       "liga": "Copa Intercontinental FIFA",
       "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260707&limit=300&_=1783465904"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260708&limit=300&_=1783469597"
     }
   ]
 }
