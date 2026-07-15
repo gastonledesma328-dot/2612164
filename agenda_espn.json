@@ -1,7 +1,7 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-07-15T18:44:53.210165-03:00",
+  "fecha_scrapeo": "2026-07-15T19:43:34.686846-03:00",
   "total": 9,
   "total_ligas_consultadas": 116,
   "partidos": [
@@ -100,21 +100,21 @@
       },
       "fecha": "2026-07-15",
       "hora_inicio": "19:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "39'",
+      "mostrar_tiempo": "39'",
+      "estado": "First Half",
+      "estado_corto": "39'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "39'",
+      "periodo": 1,
+      "marcador_local": "1",
+      "marcador_visitante": "1",
+      "resultado": "1-1",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-07-15T22:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859714/deportivo-cuenca-leones"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859714"
     },
     {
       "id": "401859618",
@@ -137,21 +137,21 @@
       },
       "fecha": "2026-07-15",
       "hora_inicio": "19:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "36'",
+      "mostrar_tiempo": "36'",
+      "estado": "First Half",
+      "estado_corto": "36'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "36'",
+      "periodo": 1,
+      "marcador_local": "0",
+      "marcador_visitante": "0",
+      "resultado": "0-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-07-15T22:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859618/liga-de-quito-universidad-catolica-quito"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859618"
     },
     {
       "id": "401859616",
@@ -211,21 +211,21 @@
       },
       "fecha": "2026-07-15",
       "hora_inicio": "19:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "43'",
+      "mostrar_tiempo": "43'",
+      "estado": "First Half",
+      "estado_corto": "43'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "43'",
+      "periodo": 1,
+      "marcador_local": "1",
+      "marcador_visitante": "0",
+      "resultado": "1-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-07-15T22:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867178/san-antonio-bulo-bulo-real-potosi"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867178"
     },
     {
       "id": "401867176",
@@ -449,21 +449,21 @@
           },
           "fecha": "2026-07-15",
           "hora_inicio": "19:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "39'",
+          "mostrar_tiempo": "39'",
+          "estado": "First Half",
+          "estado_corto": "39'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "39'",
+          "periodo": 1,
+          "marcador_local": "1",
+          "marcador_visitante": "1",
+          "resultado": "1-1",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-07-15T22:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859714/deportivo-cuenca-leones"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859714"
         },
         {
           "id": "401859618",
@@ -486,21 +486,21 @@
           },
           "fecha": "2026-07-15",
           "hora_inicio": "19:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "36'",
+          "mostrar_tiempo": "36'",
+          "estado": "First Half",
+          "estado_corto": "36'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "36'",
+          "periodo": 1,
+          "marcador_local": "0",
+          "marcador_visitante": "0",
+          "resultado": "0-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-07-15T22:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859618/liga-de-quito-universidad-catolica-quito"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401859618"
         },
         {
           "id": "401859616",
@@ -568,21 +568,21 @@
           },
           "fecha": "2026-07-15",
           "hora_inicio": "19:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "43'",
+          "mostrar_tiempo": "43'",
+          "estado": "First Half",
+          "estado_corto": "43'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "43'",
+          "periodo": 1,
+          "marcador_local": "1",
+          "marcador_visitante": "0",
+          "resultado": "1-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-07-15T22:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867178/san-antonio-bulo-bulo-real-potosi"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401867178"
         },
         {
           "id": "401867176",
@@ -710,102 +710,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155412"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
-    },
-    {
-      "liga": "Liga Portugal 2",
-      "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
-    },
-    {
-      "liga": "KNVB Beker",
-      "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155412"
     },
     {
       "liga": "Taça de Portugal",
       "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155412"
     },
     {
-      "liga": "Liga I Rumania",
-      "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
+      "liga": "KNVB Beker",
+      "slug": "ned.knvb_beker",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155412"
     },
     {
-      "liga": "SuperLiga Serbia",
-      "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
-    },
-    {
-      "liga": "Premier League Ucrania",
-      "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
+      "liga": "Liga Portugal 2",
+      "slug": "por.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155412"
     },
     {
       "liga": "Ekstraklasa Polonia",
       "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
     },
     {
       "liga": "HNL Croacia",
       "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151891"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
+    },
+    {
+      "liga": "SuperLiga Serbia",
+      "slug": "ser.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
     },
     {
       "liga": "USL Championship",
       "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
+    },
+    {
+      "liga": "Liga I Rumania",
+      "slug": "rom.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
+    },
+    {
+      "liga": "Premier League Ucrania",
+      "slug": "ukr.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
     },
     {
       "liga": "Copa MX",
       "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
-    },
-    {
-      "liga": "J2 League Japón",
-      "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
     },
     {
       "liga": "K League 1 Corea",
       "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
     },
     {
-      "liga": "UAE Pro League",
-      "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
+      "liga": "J2 League Japón",
+      "slug": "jpn.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
     },
     {
       "liga": "Qatar Stars League",
       "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
+    },
+    {
+      "liga": "UAE Pro League",
+      "slug": "uae.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
     },
     {
       "liga": "Botola Marruecos",
       "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
-    },
-    {
-      "liga": "Copa Intercontinental FIFA",
-      "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
     },
     {
       "liga": "Premier League Egipto",
       "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784151892"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155413"
+    },
+    {
+      "liga": "Copa Intercontinental FIFA",
+      "slug": "fifa.intercontinental",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260715&limit=300&_=1784155414"
     }
   ]
 }
