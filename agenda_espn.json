@@ -1,7 +1,7 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-08-15T14:03:23.721498-03:00",
+  "fecha_scrapeo": "2026-08-15T14:32:49.655698-03:00",
   "total": 169,
   "total_ligas_consultadas": 116,
   "partidos": [
@@ -151,7 +151,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880338"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880338/millwall-bristol-city"
     },
     {
       "id": "401880337",
@@ -188,7 +188,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880337"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880337/derby-county-charlton-athletic"
     },
     {
       "id": "401880336",
@@ -225,7 +225,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880336"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880336/lincoln-city-middlesbrough"
     },
     {
       "id": "401880335",
@@ -262,7 +262,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880335"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880335/west-bromwich-albion-norwich-city"
     },
     {
       "id": "401880334",
@@ -299,7 +299,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880334"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880334/queens-park-rangers-portsmouth"
     },
     {
       "id": "401880333",
@@ -336,7 +336,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880333"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880333/swansea-city-stoke-city"
     },
     {
       "id": "401880332",
@@ -373,7 +373,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T16:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880332/birmingham-city-sheffield-united"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880332"
     },
     {
       "id": "401883260",
@@ -433,18 +433,18 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "14:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "31'",
+      "mostrar_tiempo": "31'",
+      "estado": "First Half",
+      "estado_corto": "31'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "31'",
+      "periodo": 1,
+      "marcador_local": "0",
+      "marcador_visitante": "0",
+      "resultado": "0-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T17:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401883318/rc-celta-fortuna-cadiz"
@@ -544,21 +544,21 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "13:00",
-      "hora": "28'",
-      "mostrar_tiempo": "28'",
-      "estado": "First Half",
-      "estado_corto": "28'",
-      "estado_nombre": "STATUS_FIRST_HALF",
+      "hora": "45'+3'",
+      "mostrar_tiempo": "45'+3'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
+      "estado_nombre": "STATUS_HALFTIME",
       "completado": false,
-      "minuto": "28'",
+      "minuto": "45'+3'",
       "periodo": 1,
-      "marcador_local": "0",
+      "marcador_local": "1",
       "marcador_visitante": "1",
-      "resultado": "0-1",
+      "resultado": "1-1",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T16:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881685/sudtirol-catanzaro"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881685"
     },
     {
       "id": "401881684",
@@ -581,13 +581,13 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "13:30",
-      "hora": "12'",
-      "mostrar_tiempo": "12'",
-      "estado": "En progreso",
-      "estado_corto": "12'",
-      "estado_nombre": "STATUS_IN_PROGRESS",
+      "hora": "10'",
+      "mostrar_tiempo": "10'",
+      "estado": "First Half",
+      "estado_corto": "10'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "12'",
+      "minuto": "10'",
       "periodo": 1,
       "marcador_local": "0",
       "marcador_visitante": "0",
@@ -595,7 +595,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T16:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881684/padova-udinese"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881684"
     },
     {
       "id": "401881683",
@@ -877,21 +877,21 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "14:00",
-      "hora": "3'",
-      "mostrar_tiempo": "3'",
+      "hora": "28'",
+      "mostrar_tiempo": "28'",
       "estado": "First Half",
-      "estado_corto": "3'",
+      "estado_corto": "28'",
       "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "3'",
+      "minuto": "28'",
       "periodo": 1,
       "marcador_local": "0",
-      "marcador_visitante": "0",
-      "resultado": "0-0",
+      "marcador_visitante": "1",
+      "resultado": "0-1",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T17:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401885483/santa-clara-academico-de-viseu"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401885483"
     },
     {
       "id": "401885476",
@@ -988,13 +988,13 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "13:45",
-      "hora": "9'",
-      "mostrar_tiempo": "9'",
+      "hora": "39'",
+      "mostrar_tiempo": "39'",
       "estado": "First Half",
-      "estado_corto": "9'",
+      "estado_corto": "39'",
       "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "9'",
+      "minuto": "39'",
       "periodo": 1,
       "marcador_local": "0",
       "marcador_visitante": "0",
@@ -1113,7 +1113,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879031"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879031/zulte-waregem-union-st-gilloise"
     },
     {
       "id": "401879030",
@@ -1136,21 +1136,21 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "13:15",
-      "hora": "17'",
-      "mostrar_tiempo": "17'",
+      "hora": "45'+3'",
+      "mostrar_tiempo": "45'+3'",
       "estado": "First Half",
-      "estado_corto": "17'",
+      "estado_corto": "45'+3'",
       "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "17'",
+      "minuto": "45'+3'",
       "periodo": 1,
       "marcador_local": "0",
-      "marcador_visitante": "0",
-      "resultado": "0-0",
+      "marcador_visitante": "1",
+      "resultado": "0-1",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T16:15Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879030/antwerp-kv-kortrijk"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879030"
     },
     {
       "id": "401879029",
@@ -1247,21 +1247,21 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "13:00",
-      "hora": "32'",
-      "mostrar_tiempo": "32'",
-      "estado": "First Half",
-      "estado_corto": "32'",
-      "estado_nombre": "STATUS_FIRST_HALF",
+      "hora": "45'+2'",
+      "mostrar_tiempo": "45'+2'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
+      "estado_nombre": "STATUS_HALFTIME",
       "completado": false,
-      "minuto": "32'",
+      "minuto": "45'+2'",
       "periodo": 1,
       "marcador_local": "0",
-      "marcador_visitante": "0",
-      "resultado": "0-0",
+      "marcador_visitante": "1",
+      "resultado": "0-1",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T16:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401888325/trabzonspor-kasimpasa"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401888325"
     },
     {
       "id": "401888322",
@@ -1284,13 +1284,13 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "13:00",
-      "hora": "31'",
-      "mostrar_tiempo": "31'",
-      "estado": "First Half",
-      "estado_corto": "31'",
-      "estado_nombre": "STATUS_FIRST_HALF",
+      "hora": "45'+4'",
+      "mostrar_tiempo": "45'+4'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
+      "estado_nombre": "STATUS_HALFTIME",
       "completado": false,
-      "minuto": "31'",
+      "minuto": "45'+4'",
       "periodo": 1,
       "marcador_local": "0",
       "marcador_visitante": "0",
@@ -1298,7 +1298,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T16:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401888322/caykur-rizespor-konyaspor"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401888322"
     },
     {
       "id": "401888326",
@@ -1395,21 +1395,21 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "12:00",
-      "hora": "29'",
-      "mostrar_tiempo": "29'",
-      "estado": "En progreso",
-      "estado_corto": "29'",
-      "estado_nombre": "STATUS_IN_PROGRESS",
-      "completado": false,
-      "minuto": "29'",
-      "periodo": 1,
-      "marcador_local": "1",
-      "marcador_visitante": "0",
-      "resultado": "1-0",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
+      "marcador_local": "2",
+      "marcador_visitante": "1",
+      "resultado": "2-1",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T15:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881808/wolfsberger-austria-lustenau"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881808"
     },
     {
       "id": "401881807",
@@ -1728,18 +1728,18 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "14:30",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "3'",
+      "mostrar_tiempo": "3'",
+      "estado": "First Half",
+      "estado_corto": "3'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "3'",
+      "periodo": 1,
+      "marcador_local": "0",
+      "marcador_visitante": "0",
+      "resultado": "0-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T17:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401841494/tigre-aldosivi"
@@ -1765,18 +1765,18 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "14:30",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "3'",
+      "mostrar_tiempo": "3'",
+      "estado": "En progreso",
+      "estado_corto": "3'",
+      "estado_nombre": "STATUS_IN_PROGRESS",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "3'",
+      "periodo": 1,
+      "marcador_local": "0",
+      "marcador_visitante": "0",
+      "resultado": "0-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T17:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401841502/union-santa-fe-san-lorenzo"
@@ -3800,13 +3800,13 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "13:15",
-      "hora": "16'",
-      "mostrar_tiempo": "16'",
+      "hora": "26'",
+      "mostrar_tiempo": "26'",
       "estado": "First Half",
-      "estado_corto": "16'",
+      "estado_corto": "26'",
       "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "16'",
+      "minuto": "26'",
       "periodo": 1,
       "marcador_local": "0",
       "marcador_visitante": "0",
@@ -3814,7 +3814,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T16:15Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401900404/al-khaleej-al-taawoun"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401900404"
     },
     {
       "id": "401900403",
@@ -4739,7 +4739,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T13:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401902071"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401902071/siwelele-amazulu"
     },
     {
       "id": "401902070",
@@ -4776,7 +4776,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T13:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401902070"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401902070/mamelodi-sundowns-kaizer-chiefs"
     },
     {
       "id": "401842793",
@@ -4813,7 +4813,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T13:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401842793"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401842793/ik-sirius-mjallby-aif"
     },
     {
       "id": "401879890",
@@ -4887,7 +4887,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881442"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881442/colchester-united-accrington-stanley"
     },
     {
       "id": "401889377",
@@ -4961,7 +4961,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881441"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881441/salford-city-barnet"
     },
     {
       "id": "401880919",
@@ -5220,7 +5220,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881440"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881440/rotherham-united-cheltenham-town"
     },
     {
       "id": "401881439",
@@ -5257,7 +5257,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881439"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881439/fleetwood-town-chesterfield"
     },
     {
       "id": "401881438",
@@ -5294,7 +5294,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881438"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881438/crewe-alexandra-crawley-town"
     },
     {
       "id": "401889376",
@@ -5405,7 +5405,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881437"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881437/walsall-gillingham"
     },
     {
       "id": "401881436",
@@ -5442,7 +5442,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881436"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881436/exeter-city-grimsby-town"
     },
     {
       "id": "401880914",
@@ -5664,7 +5664,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881435"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881435/swindon-town-northampton-town"
     },
     {
       "id": "401880911",
@@ -5886,7 +5886,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881434"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881434/shrewsbury-town-tranmere-rovers"
     },
     {
       "id": "401889369",
@@ -6034,7 +6034,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T14:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881433"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881433/bristol-rovers-york-city"
     },
     {
       "id": "401875978",
@@ -6094,21 +6094,21 @@
       },
       "fecha": "2026-08-15",
       "hora_inicio": "12:30",
-      "hora": "45'+2'",
-      "mostrar_tiempo": "45'+2'",
-      "estado": "Medio Tiempo",
-      "estado_corto": "MT",
-      "estado_nombre": "STATUS_HALFTIME",
-      "completado": false,
-      "minuto": "45'+2'",
-      "periodo": 1,
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
       "marcador_local": "1",
-      "marcador_visitante": "0",
-      "resultado": "1-0",
+      "marcador_visitante": "1",
+      "resultado": "1-1",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-15T15:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879894/rubin-kazan-rostov"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879894"
     },
     {
       "id": "401902069",
@@ -6420,7 +6420,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880338"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880338/millwall-bristol-city"
         },
         {
           "id": "401880337",
@@ -6457,7 +6457,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880337"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880337/derby-county-charlton-athletic"
         },
         {
           "id": "401880336",
@@ -6494,7 +6494,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880336"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880336/lincoln-city-middlesbrough"
         },
         {
           "id": "401880335",
@@ -6531,7 +6531,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880335"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880335/west-bromwich-albion-norwich-city"
         },
         {
           "id": "401880334",
@@ -6568,7 +6568,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880334"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880334/queens-park-rangers-portsmouth"
         },
         {
           "id": "401880333",
@@ -6605,7 +6605,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880333"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880333/swansea-city-stoke-city"
         },
         {
           "id": "401880332",
@@ -6642,7 +6642,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T16:30Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880332/birmingham-city-sheffield-united"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401880332"
         }
       ]
     },
@@ -6710,18 +6710,18 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "14:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "31'",
+          "mostrar_tiempo": "31'",
+          "estado": "First Half",
+          "estado_corto": "31'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "31'",
+          "periodo": 1,
+          "marcador_local": "0",
+          "marcador_visitante": "0",
+          "resultado": "0-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T17:00Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401883318/rc-celta-fortuna-cadiz"
@@ -6829,21 +6829,21 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "13:00",
-          "hora": "28'",
-          "mostrar_tiempo": "28'",
-          "estado": "First Half",
-          "estado_corto": "28'",
-          "estado_nombre": "STATUS_FIRST_HALF",
+          "hora": "45'+3'",
+          "mostrar_tiempo": "45'+3'",
+          "estado": "Medio Tiempo",
+          "estado_corto": "MT",
+          "estado_nombre": "STATUS_HALFTIME",
           "completado": false,
-          "minuto": "28'",
+          "minuto": "45'+3'",
           "periodo": 1,
-          "marcador_local": "0",
+          "marcador_local": "1",
           "marcador_visitante": "1",
-          "resultado": "0-1",
+          "resultado": "1-1",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T16:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881685/sudtirol-catanzaro"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881685"
         },
         {
           "id": "401881684",
@@ -6866,13 +6866,13 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "13:30",
-          "hora": "12'",
-          "mostrar_tiempo": "12'",
-          "estado": "En progreso",
-          "estado_corto": "12'",
-          "estado_nombre": "STATUS_IN_PROGRESS",
+          "hora": "10'",
+          "mostrar_tiempo": "10'",
+          "estado": "First Half",
+          "estado_corto": "10'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "12'",
+          "minuto": "10'",
           "periodo": 1,
           "marcador_local": "0",
           "marcador_visitante": "0",
@@ -6880,7 +6880,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T16:30Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881684/padova-udinese"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881684"
         },
         {
           "id": "401881683",
@@ -7178,21 +7178,21 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "14:00",
-          "hora": "3'",
-          "mostrar_tiempo": "3'",
+          "hora": "28'",
+          "mostrar_tiempo": "28'",
           "estado": "First Half",
-          "estado_corto": "3'",
+          "estado_corto": "28'",
           "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "3'",
+          "minuto": "28'",
           "periodo": 1,
           "marcador_local": "0",
-          "marcador_visitante": "0",
-          "resultado": "0-0",
+          "marcador_visitante": "1",
+          "resultado": "0-1",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T17:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401885483/santa-clara-academico-de-viseu"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401885483"
         },
         {
           "id": "401885476",
@@ -7297,13 +7297,13 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "13:45",
-          "hora": "9'",
-          "mostrar_tiempo": "9'",
+          "hora": "39'",
+          "mostrar_tiempo": "39'",
           "estado": "First Half",
-          "estado_corto": "9'",
+          "estado_corto": "39'",
           "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "9'",
+          "minuto": "39'",
           "periodo": 1,
           "marcador_local": "0",
           "marcador_visitante": "0",
@@ -7430,7 +7430,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879031"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879031/zulte-waregem-union-st-gilloise"
         },
         {
           "id": "401879030",
@@ -7453,21 +7453,21 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "13:15",
-          "hora": "17'",
-          "mostrar_tiempo": "17'",
+          "hora": "45'+3'",
+          "mostrar_tiempo": "45'+3'",
           "estado": "First Half",
-          "estado_corto": "17'",
+          "estado_corto": "45'+3'",
           "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "17'",
+          "minuto": "45'+3'",
           "periodo": 1,
           "marcador_local": "0",
-          "marcador_visitante": "0",
-          "resultado": "0-0",
+          "marcador_visitante": "1",
+          "resultado": "0-1",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T16:15Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879030/antwerp-kv-kortrijk"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879030"
         },
         {
           "id": "401879029",
@@ -7572,21 +7572,21 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "13:00",
-          "hora": "32'",
-          "mostrar_tiempo": "32'",
-          "estado": "First Half",
-          "estado_corto": "32'",
-          "estado_nombre": "STATUS_FIRST_HALF",
+          "hora": "45'+2'",
+          "mostrar_tiempo": "45'+2'",
+          "estado": "Medio Tiempo",
+          "estado_corto": "MT",
+          "estado_nombre": "STATUS_HALFTIME",
           "completado": false,
-          "minuto": "32'",
+          "minuto": "45'+2'",
           "periodo": 1,
           "marcador_local": "0",
-          "marcador_visitante": "0",
-          "resultado": "0-0",
+          "marcador_visitante": "1",
+          "resultado": "0-1",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T16:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401888325/trabzonspor-kasimpasa"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401888325"
         },
         {
           "id": "401888322",
@@ -7609,13 +7609,13 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "13:00",
-          "hora": "31'",
-          "mostrar_tiempo": "31'",
-          "estado": "First Half",
-          "estado_corto": "31'",
-          "estado_nombre": "STATUS_FIRST_HALF",
+          "hora": "45'+4'",
+          "mostrar_tiempo": "45'+4'",
+          "estado": "Medio Tiempo",
+          "estado_corto": "MT",
+          "estado_nombre": "STATUS_HALFTIME",
           "completado": false,
-          "minuto": "31'",
+          "minuto": "45'+4'",
           "periodo": 1,
           "marcador_local": "0",
           "marcador_visitante": "0",
@@ -7623,7 +7623,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T16:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401888322/caykur-rizespor-konyaspor"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401888322"
         },
         {
           "id": "401888326",
@@ -7728,21 +7728,21 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "12:00",
-          "hora": "29'",
-          "mostrar_tiempo": "29'",
-          "estado": "En progreso",
-          "estado_corto": "29'",
-          "estado_nombre": "STATUS_IN_PROGRESS",
-          "completado": false,
-          "minuto": "29'",
-          "periodo": 1,
-          "marcador_local": "1",
-          "marcador_visitante": "0",
-          "resultado": "1-0",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
+          "marcador_local": "2",
+          "marcador_visitante": "1",
+          "resultado": "2-1",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T15:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881808/wolfsberger-austria-lustenau"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881808"
         },
         {
           "id": "401881807",
@@ -8085,18 +8085,18 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "14:30",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "3'",
+          "mostrar_tiempo": "3'",
+          "estado": "First Half",
+          "estado_corto": "3'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "3'",
+          "periodo": 1,
+          "marcador_local": "0",
+          "marcador_visitante": "0",
+          "resultado": "0-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T17:30Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401841494/tigre-aldosivi"
@@ -8122,18 +8122,18 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "14:30",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "3'",
+          "mostrar_tiempo": "3'",
+          "estado": "En progreso",
+          "estado_corto": "3'",
+          "estado_nombre": "STATUS_IN_PROGRESS",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "3'",
+          "periodo": 1,
+          "marcador_local": "0",
+          "marcador_visitante": "0",
+          "resultado": "0-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T17:30Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401841502/union-santa-fe-san-lorenzo"
@@ -10261,13 +10261,13 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "13:15",
-          "hora": "16'",
-          "mostrar_tiempo": "16'",
+          "hora": "26'",
+          "mostrar_tiempo": "26'",
           "estado": "First Half",
-          "estado_corto": "16'",
+          "estado_corto": "26'",
           "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "16'",
+          "minuto": "26'",
           "periodo": 1,
           "marcador_local": "0",
           "marcador_visitante": "0",
@@ -10275,7 +10275,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T16:15Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401900404/al-khaleej-al-taawoun"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401900404"
         },
         {
           "id": "401900403",
@@ -11010,7 +11010,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T13:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401842793"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401842793/ik-sirius-mjallby-aif"
         }
       ]
     },
@@ -11671,7 +11671,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881442"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881442/colchester-united-accrington-stanley"
         },
         {
           "id": "401881441",
@@ -11708,7 +11708,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881441"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881441/salford-city-barnet"
         },
         {
           "id": "401881440",
@@ -11745,7 +11745,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881440"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881440/rotherham-united-cheltenham-town"
         },
         {
           "id": "401881439",
@@ -11782,7 +11782,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881439"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881439/fleetwood-town-chesterfield"
         },
         {
           "id": "401881438",
@@ -11819,7 +11819,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881438"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881438/crewe-alexandra-crawley-town"
         },
         {
           "id": "401881437",
@@ -11856,7 +11856,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881437"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881437/walsall-gillingham"
         },
         {
           "id": "401881436",
@@ -11893,7 +11893,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881436"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881436/exeter-city-grimsby-town"
         },
         {
           "id": "401881435",
@@ -11930,7 +11930,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881435"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881435/swindon-town-northampton-town"
         },
         {
           "id": "401881434",
@@ -11967,7 +11967,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881434"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881434/shrewsbury-town-tranmere-rovers"
         },
         {
           "id": "401881433",
@@ -12004,7 +12004,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T14:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881433"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881433/bristol-rovers-york-city"
         }
       ]
     },
@@ -12561,21 +12561,21 @@
           },
           "fecha": "2026-08-15",
           "hora_inicio": "12:30",
-          "hora": "45'+2'",
-          "mostrar_tiempo": "45'+2'",
-          "estado": "Medio Tiempo",
-          "estado_corto": "MT",
-          "estado_nombre": "STATUS_HALFTIME",
-          "completado": false,
-          "minuto": "45'+2'",
-          "periodo": 1,
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
           "marcador_local": "1",
-          "marcador_visitante": "0",
-          "resultado": "1-0",
+          "marcador_visitante": "1",
+          "resultado": "1-1",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T15:30Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879894/rubin-kazan-rostov"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879894"
         },
         {
           "id": "401879891",
@@ -12657,7 +12657,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T13:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401902071"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401902071/siwelele-amazulu"
         },
         {
           "id": "401902070",
@@ -12694,7 +12694,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-15T13:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401902070"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401902070/mamelodi-sundowns-kaizer-chiefs"
         },
         {
           "id": "401902069",
@@ -12814,102 +12814,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813389"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815134"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813390"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815134"
     },
     {
       "liga": "KNVB Beker",
       "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813390"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815134"
     },
     {
       "liga": "Liga Portugal 2",
       "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813390"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815135"
     },
     {
       "liga": "Taça de Portugal",
       "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813390"
-    },
-    {
-      "liga": "HNL Croacia",
-      "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815135"
     },
     {
       "liga": "Ekstraklasa Polonia",
       "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815135"
     },
     {
       "liga": "SuperLiga Serbia",
       "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815136"
     },
     {
-      "liga": "Premier League Ucrania",
-      "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "liga": "HNL Croacia",
+      "slug": "cro.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815136"
     },
     {
       "liga": "Liga I Rumania",
       "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815136"
+    },
+    {
+      "liga": "Premier League Ucrania",
+      "slug": "ukr.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815136"
     },
     {
       "liga": "USL Championship",
       "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815136"
     },
     {
       "liga": "Copa MX",
       "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
-    },
-    {
-      "liga": "J2 League Japón",
-      "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815136"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815136"
+    },
+    {
+      "liga": "J2 League Japón",
+      "slug": "jpn.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815136"
     },
     {
       "liga": "K League 1 Corea",
       "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815136"
     },
     {
       "liga": "UAE Pro League",
       "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
-    },
-    {
-      "liga": "Botola Marruecos",
-      "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
-    },
-    {
-      "liga": "Premier League Egipto",
-      "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815137"
     },
     {
       "liga": "Qatar Stars League",
       "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813391"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815137"
+    },
+    {
+      "liga": "Botola Marruecos",
+      "slug": "mar.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815137"
+    },
+    {
+      "liga": "Premier League Egipto",
+      "slug": "egy.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815137"
     },
     {
       "liga": "Copa Intercontinental FIFA",
       "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786813392"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260815&limit=300&_=1786815137"
     }
   ]
 }
