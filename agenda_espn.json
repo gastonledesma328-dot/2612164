@@ -1,7 +1,7 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-08-21T19:35:51.232788-03:00",
+  "fecha_scrapeo": "2026-08-21T19:58:40.792770-03:00",
   "total": 56,
   "total_ligas_consultadas": 116,
   "partidos": [
@@ -40,7 +40,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T19:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879301"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879301/coventry-city-arsenal"
     },
     {
       "id": "401882914",
@@ -77,7 +77,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T19:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401882914"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401882914/real-sociedad-real-betis"
     },
     {
       "id": "401876489",
@@ -151,7 +151,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T19:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401883224"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401883224/girona-cordoba"
     },
     {
       "id": "401899653",
@@ -632,7 +632,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T17:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881803"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881803/grazer-ak-sv-josko-ried"
     },
     {
       "id": "401841522",
@@ -780,7 +780,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T18:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401844076"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401844076/deportivo-moron-san-telmo"
     },
     {
       "id": "401844065",
@@ -803,18 +803,18 @@
       },
       "fecha": "2026-08-21",
       "hora_inicio": "19:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "45'+7'",
+      "mostrar_tiempo": "45'+7'",
+      "estado": "Medio Tiempo",
+      "estado_corto": "MT",
+      "estado_nombre": "STATUS_HALFTIME",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "45'+7'",
+      "periodo": 1,
+      "marcador_local": "1",
+      "marcador_visitante": "0",
+      "resultado": "1-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T22:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401844065/mitre-santiago-del-estero-deportivo-madryn"
@@ -951,21 +951,21 @@
       },
       "fecha": "2026-08-21",
       "hora_inicio": "18:05",
-      "hora": "70'",
-      "mostrar_tiempo": "70'",
-      "estado": "Second Half",
-      "estado_corto": "70'",
-      "estado_nombre": "STATUS_SECOND_HALF",
+      "hora": "5'",
+      "mostrar_tiempo": "5'",
+      "estado": "En progreso",
+      "estado_corto": "5'",
+      "estado_nombre": "STATUS_IN_PROGRESS",
       "completado": false,
-      "minuto": "70'",
-      "periodo": 2,
-      "marcador_local": "1",
+      "minuto": "5'",
+      "periodo": 1,
+      "marcador_local": "0",
       "marcador_visitante": "0",
-      "resultado": "1-0",
+      "resultado": "0-0",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T21:05Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401877994/boyaca-chico-fc-jaguares-de-cordoba"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401877994"
     },
     {
       "id": "401877874",
@@ -1108,8 +1108,8 @@
       "minuto": null,
       "periodo": null,
       "marcador_local": "1",
-      "marcador_visitante": "1",
-      "resultado": "1-1",
+      "marcador_visitante": "3",
+      "resultado": "1-3",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T17:00Z",
@@ -1210,18 +1210,18 @@
       },
       "fecha": "2026-08-21",
       "hora_inicio": "19:30",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
+      "hora": "28'",
+      "mostrar_tiempo": "28'",
+      "estado": "First Half",
+      "estado_corto": "28'",
+      "estado_nombre": "STATUS_FIRST_HALF",
       "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "minuto": "28'",
+      "periodo": 1,
+      "marcador_local": "0",
+      "marcador_visitante": "0",
+      "resultado": "0-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T22:30Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401906665/universitario-de-vinto-the-strongest"
@@ -1284,14 +1284,14 @@
       },
       "fecha": "2026-08-21",
       "hora_inicio": "17:00",
-      "hora": "42'",
-      "mostrar_tiempo": "42'",
-      "estado": "First Half",
-      "estado_corto": "42'",
-      "estado_nombre": "STATUS_FIRST_HALF",
-      "completado": false,
-      "minuto": "42'",
-      "periodo": 1,
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
+      "periodo": null,
       "marcador_local": "0",
       "marcador_visitante": "0",
       "resultado": "0-0",
@@ -1811,8 +1811,8 @@
       "minuto": null,
       "periodo": null,
       "marcador_local": "0",
-      "marcador_visitante": "1",
-      "resultado": "0-1",
+      "marcador_visitante": "3",
+      "resultado": "0-3",
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T17:00Z",
@@ -1853,7 +1853,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875974"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875974/fc-eindhoven-fc-den-bosch"
     },
     {
       "id": "401875973",
@@ -1890,7 +1890,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875973"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875973/roda-jc-kerkrade-fc-dordrecht"
     },
     {
       "id": "401875972",
@@ -1927,7 +1927,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875972"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875972/jong-az-fc-emmen"
     },
     {
       "id": "401875971",
@@ -1964,7 +1964,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875971"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875971/rkc-waalwijk-helmond-sport"
     },
     {
       "id": "401875970",
@@ -2001,7 +2001,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875970"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875970/fc-volendam-mvv-maastricht"
     },
     {
       "id": "401875969",
@@ -2038,7 +2038,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T18:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875969"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875969/almere-city-vitesse"
     },
     {
       "id": "401878585",
@@ -2075,7 +2075,7 @@
       "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-08-21T18:30Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401878585"
+      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401878585/partick-thistle-inverness-caledonian-thistle"
     }
   ],
   "agrupado_por_liga": [
@@ -2120,7 +2120,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T19:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879301"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401879301/coventry-city-arsenal"
         }
       ]
     },
@@ -2165,7 +2165,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T19:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401882914"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401882914/real-sociedad-real-betis"
         }
       ]
     },
@@ -2255,7 +2255,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T19:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401883224"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401883224/girona-cordoba"
         }
       ]
     },
@@ -2784,7 +2784,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T17:30Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881803"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401881803/grazer-ak-sv-josko-ried"
         }
       ]
     },
@@ -2948,7 +2948,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T18:30Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401844076"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401844076/deportivo-moron-san-telmo"
         },
         {
           "id": "401844065",
@@ -2971,18 +2971,18 @@
           },
           "fecha": "2026-08-21",
           "hora_inicio": "19:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "45'+7'",
+          "mostrar_tiempo": "45'+7'",
+          "estado": "Medio Tiempo",
+          "estado_corto": "MT",
+          "estado_nombre": "STATUS_HALFTIME",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "45'+7'",
+          "periodo": 1,
+          "marcador_local": "1",
+          "marcador_visitante": "0",
+          "resultado": "1-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T22:00Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401844065/mitre-santiago-del-estero-deportivo-madryn"
@@ -3143,21 +3143,21 @@
           },
           "fecha": "2026-08-21",
           "hora_inicio": "18:05",
-          "hora": "70'",
-          "mostrar_tiempo": "70'",
-          "estado": "Second Half",
-          "estado_corto": "70'",
-          "estado_nombre": "STATUS_SECOND_HALF",
+          "hora": "5'",
+          "mostrar_tiempo": "5'",
+          "estado": "En progreso",
+          "estado_corto": "5'",
+          "estado_nombre": "STATUS_IN_PROGRESS",
           "completado": false,
-          "minuto": "70'",
-          "periodo": 2,
-          "marcador_local": "1",
+          "minuto": "5'",
+          "periodo": 1,
+          "marcador_local": "0",
           "marcador_visitante": "0",
-          "resultado": "1-0",
+          "resultado": "0-0",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T21:05Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401877994/boyaca-chico-fc-jaguares-de-cordoba"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401877994"
         },
         {
           "id": "401877874",
@@ -3316,8 +3316,8 @@
           "minuto": null,
           "periodo": null,
           "marcador_local": "1",
-          "marcador_visitante": "1",
-          "resultado": "1-1",
+          "marcador_visitante": "3",
+          "resultado": "1-3",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T17:00Z",
@@ -3434,18 +3434,18 @@
           },
           "fecha": "2026-08-21",
           "hora_inicio": "19:30",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
+          "hora": "28'",
+          "mostrar_tiempo": "28'",
+          "estado": "First Half",
+          "estado_corto": "28'",
+          "estado_nombre": "STATUS_FIRST_HALF",
           "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "minuto": "28'",
+          "periodo": 1,
+          "marcador_local": "0",
+          "marcador_visitante": "0",
+          "resultado": "0-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T22:30Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401906665/universitario-de-vinto-the-strongest"
@@ -3516,14 +3516,14 @@
           },
           "fecha": "2026-08-21",
           "hora_inicio": "17:00",
-          "hora": "42'",
-          "mostrar_tiempo": "42'",
-          "estado": "First Half",
-          "estado_corto": "42'",
-          "estado_nombre": "STATUS_FIRST_HALF",
-          "completado": false,
-          "minuto": "42'",
-          "periodo": 1,
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
+          "periodo": null,
           "marcador_local": "0",
           "marcador_visitante": "0",
           "resultado": "0-0",
@@ -4091,8 +4091,8 @@
           "minuto": null,
           "periodo": null,
           "marcador_local": "0",
-          "marcador_visitante": "1",
-          "resultado": "0-1",
+          "marcador_visitante": "3",
+          "resultado": "0-3",
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T17:00Z",
@@ -4141,7 +4141,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T18:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875974"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875974/fc-eindhoven-fc-den-bosch"
         },
         {
           "id": "401875973",
@@ -4178,7 +4178,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T18:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875973"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875973/roda-jc-kerkrade-fc-dordrecht"
         },
         {
           "id": "401875972",
@@ -4215,7 +4215,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T18:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875972"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875972/jong-az-fc-emmen"
         },
         {
           "id": "401875971",
@@ -4252,7 +4252,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T18:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875971"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875971/rkc-waalwijk-helmond-sport"
         },
         {
           "id": "401875970",
@@ -4289,7 +4289,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T18:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875970"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875970/fc-volendam-mvv-maastricht"
         },
         {
           "id": "401875969",
@@ -4326,7 +4326,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T18:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875969"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401875969/almere-city-vitesse"
         }
       ]
     },
@@ -4371,7 +4371,7 @@
           "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-08-21T18:30Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401878585"
+          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401878585/partick-thistle-inverness-caledonian-thistle"
         }
       ]
     }
@@ -4380,102 +4380,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351736"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353106"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351736"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353107"
     },
     {
       "liga": "KNVB Beker",
       "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351737"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353107"
     },
     {
       "liga": "Liga Portugal 2",
       "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351737"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353107"
     },
     {
       "liga": "Taça de Portugal",
       "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351737"
-    },
-    {
-      "liga": "SuperLiga Serbia",
-      "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351738"
-    },
-    {
-      "liga": "Ekstraklasa Polonia",
-      "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351738"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353107"
     },
     {
       "liga": "HNL Croacia",
       "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351738"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
     },
     {
-      "liga": "USL Championship",
-      "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351738"
+      "liga": "SuperLiga Serbia",
+      "slug": "ser.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
     },
     {
-      "liga": "Premier League Ucrania",
-      "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351738"
+      "liga": "Ekstraklasa Polonia",
+      "slug": "pol.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353107"
     },
     {
       "liga": "Liga I Rumania",
       "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351738"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
     },
     {
-      "liga": "Copa MX",
-      "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351738"
+      "liga": "Premier League Ucrania",
+      "slug": "ukr.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
+    },
+    {
+      "liga": "USL Championship",
+      "slug": "usa.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351738"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
+    },
+    {
+      "liga": "Copa MX",
+      "slug": "mex.copa",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
     },
     {
       "liga": "J2 League Japón",
       "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351738"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
     },
     {
       "liga": "K League 1 Corea",
       "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351739"
-    },
-    {
-      "liga": "UAE Pro League",
-      "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351739"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
     },
     {
       "liga": "Qatar Stars League",
       "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351739"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353109"
     },
     {
-      "liga": "Premier League Egipto",
-      "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351739"
+      "liga": "UAE Pro League",
+      "slug": "uae.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353108"
     },
     {
       "liga": "Botola Marruecos",
       "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351739"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353109"
+    },
+    {
+      "liga": "Premier League Egipto",
+      "slug": "egy.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353109"
     },
     {
       "liga": "Copa Intercontinental FIFA",
       "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787351739"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20260821&limit=300&_=1787353109"
     }
   ]
 }
