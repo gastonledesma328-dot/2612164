@@ -1,8 +1,8 @@
 {
   "fuente": "ESPN Argentina",
   "metodo": "scoreboard + summary doble endpoint paralelo",
-  "fecha_scrapeo": "2026-10-18T02:00:12.257114-03:00",
-  "total": 148,
+  "fecha_scrapeo": "2026-10-18T06:29:07.082548-03:00",
+  "total": 147,
   "total_ligas_consultadas": 116,
   "partidos": [
     {
@@ -3393,18 +3393,18 @@
       },
       "fecha": "2026-10-18",
       "hora_inicio": "01:55",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
-      "completado": false,
-      "minuto": "0'",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
       "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "marcador_local": "0",
+      "marcador_visitante": "3",
+      "resultado": "0-3",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-10-18T04:55Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401877598/vissel-kobe-fagiano-okayama"
@@ -3430,18 +3430,18 @@
       },
       "fecha": "2026-10-18",
       "hora_inicio": "04:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
-      "completado": false,
-      "minuto": "0'",
+      "hora": "Fin",
+      "mostrar_tiempo": "Fin",
+      "estado": "Tiempo Completo",
+      "estado_corto": "F",
+      "estado_nombre": "STATUS_FULL_TIME",
+      "completado": true,
+      "minuto": null,
       "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
+      "marcador_local": "3",
+      "marcador_visitante": "0",
+      "resultado": "3-0",
+      "mostrar_marcador": true,
       "goleadores": [],
       "fecha_espn": "2026-10-18T07:00Z",
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401877601/avispa-fukuoka-machida-zelvia"
@@ -4039,43 +4039,6 @@
       "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401912243/as-maniema-union-kabuscorp"
     },
     {
-      "id": "401912248",
-      "partido": "The Panthers FC vs USM Alger",
-      "local": "The Panthers FC",
-      "visitante": "USM Alger",
-      "local_id": "132884",
-      "visitante_id": "7517",
-      "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132884.png",
-      "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7517.png",
-      "liga": "CAF Confederation Cup",
-      "liga_corta": "CAF Confederation Cup",
-      "liga_slug": "caf.confed",
-      "prioridad_liga": 401,
-      "competicion": {
-        "nombre": "CAF Confederation Cup",
-        "nombre_corto": "CAF Confederation Cup",
-        "slug": "caf.confed",
-        "prioridad": 401
-      },
-      "fecha": "2026-10-18",
-      "hora_inicio": "12:00",
-      "hora": "0'",
-      "mostrar_tiempo": "0'",
-      "estado": "Agendado",
-      "estado_corto": "Scheduled",
-      "estado_nombre": "STATUS_SCHEDULED",
-      "completado": false,
-      "minuto": "0'",
-      "periodo": null,
-      "marcador_local": null,
-      "marcador_visitante": null,
-      "resultado": null,
-      "mostrar_marcador": false,
-      "goleadores": [],
-      "fecha_espn": "2026-10-18T15:00Z",
-      "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401912248/usm-alger-the-panthers-fc"
-    },
-    {
       "id": "401912244",
       "partido": "Diarra vs ASKO Kara",
       "local": "Diarra",
@@ -4521,9 +4484,9 @@
     },
     {
       "id": "401925431",
-      "partido": "Churchill Brothers vs East Bengal FC",
+      "partido": "Churchill Brothers vs EAST BENGAL FC",
       "local": "Churchill Brothers",
-      "visitante": "East Bengal FC",
+      "visitante": "EAST BENGAL FC",
       "local_id": "8896",
       "visitante_id": "8897",
       "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8896.png",
@@ -9093,18 +9056,18 @@
           },
           "fecha": "2026-10-18",
           "hora_inicio": "01:55",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
-          "completado": false,
-          "minuto": "0'",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
           "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "marcador_local": "0",
+          "marcador_visitante": "3",
+          "resultado": "0-3",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-10-18T04:55Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401877598/vissel-kobe-fagiano-okayama"
@@ -9130,18 +9093,18 @@
           },
           "fecha": "2026-10-18",
           "hora_inicio": "04:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
-          "completado": false,
-          "minuto": "0'",
+          "hora": "Fin",
+          "mostrar_tiempo": "Fin",
+          "estado": "Tiempo Completo",
+          "estado_corto": "F",
+          "estado_nombre": "STATUS_FULL_TIME",
+          "completado": true,
+          "minuto": null,
           "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
+          "marcador_local": "3",
+          "marcador_visitante": "0",
+          "resultado": "3-0",
+          "mostrar_marcador": true,
           "goleadores": [],
           "fecha_espn": "2026-10-18T07:00Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401877601/avispa-fukuoka-machida-zelvia"
@@ -9575,7 +9538,7 @@
       "liga": "CAF Confederation Cup",
       "liga_slug": "caf.confed",
       "prioridad": 401,
-      "total": 7,
+      "total": 6,
       "partidos": [
         {
           "id": "401912487",
@@ -9761,43 +9724,6 @@
           "goleadores": [],
           "fecha_espn": "2026-10-18T15:00Z",
           "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401912243/as-maniema-union-kabuscorp"
-        },
-        {
-          "id": "401912248",
-          "partido": "The Panthers FC vs USM Alger",
-          "local": "The Panthers FC",
-          "visitante": "USM Alger",
-          "local_id": "132884",
-          "visitante_id": "7517",
-          "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132884.png",
-          "visitante_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7517.png",
-          "liga": "CAF Confederation Cup",
-          "liga_corta": "CAF Confederation Cup",
-          "liga_slug": "caf.confed",
-          "prioridad_liga": 401,
-          "competicion": {
-            "nombre": "CAF Confederation Cup",
-            "nombre_corto": "CAF Confederation Cup",
-            "slug": "caf.confed",
-            "prioridad": 401
-          },
-          "fecha": "2026-10-18",
-          "hora_inicio": "12:00",
-          "hora": "0'",
-          "mostrar_tiempo": "0'",
-          "estado": "Agendado",
-          "estado_corto": "Scheduled",
-          "estado_nombre": "STATUS_SCHEDULED",
-          "completado": false,
-          "minuto": "0'",
-          "periodo": null,
-          "marcador_local": null,
-          "marcador_visitante": null,
-          "resultado": null,
-          "mostrar_marcador": false,
-          "goleadores": [],
-          "fecha_espn": "2026-10-18T15:00Z",
-          "url_espn": "https://www.espn.com.ar/futbol/partido/_/juegoId/401912248/usm-alger-the-panthers-fc"
         },
         {
           "id": "401912244",
@@ -10663,9 +10589,9 @@
       "partidos": [
         {
           "id": "401925431",
-          "partido": "Churchill Brothers vs East Bengal FC",
+          "partido": "Churchill Brothers vs EAST BENGAL FC",
           "local": "Churchill Brothers",
-          "visitante": "East Bengal FC",
+          "visitante": "EAST BENGAL FC",
           "local_id": "8896",
           "visitante_id": "8897",
           "local_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8896.png",
@@ -11292,102 +11218,102 @@
     {
       "liga": "Community Shield",
       "slug": "eng.community",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
-    },
-    {
-      "liga": "KNVB Beker",
-      "slug": "ned.knvb_beker",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
-    },
-    {
-      "liga": "Liga Portugal 2",
-      "slug": "por.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.community/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315708"
     },
     {
       "liga": "3. Liga",
       "slug": "ger.3",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ger.3/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
     },
     {
       "liga": "Taça de Portugal",
       "slug": "por.taca_de_portugal",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.taca_de_portugal/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
+    },
+    {
+      "liga": "KNVB Beker",
+      "slug": "ned.knvb_beker",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ned.knvb_beker/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
+    },
+    {
+      "liga": "Liga Portugal 2",
+      "slug": "por.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
     },
     {
       "liga": "Ekstraklasa Polonia",
       "slug": "pol.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
-    },
-    {
-      "liga": "SuperLiga Serbia",
-      "slug": "ser.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
-    },
-    {
-      "liga": "Liga I Rumania",
-      "slug": "rom.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
-    },
-    {
-      "liga": "Premier League Ucrania",
-      "slug": "ukr.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/pol.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
     },
     {
       "liga": "HNL Croacia",
       "slug": "cro.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299568"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/cro.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
+    },
+    {
+      "liga": "SuperLiga Serbia",
+      "slug": "ser.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ser.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
+    },
+    {
+      "liga": "Premier League Ucrania",
+      "slug": "ukr.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/ukr.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
+    },
+    {
+      "liga": "Liga I Rumania",
+      "slug": "rom.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/rom.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
     },
     {
       "liga": "USL Championship",
       "slug": "usa.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
-    },
-    {
-      "liga": "Copa MX",
-      "slug": "mex.copa",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
-    },
-    {
-      "liga": "K League 1 Corea",
-      "slug": "kor.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
-    },
-    {
-      "liga": "J2 League Japón",
-      "slug": "jpn.2",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
     },
     {
       "liga": "CONCACAF Nations League",
       "slug": "concacaf.nations",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315710"
+    },
+    {
+      "liga": "K League 1 Corea",
+      "slug": "kor.1",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/kor.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315710"
+    },
+    {
+      "liga": "J2 League Japón",
+      "slug": "jpn.2",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/jpn.2/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315710"
     },
     {
       "liga": "UAE Pro League",
       "slug": "uae.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/uae.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315710"
     },
     {
       "liga": "Qatar Stars League",
       "slug": "qat.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/qat.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315710"
     },
     {
       "liga": "Premier League Egipto",
       "slug": "egy.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/egy.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315710"
     },
     {
       "liga": "Botola Marruecos",
       "slug": "mar.1",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mar.1/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315710"
     },
     {
       "liga": "Copa Intercontinental FIFA",
       "slug": "fifa.intercontinental",
-      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792299569"
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.intercontinental/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315710"
+    },
+    {
+      "liga": "Copa MX",
+      "slug": "mex.copa",
+      "error": "400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/soccer/mex.copa/scoreboard?region=ar&lang=es&contentorigin=espn&dates=20261018&limit=300&_=1792315709"
     }
   ]
 }
